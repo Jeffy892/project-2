@@ -42,7 +42,7 @@ object Runner {
     }
     var start = System.currentTimeMillis()
     var filesFoundInDir = false
-    while(!filesFoundInDir && (System.currentTimeMillis()-start) < 30000) {
+    while(!filesFoundInDir && (System.currentTimeMillis()-start) < 60000) {
       filesFoundInDir = Files.list(Paths.get("twitterstream")).findFirst().isPresent()
       Thread.sleep(500)
     }
@@ -58,7 +58,7 @@ object Runner {
     //streamDf is a stream, using *Structured Streaming*
     val streamDf = spark.readStream.schema(staticDf.schema).json("twitterstream")
     streamDf
-      .select($"data.entities.hashtags.tag")
+      .select($"data.text")
       .writeStream
       .outputMode("append")
       .format("console")
@@ -79,7 +79,7 @@ object Runner {
       )
       .build()
     val uriBuilder: URIBuilder = new URIBuilder(
-      s"https://api.twitter.com/2/tweets/sample/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name"
+      s"https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name"
     )
     val httpGet = new HttpGet(uriBuilder.build())
     //set up the authorization for this request, using our bearer token

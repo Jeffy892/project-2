@@ -743,3 +743,31 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.02.12 08:55:53 INFO  Deduplicating compilation of root from bsp client 'Metals 0.9.10' (since 12.574s)[0m
 [0m2021.02.12 08:55:53 INFO  compiling root (1 scala source)[0m
 [0m2021.02.12 08:55:54 INFO  time: compiled root in 1.19s[0m
+[0m2021.02.12 11:37:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 11:37:10 INFO  time: compiled root in 2s[0m
+[0m2021.02.12 13:13:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:14:01 INFO  time: compiled root in 1.46s[0m
+Feb 12, 2021 1:22:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 108
+[0m2021.02.12 13:38:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:38:54 INFO  time: compiled root in 1.47s[0m
+[0m2021.02.12 13:42:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:42:22 INFO  time: compiled root in 1.39s[0m
+[0m2021.02.12 13:45:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:45:02 INFO  time: compiled root in 1.76s[0m
+Feb 12, 2021 1:46:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 201
+[0m2021.02.12 13:48:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:48:05 INFO  time: compiled root in 0.33s[0m
+[0m2021.02.12 13:48:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:48:27 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.12 13:48:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:48:37 INFO  time: compiled root in 1.31s[0m
+[0m2021.02.12 13:48:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:49:02 INFO  time: compiled root in 8.51s[0m
+[0m2021.02.12 13:53:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:53:19 INFO  time: compiled root in 1.26s[0m
+[0m2021.02.12 13:54:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:55:00 INFO  time: compiled root in 1.2s[0m
+[0m2021.02.12 13:57:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:57:36 INFO  time: compiled root in 1.31s[0m
