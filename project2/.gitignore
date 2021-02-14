@@ -1,1 +1,8 @@
 target/
+twitterstream/
+twitterstream-geo/
+*.zip
+*.tmp
+.bloop/
+.metals/
+.vscode/
