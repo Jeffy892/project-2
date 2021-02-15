@@ -42,7 +42,7 @@ object Runner {
       )
       .build()
     val uriBuilder: URIBuilder = new URIBuilder(
-      s"https://api.twitter.com/2/tweets/sample/stream$queryString"
+      s"https://api.twitter.com/2/tweets/search/stream$queryString"
     )
     val httpGet = new HttpGet(uriBuilder.build())
     //set up the authorization for this request, using our bearer token
