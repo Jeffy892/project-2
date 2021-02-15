@@ -2,14 +2,14 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/home/melissawhite/filtered-stream/twitterfilteredstream",
-        "workspaceDir": "/home/melissawhite/filtered-stream/twitterfilteredstream",
+        "directory": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream",
         "sources": [
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/src/main/scala",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/src/main/scala-2.13",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/src/main/scala-2",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/src/main/java",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/target/scala-2.13/src_managed/main"
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2.13",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/scala-2.13/src_managed/main"
         ],
         "dependencies": [
             
@@ -20,11 +20,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/twitter4j/twitter4j-stream/4.0.7/twitter4j-stream-4.0.7.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/1.7.1/gson-1.7.1.jar"
         ],
-        "out": "/home/melissawhite/filtered-stream/twitterfilteredstream/.bloop/root",
-        "classesDir": "/home/melissawhite/filtered-stream/twitterfilteredstream/.bloop/root/scala-2.13/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root/scala-2.13/classes",
         "resources": [
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/src/main/resources",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/target/scala-2.13/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/scala-2.13/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -40,7 +40,7 @@
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.16.0/jline-3.16.0.jar",
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
             ],
-            "analysis": "/home/melissawhite/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -99,7 +99,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/filtered-stream/twitterfilteredstream"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream"
                 ]
             },
             "mainClass": [

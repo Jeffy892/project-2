@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "twitterfilteredstream-build-build",
-        "directory": "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project",
-        "workspaceDir": "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project",
+        "directory": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project",
         "sources": [
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/scala",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2.12",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/java",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/scala-sbt-1.0",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2.12",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-sbt-1.0",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -106,11 +106,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"
         ],
-        "out": "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/.bloop/twitterfilteredstream-build-build",
-        "classesDir": "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/.bloop/twitterfilteredstream-build-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/.bloop/twitterfilteredstream-build-build",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/.bloop/twitterfilteredstream-build-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/src/main/resources",
-            "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -127,7 +127,7 @@
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-xml_2.12.jar"
             ],
-            "analysis": "/home/melissawhite/filtered-stream/twitterfilteredstream/project/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -197,7 +197,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/filtered-stream/twitterfilteredstream/project/project"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project"
                 ]
             },
             "mainClass": [
