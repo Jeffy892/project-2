@@ -2,14 +2,14 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/home/melissawhite/pj2-twitterstreamsample",
-        "workspaceDir": "/home/melissawhite/pj2-twitterstreamsample",
+        "directory": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample",
         "sources": [
-            "/home/melissawhite/pj2-twitterstreamsample/src/main/scala",
-            "/home/melissawhite/pj2-twitterstreamsample/src/main/scala-2.11",
-            "/home/melissawhite/pj2-twitterstreamsample/src/main/scala-2",
-            "/home/melissawhite/pj2-twitterstreamsample/src/main/java",
-            "/home/melissawhite/pj2-twitterstreamsample/target/scala-2.11/src_managed/main"
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/src/main/scala-2.11",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/target/scala-2.11/src_managed/main"
         ],
         "dependencies": [
             
@@ -173,11 +173,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"
         ],
-        "out": "/home/melissawhite/pj2-twitterstreamsample/.bloop/root",
-        "classesDir": "/home/melissawhite/pj2-twitterstreamsample/.bloop/root/scala-2.11/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/.bloop/root",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/.bloop/root/scala-2.11/classes",
         "resources": [
-            "/home/melissawhite/pj2-twitterstreamsample/src/main/resources",
-            "/home/melissawhite/pj2-twitterstreamsample/target/scala-2.11/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/target/scala-2.11/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -194,7 +194,7 @@
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar",
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar"
             ],
-            "analysis": "/home/melissawhite/pj2-twitterstreamsample/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -253,7 +253,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/pj2-twitterstreamsample"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample"
                 ]
             },
             "mainClass": [

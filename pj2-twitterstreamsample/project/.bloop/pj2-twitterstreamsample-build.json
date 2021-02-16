@@ -2,16 +2,16 @@
     "version": "1.4.0",
     "project": {
         "name": "pj2-twitterstreamsample-build",
-        "directory": "/home/melissawhite/pj2-twitterstreamsample/project",
-        "workspaceDir": "/home/melissawhite/pj2-twitterstreamsample/project",
+        "directory": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project",
         "sources": [
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/scala",
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/scala-2.12",
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/scala-2",
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/java",
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/scala-sbt-1.0",
-            "/home/melissawhite/pj2-twitterstreamsample/project/target/scala-2.12/sbt-1.0/src_managed/main",
-            "/home/melissawhite/pj2-twitterstreamsample/project/Dependencies.scala"
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/scala-2.12",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/scala-sbt-1.0",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/target/scala-2.12/sbt-1.0/src_managed/main",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/Dependencies.scala"
         ],
         "dependencies": [
             
@@ -129,11 +129,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"
         ],
-        "out": "/home/melissawhite/pj2-twitterstreamsample/project/.bloop/pj2-twitterstreamsample-build",
-        "classesDir": "/home/melissawhite/pj2-twitterstreamsample/project/.bloop/pj2-twitterstreamsample-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/.bloop/pj2-twitterstreamsample-build",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/.bloop/pj2-twitterstreamsample-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/melissawhite/pj2-twitterstreamsample/project/src/main/resources",
-            "/home/melissawhite/pj2-twitterstreamsample/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -150,7 +150,7 @@
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-xml_2.12.jar"
             ],
-            "analysis": "/home/melissawhite/pj2-twitterstreamsample/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -220,7 +220,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/pj2-twitterstreamsample/project"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/pj2-twitterstreamsample/project"
                 ]
             },
             "mainClass": [

@@ -1,14 +1,14 @@
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.DataFrameReader
+import org.apache.spark.sql._
+import org.apache.spark.sql.expressions._
+import org.apache.spark.sql.functions._
+
 import java.io.FileWriter
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-
+import scala.concurrent.Future
 import twitter4j._
+import org.apache.spark.sql.types.StructType
 
-// case class Tweet(
-//   lang: String,
-//   text: String
-// )
 object run {
 
   val bts = 1409798257L;
@@ -21,45 +21,65 @@ object run {
     .build
 
   def main(args: Array[String]) {
-    val twitterStream = new TwitterStreamFactory(config).getInstance
-    val query = new FilterQuery()
-    query
-      .follow(bts)
-      .track("BTS")
-    twitterStream.addListener(statuslistener)
-    twitterStream.filter(query)
-    val start = System.currentTimeMillis();
-    while (System.currentTimeMillis() - start < 10 * 1000) {
-      /* wait for x seconds */
-    };
-    twitterStream.cleanUp
-    twitterStream.shutdown
-  }
+    val spark = SparkSession
+      .builder()
+      .appName("btslangcounter")
+      .master("local[4]")
+      .getOrCreate()
 
-  def statuslistener = new StatusListener() {
-    def onStatus(status: Status) {
-      // println(s"${status.getLang}\t${status.getText}")
-      printToFile(status, "tweets/bts.json")
+    import spark.implicits._
+    spark.sparkContext.setLogLevel("WARN")
+    // streamTweets()
+    langCount(spark)
 
+    def statuslistener = new StatusListener() {
+      def onStatus(status: Status) {
+        printToFile(status, "tweets/bts.csv")
+
+      }
+      def onDeletionNotice(statusDeletionNotice: StatusDeletionNotice) {}
+      def onTrackLimitationNotice(numberOfLimitedStatuses: Int) {}
+      def onException(ex: Exception) { ex.printStackTrace }
+      def onScrubGeo(arg0: Long, arg1: Long) {}
+      def onStallWarning(warning: StallWarning) {}
+
+      def printToFile(status: Status, file: String) {
+        val filewriter = new FileWriter(file, true)
+        println("filewriter start")
+        filewriter.write(s"${status.getLang}\n")
+        filewriter.flush()
+        filewriter.close()
+        println("------------------------")
+      }
     }
-    def onDeletionNotice(statusDeletionNotice: StatusDeletionNotice) {}
-    def onTrackLimitationNotice(numberOfLimitedStatuses: Int) {}
-    def onException(ex: Exception) { ex.printStackTrace }
-    def onScrubGeo(arg0: Long, arg1: Long) {}
-    def onStallWarning(warning: StallWarning) {}
 
-    def printToFile(status: Status, file: String) {
-      val filewriter = new FileWriter(file, true)
-      //val gson = new GsonBuilder().create()
-      //val tweet = Tweet(status.getLang(), status.getText())
-      //gson.toJson(tweet, filewriter)
-      filewriter.write(s"${status.getLang}\n")
-      filewriter.flush()
-      filewriter.close()
-      println("------------------------")
+    def streamTweets(): Unit = {
+      val twitterStream = new TwitterStreamFactory(config).getInstance
+      val query = new FilterQuery()
+      query
+        .follow(bts)
+        .track("BTS")
+      twitterStream.addListener(statuslistener)
+      twitterStream.filter(query)
+      val start = System.currentTimeMillis();
+      while (System.currentTimeMillis() - start < 10 * 1000) {
+        /* wait for x seconds */
+      }
+      twitterStream.cleanUp
+      twitterStream.shutdown
     }
 
     //TODO: Aggregate data en: 5, ko: 2, vi: 2, etc
-    //Use Spark dataframes/datasets
+    //Use Spark dataframes/data
+
+    def langCount(spark: SparkSession): Unit = {
+      import spark.implicits._
+      val df = spark.read.csv("tweets/bts.csv")
+        .withColumnRenamed("_c0", "lang")
+      df.printSchema()
+      df.show()
+      df.groupBy("lang").count().show()
+
+    }
   }
 }
