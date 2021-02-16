@@ -1,0 +1,6 @@
+full_name,city,country,counts,avg_Retweet,avg_Replies,avg_Like,avg_Quotes,index
+"Quezon City, National Capital Region","Quezon City, National Capital Region",Philippians,1,0,0,0,0,1
+Jamaica,,Jamaica,1,0,0,0,0,2
+"Santa Clara, CA","Santa Clara, CA",USA,1,0,0,0,0,3
+"Penza, Russia",Penza,Russia,1,0,0,0,0,4
+"Province of Novosibirsk, Russia",Province of Novosibirsk,Russia,1,0,0,1,0,5
