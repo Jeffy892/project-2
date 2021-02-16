@@ -1,0 +1,336 @@
++--------------------+--------------------+--------------------+
+|                data|            includes|      matching_rules|
++--------------------+--------------------+--------------------+
+|[2021-02-12T16:11...|[[[Americana, Bra...|[[135995859914608...|
+|[2021-02-12T16:12...|[[[Baltimore, MD,...|[[135995859914608...|
+|[2021-02-12T16:13...|[[[Saidapet, Indi...|[[135995859914608...|
+|[2021-02-12T16:22...|[[[Lapu-Lapu City...|[[135995859914608...|
+|[2021-02-12T16:24...|[[[General Trias,...|[[135995859914608...|
+|[2021-02-12T16:28...|[[[Spain, ecdce75...|[[135995859914608...|
+|[2021-02-12T16:31...|[[[Makati City, N...|[[135995859914608...|
+|[2021-02-12T16:33...|[[[Kita-ku, Okaya...|[[135995859914608...|
+|[2021-02-12T16:58...|[[[Manhattan, NY,...|[[135995859914608...|
+|[2021-02-12T16:59...|[[[Manhattan, NY,...|[[135995859914608...|
+|[2021-02-12T17:01...|[[[Detroit, MI, b...|[[135995859914608...|
+|[2021-02-12T17:03...|[[[Detroit, MI, b...|[[135995859914608...|
+|[2021-02-12T17:08...|[[[Kuta, Indonesi...|[[135995859914608...|
+|[2021-02-12T17:52...|[[[Kuta, Indonesi...|[[135995859914608...|
+|[2021-02-12T18:16...|[[[Bang Khen, Tha...|[[135995859914608...|
+|[2021-02-12T18:21...|[[[Changwon-si, R...|[[135995859914608...|
+|[2021-02-12T18:22...|[[[Changwon-si, R...|[[135995859914608...|
+|[2021-02-12T18:27...|[[[North El Monte...|[[135995859914608...|
+|[2021-02-12T18:29...|[[[Bexley, London...|[[135995859914608...|
+|[2021-02-12T18:30...|[[[Changwon-si, R...|[[135995859914608...|
++--------------------+--------------------+--------------------+
+only showing top 20 rows
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- coordinates: struct (nullable = true)
+ |    |    |    |-- coordinates: array (nullable = true)
+ |    |    |    |    |-- element: double (containsNull = true)
+ |    |    |    |-- type: string (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
++-----------------------+
+|count(DISTINCT data.id)|
++-----------------------+
+|                    118|
++-----------------------+
+
++-------------------------------+
+|count(DISTINCT data.created_at)|
++-------------------------------+
+|                            117|
++-------------------------------+
+
++-----------------------------------------+
+|count(DISTINCT includes.places.full_name)|
++-----------------------------------------+
+|                                       84|
++-----------------------------------------+
+
++--------------------+-----+
+|           full_name|count|
++--------------------+-----+
+|[Nova Iguaçu, Bra...|    1|
+|   [Jersey City, NJ]|    1|
+|[Rostov-na-Donu, ...|    1|
+| [Americana, Brasil]|    1|
+|[Bang Khen, Thail...|    1|
+|[Brick Live Café ...|    1|
+|[Ivry-sur-Seine, ...|    1|
+|[Chom Phon, Thail...|    1|
+|[Cimanggis, Indon...|    1|
+|[Sapporo-shi Toyo...|    1|
+|[Neuquén, Argentina]|    1|
+|      [Columbus, OH]|    1|
+|    [Quito, Ecuador]|    2|
+|[Cebu City, Centr...|    1|
+|   [West Covina, CA]|    1|
+|  [Kita-ku, Okayama]|    1|
+|   [Saidapet, India]|    1|
+|    [Bexley, London]|    1|
+|[Changwon-si, Rep...|    8|
+| [Bisceglie, Puglia]|    1|
++--------------------+-----+
+only showing top 20 rows
+
++--------------------+--------------------+--------------------+----------+
+|                data|            includes|      matching_rules|row_number|
++--------------------+--------------------+--------------------+----------+
+|[2021-02-13T00:15...|[[[Nova Iguaçu, B...|[[135995859914608...|         1|
+|[2021-02-12T19:03...|[[[Jersey City, N...|[[135995859914608...|         1|
+|[2021-02-12T15:05...|[[[Rostov-na-Donu...|[[135995859914608...|         1|
+|[2021-02-12T16:11...|[[[Americana, Bra...|[[135995859914608...|         1|
+|[2021-02-12T18:16...|[[[Bang Khen, Tha...|[[135995859914608...|         1|
+|[2021-02-12T12:32...|[[[Brick Live Caf...|[[135995859914608...|         1|
+|[2021-02-12T15:14...|[[[Ivry-sur-Seine...|[[135995859914608...|         1|
+|[2021-02-12T15:27...|[[[Chom Phon, Tha...|[[135995859914608...|         1|
+|[2021-02-12T23:57...|[[[Cimanggis, Ind...|[[135995859914608...|         1|
+|[2021-02-12T15:11...|[[[Neuquén, Argen...|[[135995859914608...|         1|
+|[2021-02-12T12:20...|[[[Sapporo-shi To...|[[135995859914608...|         1|
+|[2021-02-12T21:40...|[[[Columbus, OH, ...|[[135995859914608...|         1|
+|[2021-02-12T15:07...|[[[Cebu City, Cen...|[[135995859914608...|         1|
+|[2021-02-12T23:47...|[[[Quito, Ecuador...|[[135995859914608...|         1|
+|[2021-02-13T00:03...|[[[Quito, Ecuador...|[[135995859914608...|         2|
+|[2021-02-12T21:05...|[[[West Covina, C...|[[135995859914608...|         1|
+|[2021-02-12T16:33...|[[[Kita-ku, Okaya...|[[135995859914608...|         1|
+|[2021-02-12T18:29...|[[[Bexley, London...|[[135995859914608...|         1|
+|[2021-02-12T16:13...|[[[Saidapet, Indi...|[[135995859914608...|         1|
+|[2021-02-12T12:38...|[[[Changwon-si, R...|[[135995859914608...|         1|
++--------------------+--------------------+--------------------+----------+
+only showing top 20 rows
+
++-----------------------------------------+------+-----------+-----------+------------------+----------+
+|full_name                                |counts|avg_Retweet|avg_Replies|avg_Like          |avg_Quotes|
++-----------------------------------------+------+-----------+-----------+------------------+----------+
+|[Manhattan, NY]                          |8     |0.0        |0.0        |0.0               |0.0       |
+|[Changwon-si, Republic of Korea]         |8     |0.0        |0.0        |0.375             |0.0       |
+|[Kazakhstan]                             |4     |0.0        |0.0        |0.0               |0.0       |
+|[Potsdam, Germany]                       |3     |0.0        |0.0        |0.0               |0.0       |
+|[Saraikela Kharsawan, India]             |3     |0.0        |0.0        |0.3333333333333333|0.0       |
+|[Duque de Caxias, Brasil]                |3     |0.0        |0.0        |0.0               |0.0       |
+|[Kortrijk, België]                       |2     |0.0        |0.0        |0.0               |0.0       |
+|[Kuta, Indonesia]                        |2     |0.0        |0.0        |0.0               |0.0       |
+|[Quito, Ecuador]                         |2     |0.0        |0.0        |0.0               |0.0       |
+|[Florianópolis, Brazil]                  |2     |0.0        |0.0        |0.0               |0.0       |
+|[Meknes, Morocco]                        |2     |0.0        |0.0        |0.0               |0.0       |
+|[Bogotá, D.C., Colombia]                 |2     |0.0        |0.0        |0.0               |0.0       |
+|[Uzbekistan]                             |2     |0.0        |0.0        |0.0               |0.0       |
+|[Detroit, MI]                            |2     |0.0        |0.0        |0.0               |0.0       |
+|[Jesolo, Veneto]                         |2     |0.0        |0.0        |0.0               |0.0       |
+|[Ukraine]                                |2     |0.0        |0.0        |0.0               |0.0       |
+|[Makati City, National Capital Region]   |2     |0.0        |0.0        |0.0               |0.0       |
+|[Rostov-na-Donu, Russia]                 |1     |0.0        |0.0        |0.0               |0.0       |
+|[Americana, Brasil]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Nova Iguaçu, Brasil]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Jersey City, NJ]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Chom Phon, Thailand]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Bang Khen, Thailand]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Cimanggis, Indonesia]                   |1     |0.0        |0.0        |0.0               |0.0       |
+|[Sapporo-shi Toyohira-ku, Hokkaidō]      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Neuquén, Argentina]                     |1     |0.0        |0.0        |0.0               |0.0       |
+|[Cebu City, Central Visayas]             |1     |0.0        |0.0        |0.0               |0.0       |
+|[Kelang, Selangor]                       |1     |0.0        |0.0        |0.0               |0.0       |
+|[Columbus, OH]                           |1     |0.0        |0.0        |0.0               |0.0       |
+|[Brick Live Café by BTS]                 |1     |0.0        |0.0        |0.0               |0.0       |
+|[Ivry-sur-Seine, France]                 |1     |0.0        |1.0        |0.0               |0.0       |
+|[West Covina, CA]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Kita-ku, Okayama]                       |1     |0.0        |0.0        |0.0               |0.0       |
+|[Saidapet, India]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Bexley, London]                         |1     |0.0        |0.0        |1.0               |0.0       |
+|[Kalyan Dombivali, India]                |1     |0.0        |0.0        |0.0               |0.0       |
+|[Bisceglie, Puglia]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[South Carolina, USA]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Sao Paulo, Brazil]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Lapu-Lapu City, Central Visayas]        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Guarulhos, Brasil]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Sawangan, Indonesia]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Los Angeles, CA]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Vicenza, Veneto]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Rancho Cucamonga, CA]                   |1     |0.0        |0.0        |0.0               |0.0       |
+|[Sawah Besar, Indonesia]                 |1     |0.0        |0.0        |0.0               |0.0       |
+|[Saint Petersburg, Russia]               |1     |0.0        |0.0        |0.0               |0.0       |
+|[Dhaka, Bangladesh]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Spain]                                  |1     |0.0        |0.0        |1.0               |0.0       |
+|[Aziziah, Kingdom of Saudi Arabia]       |1     |0.0        |0.0        |0.0               |0.0       |
+|[Dacca, Bangladesh]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Bærum, Norge]                           |1     |0.0        |0.0        |0.0               |0.0       |
+|[Paranaque City, National Capital Region]|1     |0.0        |0.0        |0.0               |0.0       |
+|[Attiki, Greece]                         |1     |0.0        |0.0        |0.0               |0.0       |
+|[Miami Beach, FL]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Campos dos Goytacazes, Brasil]          |1     |0.0        |0.0        |0.0               |0.0       |
+|[Santa Fé, Argentina]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Carapicuíba, Brasil]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[San Pedro, Calabarzon]                  |1     |0.0        |0.0        |0.0               |0.0       |
+|[Arnavutköy, Türkiye]                    |1     |0.0        |0.0        |0.0               |0.0       |
+|[Virginia, USA]                          |1     |0.0        |0.0        |0.0               |0.0       |
+|[North El Monte, CA]                     |1     |0.0        |0.0        |0.0               |0.0       |
+|[Baltimore, MD]                          |1     |0.0        |0.0        |0.0               |0.0       |
+|[Oklahoma City, OK]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Milan, Lombardy]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Padua, Veneto]                          |1     |0.0        |0.0        |0.0               |0.0       |
+|[Tula de Allende, Hidalgo]               |1     |0.0        |0.0        |1.0               |0.0       |
+|[General Trias, Calabarzon]              |1     |0.0        |0.0        |0.0               |0.0       |
+|[Jamaica]                                |1     |0.0        |0.0        |0.0               |0.0       |
+|[Cainta, Calabarzon]                     |1     |0.0        |0.0        |0.0               |0.0       |
+|[Ansan-si, Republic of Korea]            |1     |0.0        |0.0        |0.0               |0.0       |
+|[Province of Moscow, Russia]             |1     |0.0        |0.0        |0.0               |0.0       |
+|[Lester, PA]                             |1     |0.0        |0.0        |0.0               |0.0       |
+|[Kerala, India]                          |1     |0.0        |0.0        |0.0               |0.0       |
+|[Arjawinangun, Indonesia]                |1     |0.0        |0.0        |0.0               |0.0       |
+|[Lat Yao, Thailand]                      |1     |0.0        |0.0        |0.0               |0.0       |
+|[Portland, OR]                           |1     |0.0        |0.0        |0.0               |0.0       |
+|[Paju-si, Republic of Korea]             |1     |0.0        |0.0        |0.0               |0.0       |
+|[Norzagaray, Central Luzon]              |1     |0.0        |0.0        |0.0               |0.0       |
+|[Punggelan, Indonesia]                   |1     |0.0        |0.0        |0.0               |0.0       |
+|[Pyeongtaek-si, Republic of Korea]       |1     |0.0        |0.0        |0.0               |0.0       |
+|[Toronto, Ontario]                       |1     |0.0        |0.0        |0.0               |0.0       |
+|[Giri, Indonesia]                        |1     |0.0        |0.0        |0.0               |0.0       |
+|[Vitória, Brazil]                        |1     |0.0        |0.0        |0.0               |0.0       |
++-----------------------------------------+------+-----------+-----------+------------------+----------+
+
+== Parsed Logical Plan ==
+'Sort ['counts DESC NULLS LAST], true
++- Aggregate [includes#1.places.full_name], [includes#1.places.full_name AS full_name#118, count(includes#1.places.full_name) AS counts#108L, avg(data#0.public_metrics.retweet_count) AS avg_Retweet#110, avg(data#0.public_metrics.reply_count) AS avg_Replies#112, avg(data#0.public_metrics.like_count) AS avg_Like#114, avg(data#0.public_metrics.quote_count) AS avg_Quotes#116]
+   +- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+full_name: array<string>, counts: bigint, avg_Retweet: double, avg_Replies: double, avg_Like: double, avg_Quotes: double
+Sort [counts#108L DESC NULLS LAST], true
++- Aggregate [includes#1.places.full_name], [includes#1.places.full_name AS full_name#118, count(includes#1.places.full_name) AS counts#108L, avg(data#0.public_metrics.retweet_count) AS avg_Retweet#110, avg(data#0.public_metrics.reply_count) AS avg_Replies#112, avg(data#0.public_metrics.like_count) AS avg_Like#114, avg(data#0.public_metrics.quote_count) AS avg_Quotes#116]
+   +- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Sort [counts#108L DESC NULLS LAST], true
++- Aggregate [includes#1.places.full_name], [includes#1.places.full_name AS full_name#118, count(includes#1.places.full_name) AS counts#108L, avg(data#0.public_metrics.retweet_count) AS avg_Retweet#110, avg(data#0.public_metrics.reply_count) AS avg_Replies#112, avg(data#0.public_metrics.like_count) AS avg_Like#114, avg(data#0.public_metrics.quote_count) AS avg_Quotes#116]
+   +- Project [data#0, includes#1]
+      +- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(3) Sort [counts#108L DESC NULLS LAST], true, 0
++- Exchange rangepartitioning(counts#108L DESC NULLS LAST, 200)
+   +- *(2) HashAggregate(keys=[includes#1.places.full_name#171], functions=[count(includes#1.places.full_name), avg(data#0.public_metrics.retweet_count), avg(data#0.public_metrics.reply_count), avg(data#0.public_metrics.like_count), avg(data#0.public_metrics.quote_count)], output=[full_name#118, counts#108L, avg_Retweet#110, avg_Replies#112, avg_Like#114, avg_Quotes#116])
+      +- Exchange hashpartitioning(includes#1.places.full_name#171, 200)
+         +- *(1) HashAggregate(keys=[includes#1.places.full_name AS includes#1.places.full_name#171], functions=[partial_count(includes#1.places.full_name), partial_avg(data#0.public_metrics.retweet_count), partial_avg(data#0.public_metrics.reply_count), partial_avg(data#0.public_metrics.like_count), partial_avg(data#0.public_metrics.quote_count)], output=[includes#1.places.full_name#171, count#158L, sum#159, count#160L, sum#161, count#162L, sum#163, count#164L, sum#165, count#166L])
+            +- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/twitterFilteredStream_210212..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<coordinates:struct<coordinates:array<double>,type...
+(6) MapPartitionsRDD[73] at rdd at Runner.scala:74 []
+ |  SQLExecutionRDD[72] at rdd at Runner.scala:74 []
+ |  MapPartitionsRDD[71] at rdd at Runner.scala:74 []
+ |  MapPartitionsRDD[70] at rdd at Runner.scala:74 []
+ |  ShuffledRowRDD[69] at rdd at Runner.scala:74 []
+ +-(200) MapPartitionsRDD[68] at rdd at Runner.scala:74 []
+     |   MapPartitionsRDD[64] at rdd at Runner.scala:74 []
+     |   ShuffledRowRDD[63] at rdd at Runner.scala:74 []
+     +-(1) MapPartitionsRDD[62] at rdd at Runner.scala:74 []
+        |  MapPartitionsRDD[61] at rdd at Runner.scala:74 []
+        |  FileScanRDD[60] at rdd at Runner.scala:74 []
++-----------------------------------------+------+-----------+-----------+------------------+----------+-----+
+|full_name                                |counts|avg_Retweet|avg_Replies|avg_Like          |avg_Quotes|index|
++-----------------------------------------+------+-----------+-----------+------------------+----------+-----+
+|[Changwon-si, Republic of Korea]         |8     |0.0        |0.0        |0.375             |0.0       |1    |
+|[Manhattan, NY]                          |8     |0.0        |0.0        |0.0               |0.0       |2    |
+|[Kazakhstan]                             |4     |0.0        |0.0        |0.0               |0.0       |3    |
+|[Potsdam, Germany]                       |3     |0.0        |0.0        |0.0               |0.0       |4    |
+|[Duque de Caxias, Brasil]                |3     |0.0        |0.0        |0.0               |0.0       |5    |
+|[Saraikela Kharsawan, India]             |3     |0.0        |0.0        |0.3333333333333333|0.0       |6    |
+|[Quito, Ecuador]                         |2     |0.0        |0.0        |0.0               |0.0       |7    |
+|[Kuta, Indonesia]                        |2     |0.0        |0.0        |0.0               |0.0       |8    |
+|[Florianópolis, Brazil]                  |2     |0.0        |0.0        |0.0               |0.0       |9    |
+|[Bogotá, D.C., Colombia]                 |2     |0.0        |0.0        |0.0               |0.0       |10   |
+|[Detroit, MI]                            |2     |0.0        |0.0        |0.0               |0.0       |11   |
+|[Ukraine]                                |2     |0.0        |0.0        |0.0               |0.0       |12   |
+|[Kortrijk, België]                       |2     |0.0        |0.0        |0.0               |0.0       |13   |
+|[Meknes, Morocco]                        |2     |0.0        |0.0        |0.0               |0.0       |14   |
+|[Uzbekistan]                             |2     |0.0        |0.0        |0.0               |0.0       |15   |
+|[Jesolo, Veneto]                         |2     |0.0        |0.0        |0.0               |0.0       |16   |
+|[Makati City, National Capital Region]   |2     |0.0        |0.0        |0.0               |0.0       |17   |
+|[Nova Iguaçu, Brasil]                    |1     |0.0        |0.0        |0.0               |0.0       |18   |
+|[Jersey City, NJ]                        |1     |0.0        |0.0        |0.0               |0.0       |19   |
+|[Rostov-na-Donu, Russia]                 |1     |0.0        |0.0        |0.0               |0.0       |20   |
+|[Americana, Brasil]                      |1     |0.0        |0.0        |0.0               |0.0       |21   |
+|[Bang Khen, Thailand]                    |1     |0.0        |0.0        |0.0               |0.0       |22   |
+|[Brick Live Café by BTS]                 |1     |0.0        |0.0        |0.0               |0.0       |23   |
+|[Ivry-sur-Seine, France]                 |1     |0.0        |1.0        |0.0               |0.0       |24   |
+|[Chom Phon, Thailand]                    |1     |0.0        |0.0        |0.0               |0.0       |25   |
+|[Cimanggis, Indonesia]                   |1     |0.0        |0.0        |0.0               |0.0       |26   |
+|[Sapporo-shi Toyohira-ku, Hokkaidō]      |1     |0.0        |0.0        |0.0               |0.0       |27   |
+|[Neuquén, Argentina]                     |1     |0.0        |0.0        |0.0               |0.0       |28   |
+|[Columbus, OH]                           |1     |0.0        |0.0        |0.0               |0.0       |29   |
+|[Cebu City, Central Visayas]             |1     |0.0        |0.0        |0.0               |0.0       |30   |
+|[West Covina, CA]                        |1     |0.0        |0.0        |0.0               |0.0       |31   |
+|[Kita-ku, Okayama]                       |1     |0.0        |0.0        |0.0               |0.0       |32   |
+|[Saidapet, India]                        |1     |0.0        |0.0        |0.0               |0.0       |33   |
+|[Bexley, London]                         |1     |0.0        |0.0        |1.0               |0.0       |34   |
+|[Bisceglie, Puglia]                      |1     |0.0        |0.0        |0.0               |0.0       |35   |
+|[South Carolina, USA]                    |1     |0.0        |0.0        |0.0               |0.0       |36   |
+|[Kelang, Selangor]                       |1     |0.0        |0.0        |0.0               |0.0       |37   |
+|[Guarulhos, Brasil]                      |1     |0.0        |0.0        |0.0               |0.0       |38   |
+|[Sawangan, Indonesia]                    |1     |0.0        |0.0        |0.0               |0.0       |39   |
+|[Los Angeles, CA]                        |1     |0.0        |0.0        |0.0               |0.0       |40   |
+|[Rancho Cucamonga, CA]                   |1     |0.0        |0.0        |0.0               |0.0       |41   |
+|[Sawah Besar, Indonesia]                 |1     |0.0        |0.0        |0.0               |0.0       |42   |
+|[Dhaka, Bangladesh]                      |1     |0.0        |0.0        |0.0               |0.0       |43   |
+|[Spain]                                  |1     |0.0        |0.0        |1.0               |0.0       |44   |
+|[Aziziah, Kingdom of Saudi Arabia]       |1     |0.0        |0.0        |0.0               |0.0       |45   |
+|[Dacca, Bangladesh]                      |1     |0.0        |0.0        |0.0               |0.0       |46   |
+|[Kalyan Dombivali, India]                |1     |0.0        |0.0        |0.0               |0.0       |47   |
+|[Bærum, Norge]                           |1     |0.0        |0.0        |0.0               |0.0       |48   |
+|[Miami Beach, FL]                        |1     |0.0        |0.0        |0.0               |0.0       |49   |
+|[Carapicuíba, Brasil]                    |1     |0.0        |0.0        |0.0               |0.0       |50   |
+|[Sao Paulo, Brazil]                      |1     |0.0        |0.0        |0.0               |0.0       |51   |
+|[San Pedro, Calabarzon]                  |1     |0.0        |0.0        |0.0               |0.0       |52   |
+|[Lapu-Lapu City, Central Visayas]        |1     |0.0        |0.0        |0.0               |0.0       |53   |
+|[Virginia, USA]                          |1     |0.0        |0.0        |0.0               |0.0       |54   |
+|[Arnavutköy, Türkiye]                    |1     |0.0        |0.0        |0.0               |0.0       |55   |
+|[North El Monte, CA]                     |1     |0.0        |0.0        |0.0               |0.0       |56   |
+|[Baltimore, MD]                          |1     |0.0        |0.0        |0.0               |0.0       |57   |
+|[Oklahoma City, OK]                      |1     |0.0        |0.0        |0.0               |0.0       |58   |
+|[Milan, Lombardy]                        |1     |0.0        |0.0        |0.0               |0.0       |59   |
+|[General Trias, Calabarzon]              |1     |0.0        |0.0        |0.0               |0.0       |60   |
+|[Tula de Allende, Hidalgo]               |1     |0.0        |0.0        |1.0               |0.0       |61   |
+|[Jamaica]                                |1     |0.0        |0.0        |0.0               |0.0       |62   |
+|[Padua, Veneto]                          |1     |0.0        |0.0        |0.0               |0.0       |63   |
+|[Vicenza, Veneto]                        |1     |0.0        |0.0        |0.0               |0.0       |64   |
+|[Cainta, Calabarzon]                     |1     |0.0        |0.0        |0.0               |0.0       |65   |
+|[Saint Petersburg, Russia]               |1     |0.0        |0.0        |0.0               |0.0       |66   |
+|[Ansan-si, Republic of Korea]            |1     |0.0        |0.0        |0.0               |0.0       |67   |
+|[Province of Moscow, Russia]             |1     |0.0        |0.0        |0.0               |0.0       |68   |
+|[Arjawinangun, Indonesia]                |1     |0.0        |0.0        |0.0               |0.0       |69   |
+|[Lester, PA]                             |1     |0.0        |0.0        |0.0               |0.0       |70   |
+|[Kerala, India]                          |1     |0.0        |0.0        |0.0               |0.0       |71   |
+|[Lat Yao, Thailand]                      |1     |0.0        |0.0        |0.0               |0.0       |72   |
+|[Paju-si, Republic of Korea]             |1     |0.0        |0.0        |0.0               |0.0       |73   |
+|[Norzagaray, Central Luzon]              |1     |0.0        |0.0        |0.0               |0.0       |74   |
+|[Portland, OR]                           |1     |0.0        |0.0        |0.0               |0.0       |75   |
+|[Paranaque City, National Capital Region]|1     |0.0        |0.0        |0.0               |0.0       |76   |
+|[Pyeongtaek-si, Republic of Korea]       |1     |0.0        |0.0        |0.0               |0.0       |77   |
+|[Attiki, Greece]                         |1     |0.0        |0.0        |0.0               |0.0       |78   |
+|[Punggelan, Indonesia]                   |1     |0.0        |0.0        |0.0               |0.0       |79   |
+|[Campos dos Goytacazes, Brasil]          |1     |0.0        |0.0        |0.0               |0.0       |80   |
+|[Toronto, Ontario]                       |1     |0.0        |0.0        |0.0               |0.0       |81   |
+|[Giri, Indonesia]                        |1     |0.0        |0.0        |0.0               |0.0       |82   |
+|[Santa Fé, Argentina]                    |1     |0.0        |0.0        |0.0               |0.0       |83   |
+|[Vitória, Brazil]                        |1     |0.0        |0.0        |0.0               |0.0       |84   |
++-----------------------------------------+------+-----------+-----------+------------------+----------+-----+
+
