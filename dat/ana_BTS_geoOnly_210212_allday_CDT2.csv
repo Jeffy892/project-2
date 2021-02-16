@@ -1,0 +1,85 @@
+full_name,city,country,counts,avg_Retweet,avg_Replies,avg_Like,avg_Quotes,index
+"Changwon-si, Republic of Korea",Changwon-si,Republic of Korea,8,0,0,0.375,0,1
+"Manhattan, NY","Manhattan, NY",USA,8,0,0,0,0,2
+Kazakhstan,Kazakhstan,Dubai,4,0,0,0,0,3
+"Potsdam, Germany",Potsdam,Germany,3,0,0,0,0,4
+"Duque de Caxias, Brasil",Duque de Caxias,Brasil,3,0,0,0,0,5
+"Saraikela Kharsawan, India",Saraikela Kharsawan,India,3,0,0,0.333333333,0,6
+"Quito, Ecuador",Quito,Ecuador,2,0,0,0,0,7
+"Kuta, Indonesia",Kuta,Indonesia,2,0,0,0,0,8
+"Florianópolis, Brazil",Florianópolis,Brazil,2,0,0,0,0,9
+"Bogotá, D.C., Colombia","Bogotá, D.C.",Colombia,2,0,0,0,0,10
+"Detroit, MI","Detroit, MI",USA,2,0,0,0,0,11
+Ukraine,,Ukraine,2,0,0,0,0,12
+"Kortrijk, België",,Belgium ,2,0,0,0,0,13
+"Meknes, Morocco",Meknes,Morocco,2,0,0,0,0,14
+Uzbekistan,,Uzbekistan,2,0,0,0,0,15
+"Jesolo, Veneto","Jesolo, Veneto",Italy,2,0,0,0,0,16
+"Makati City, National Capital Region","Makati City, National Capital Region",Philippines,2,0,0,0,0,17
+"Nova Iguaçu, Brasil",Nova Iguaçu,Brasil,1,0,0,0,0,18
+"Jersey City, NJ","Jersey City, NJ",USA,1,0,0,0,0,19
+"Rostov-na-Donu, Russia",Rostov-na-Donu,Russia,1,0,0,0,0,20
+"Americana, Brasil",Americana,Brasil,1,0,0,0,0,21
+"Bang Khen, Thailand",Bang Khen,Thailand,1,0,0,0,0,22
+Brick Live Café by BTS,,,1,0,0,0,0,23
+"Ivry-sur-Seine, France",Ivry-sur-Seine,France,1,0,1,0,0,24
+"Chom Phon, Thailand",Chom Phon,Thailand,1,0,0,0,0,25
+"Cimanggis, Indonesia",Cimanggis,Indonesia,1,0,0,0,0,26
+"Sapporo-shi Toyohira-ku, Hokkaidō","Sapporo-shi Toyohira-ku, Hokkaidō",Japan,1,0,0,0,0,27
+"Neuquén, Argentina",Neuquén,Argentina,1,0,0,0,0,28
+"Columbus, OH","Columbus, OH",USA,1,0,0,0,0,29
+"Cebu City, Central Visayas","Cebu City, Central Visayas",Philippines,1,0,0,0,0,30
+"West Covina, CA","West Covina, CA",USA,1,0,0,0,0,31
+"Kita-ku, Okayama","Kita-ku, Okayama",Japan,1,0,0,0,0,32
+"Saidapet, India",Saidapet,India,1,0,0,0,0,33
+"Bexley, London","Bexley, London",UK,1,0,0,1,0,34
+"Bisceglie, Puglia","Bisceglie, Puglia",Italy,1,0,0,0,0,35
+"South Carolina, USA",South Carolina,USA,1,0,0,0,0,36
+"Kelang, Selangor","Kelang, Selangor",Malaysia,1,0,0,0,0,37
+"Guarulhos, Brasil",Guarulhos,Brasil,1,0,0,0,0,38
+"Sawangan, Indonesia",Sawangan,Indonesia,1,0,0,0,0,39
+"Los Angeles, CA","Los Angeles, CA",USA,1,0,0,0,0,40
+"Rancho Cucamonga, CA","Rancho Cucamonga, CA",USA,1,0,0,0,0,41
+"Sawah Besar, Indonesia",Sawah Besar,Indonesia,1,0,0,0,0,42
+"Dhaka, Bangladesh",Dhaka,Bangladesh,1,0,0,0,0,43
+Spain,,Spain,1,0,0,1,0,44
+"Aziziah, Kingdom of Saudi Arabia",Aziziah,Kingdom of Saudi Arabia,1,0,0,0,0,45
+"Dacca, Bangladesh",Dacca,Bangladesh,1,0,0,0,0,46
+"Kalyan Dombivali, India",Kalyan Dombivali,India,1,0,0,0,0,47
+"Bærum, Norge","Bærum, Norge",Norway,1,0,0,0,0,48
+"Miami Beach, FL","Miami Beach, FL",USA,1,0,0,0,0,49
+"Carapicuíba, Brasil",Carapicuíba,Brasil,1,0,0,0,0,50
+"Sao Paulo, Brazil",Sao Paulo,Brazil,1,0,0,0,0,51
+"San Pedro, Calabarzon","San Pedro, Calabarzon",Philippines,1,0,0,0,0,52
+"Lapu-Lapu City, Central Visayas","Lapu-Lapu City, Central Visayas",Philippines,1,0,0,0,0,53
+"Virginia, USA",Virginia,USA,1,0,0,0,0,54
+"Arnavutköy, Türkiye",Arnavutköy,Turkey,1,0,0,0,0,55
+"North El Monte, CA","North El Monte, CA",USA,1,0,0,0,0,56
+"Baltimore, MD","Baltimore, MD",USA,1,0,0,0,0,57
+"Oklahoma City, OK","Oklahoma City, OK",USA,1,0,0,0,0,58
+"Milan, Lombardy","Milan, Lombardy",Italy,1,0,0,0,0,59
+"General Trias, Calabarzon","General Trias, Calabarzon",Philippines,1,0,0,0,0,60
+"Tula de Allende, Hidalgo","Tula de Allende, Hidalgo",Mexico,1,0,0,1,0,61
+Jamaica,Jamaica,Mexico,1,0,0,0,0,62
+"Padua, Veneto","Padua, Veneto",Italy,1,0,0,0,0,63
+"Vicenza, Veneto","Vicenza, Veneto",Italy,1,0,0,0,0,64
+"Cainta, Calabarzon","Cainta, Calabarzon",Philippines,1,0,0,0,0,65
+"Saint Petersburg, Russia",Saint Petersburg,Russia,1,0,0,0,0,66
+"Ansan-si, Republic of Korea",Ansan-si,Republic of Korea,1,0,0,0,0,67
+"Province of Moscow, Russia",Province of Moscow,Russia,1,0,0,0,0,68
+"Arjawinangun, Indonesia",Arjawinangun,Indonesia,1,0,0,0,0,69
+"Lester, PA","Lester, PA",USA,1,0,0,0,0,70
+"Kerala, India",Kerala,India,1,0,0,0,0,71
+"Lat Yao, Thailand",Lat Yao,Thailand,1,0,0,0,0,72
+"Paju-si, Republic of Korea",Paju-si,Republic of Korea,1,0,0,0,0,73
+"Norzagaray, Central Luzon","Norzagaray, Central Luzon",Philippines,1,0,0,0,0,74
+"Portland, OR","Portland, OR",USA,1,0,0,0,0,75
+"Paranaque City, National Capital Region","Paranaque City, National Capital Region",Philippines,1,0,0,0,0,76
+"Pyeongtaek-si, Republic of Korea",Pyeongtaek-si,Republic of Korea,1,0,0,0,0,77
+"Attiki, Greece",Attiki,Greece,1,0,0,0,0,78
+"Punggelan, Indonesia",Punggelan,Indonesia,1,0,0,0,0,79
+"Campos dos Goytacazes, Brasil",Campos dos Goytacazes,Brasil,1,0,0,0,0,80
+"Toronto, Ontario","Toronto, Ontario",Canada,1,0,0,0,0,81
+"Giri, Indonesia",Giri,Indonesia,1,0,0,0,0,82
+"Santa Fé, Argentina",Santa Fé,Argentina,1,0,0,0,0,83
+"Vitória, Brazil",Vitória,Brazil,1,0,0,0,0,84
