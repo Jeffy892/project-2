@@ -1,0 +1,11 @@
+full_name,city,country,counts,avg_Retweet,avg_Replies,avg_Like,avg_Quotes,index
+"Changwon-si, Republic of Korea",Changwon-si,Republic of Korea,14,0,0,0.0714285714285714,0,1
+"Minato-ku, Tokyo","Minato-ku, Tokyo",Japan,2,0,0,0,0,2
+"Garden City, NY","Garden City, NY",USA,2,0,0,0,0,3
+"Kita-ku, Okayama","Kita-ku, Okayama",Japan,1,0,0,2,0,4
+India,,India,1,0,0,0,0,5
+"El Paso, TX","El Paso, TX",USA,1,0,0,0,0,6
+"Rio de Janeiro, Brazil",Rio de Janeiro,Brazil,1,0,0,0,0,7
+"Fenton, MI","Fenton, MI",USA,1,0,0,0,0,8
+"Gambir, Indonesia",Gambir,Indonesia,1,0,0,0,0,9
+,,,0,0,0,0,0,10
