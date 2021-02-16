@@ -69,17 +69,19 @@ object run {
       twitterStream.shutdown
     }
 
-    //TODO: Aggregate data en: 5, ko: 2, vi: 2, etc
-    //Use Spark dataframes/data
-
     def langCount(spark: SparkSession): Unit = {
       import spark.implicits._
       val df = spark.read.csv("tweets/bts.csv")
         .withColumnRenamed("_c0", "lang")
       df.printSchema()
-      df.show()
-      df.groupBy("lang").count().show()
+      df.show(false)
+      
+      println("count per language")
+      val countPerLang = df.groupBy("lang").count()
+      countPerLang.show(false)
 
+      println("count number of languages")
+      val countLangs = df.select(countDistinct("lang")).show(false)
     }
   }
 }
