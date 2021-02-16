@@ -1,0 +1,9 @@
+full_name,city,country,counts,avg_Retweet,avg_Replies,avg_Like,avg_Quotes,index
+Ukraine,,Ukraine,2,0,0,1,0,1
+"Grand Prairie, TX","Grand Prairie, TX",USA,1,0,0,1,0,2
+"Neyagawa-shi, Osaka",,Japan,1,0,0,0,0,3
+"Tampico, Tamaulipas",,Mexico,1,0,0,0,0,4
+"Central Coast, New South Wales","Central Coast, New South Wales",Australia,1,0,0,0,0,5
+"Bangkalan, Indonesia",Bangkalan,Indonesia,1,0,0,1,0,6
+Japan,,Japan,1,0,0,0,0,7
+"Iki-shi, Nagasaki","Iki-shi, Nagasaki",Japan,1,0,0,0,0,8
