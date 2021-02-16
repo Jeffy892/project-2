@@ -18,7 +18,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - Analysis on tweets with BTS/BTS-related hashtags and mentions in different languages
   * How many languages are tweeting about BTS?
   * What is the distribution of languages tweeting about BTS? 
-- **How is the #BTS distributed over different geo-locations?** (Mindy Jen)
+- **How is the #BTS distributed over different geo-locations? (Mindy Jen)**
 
 ## To-DO
 
