@@ -1,4 +1,4 @@
-# project-2 Group 3 Twitter Big Data Analysis
+# Project-2 Group 3 Twitter Big Data Analysis
 
 ## Twitter data analysis proposal
 We would like to explore questions about a popular Korean pop (“Kpop”) artist, BTS from Twitter, while also looking at the other Kpop groups and some information on other pop in America
