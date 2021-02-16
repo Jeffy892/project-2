@@ -1,0 +1,15 @@
+full_name,city,country,counts,avg_Retweet,avg_Replies,avg_Like,avg_Quotes,index
+"Los Angeles, CA","Los Angeles, CA",USA,2,0,0,0,0,1
+"Sajira, Indonesia",Sajira,Indonesia,2,0,0,0.5,0,2
+"Bexley, London","Bexley, London",UK,1,0,0,0,0,3
+"Magé, Brasil",Magé,Brasil,1,0,0,0,0,4
+"Bogotá, D.C., Colombia","Bogotá, D.C.",Colombia,1,0,0,0,0,5
+"London, England","London, England",UK,1,0,0,0,0,6
+Tunisia,,Tunisia,1,0,0,1,0,7
+"Barcelona, Spain",Barcelona,Spain,1,0,0,0,0,8
+"Pesaro, Marche","Pesaro, Marche",Italy,1,0,0,0,0,9
+"Vicenza, Veneto","Vicenza, Veneto",Italy,1,0,0,0,0,10
+"Des Plaines, IL","Des Plaines, IL",USA,1,0,0,0,0,11
+"Manhattan, NY","Manhattan, NY",USA,1,0,0,0,0,12
+"Paris, France",Paris,France,1,0,0,0,0,13
+"Tambov, Russia",Tambov,Russia,1,0,0,1,0,14
