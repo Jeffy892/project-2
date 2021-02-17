@@ -36,9 +36,17 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - HDFS and/or S3
 - Scala 2.12.10
 - Twitter API
+- python 3.8.3
 - pandas
 - numpy
 - seaborn
 - jupyter notebook
+- [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
 - Git + GitHub
+
+## Twitter Data Query
+
+## Twitter Data Analysis
+
+## Twitter Data Modeling
 
