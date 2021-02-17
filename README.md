@@ -36,11 +36,11 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - HDFS and/or S3
 - Scala 2.12.10
 - Twitter API
-- python 3.8.3
-- pandas
-- numpy
-- seaborn
-- jupyter notebook
+- [python 3.8.3](https://www.anaconda.com/products/individual)
+- [pandas](https://www.anaconda.com/products/individual)
+- [numpy](https://www.anaconda.com/products/individual)
+- [seaborn](https://www.anaconda.com/products/individual)
+- [jupyter notebook](https://www.anaconda.com/products/individual)
 - [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
 - Git + GitHub
 
