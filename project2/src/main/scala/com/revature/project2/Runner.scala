@@ -20,6 +20,9 @@ object Runner {
         spark.sparkContext.setLogLevel("WARN")
 
         //TwitterStream.run(spark)
-        TwitterStream.readData(spark)
+        //TwitterStream.readData(spark)
+        TwitterStream.analyzeData(spark)
+
+        //TwitterStream.printStates()
     }
 }

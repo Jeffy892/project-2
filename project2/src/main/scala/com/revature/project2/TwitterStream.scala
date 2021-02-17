@@ -14,8 +14,76 @@ import java.io.PrintWriter
 import java.nio.file.Files
 import java.nio.file.Paths
 import scala.concurrent.Future
-
+import scala.collection.immutable.Map
+import scala.collection.immutable.List
 object TwitterStream {
+
+    val usStates = Map(
+        ("AL" -> "ALABAMA"),
+        ("AK" -> "ALASKA"),
+        ("AS" -> "AMERICAN SAMOA"),
+        ("AZ" -> "ARIZONA"),
+        ("AR" -> "ARKANSAS"),
+        ("CA" -> "CALIFORNIA"),
+        ("CO" -> "COLORADO"),
+        ("CT" -> "CONNECTICUT"),
+        ("DE" -> "DELAWARE"),
+        ("DC" -> "DISTRICT OF COLUMBIA"),
+        ("FL" -> "FLORIDA"),
+        ("GA" -> "GEORGIA"),
+        ("GU" -> "GUAM"),
+        ("HI" -> "HAWAII"),
+        ("ID" -> "IDAHO"),
+        ("IL" -> "ILLINOIS"),
+        ("IN" -> "INDIANA"),
+        ("IA" -> "IOWA"),
+        ("KS" -> "KANSAS"),
+        ("KY" -> "KENTUCKY"),
+        ("LA" -> "LOUISIANA"),
+        ("ME" -> "MAINE"),
+        ("MD" -> "MARYLAND"),
+        ("MA" -> "MASSACHUSETTS"),
+        ("MI" -> "MICHIGAN"),
+        ("MN" -> "MINNESOTA"),
+        ("MS" -> "MISSISSIPPI"),
+        ("MO" -> "MISSOURI"),
+        ("MT" -> "MONTANA"),
+        ("NE" -> "NEBRASKA"),
+        ("NV" -> "NEVADA"),
+        ("NH" -> "NEW HAMPSHIRE"),
+        ("NJ" -> "NEW JERSEY"),
+        ("NM" -> "NEW MEXICO"),
+        ("NY" -> "NEW YORK"),
+        ("NC" -> "NORTH CAROLINA"),
+        ("ND" -> "NORTH DAKOTA"),
+        ("MP" -> "NORTHERN MARIANA IS"),
+        ("OH" -> "OHIO"),
+        ("OK" -> "OKLAHOMA"),
+        ("OR" -> "OREGON"),
+        ("PA" -> "PENNSYLVANIA"),
+        ("PR" -> "PUERTO RICO"),
+        ("RI" -> "RHODE ISLAND"),
+        ("SC" -> "SOUTH CAROLINA"),
+        ("SD" -> "SOUTH DAKOTA"),
+        ("TN" -> "TENNESSEE"),
+        ("TX" -> "TEXAS"),
+        ("UT" -> "UTAH"),
+        ("VT" -> "VERMONT"),
+        ("VA" -> "VIRGINIA"),
+        ("VI" -> "VIRGIN ISLANDS"),
+        ("WA" -> "WASHINGTON"),
+        ("WV" -> "WEST VIRGINIA"),
+        ("WI" -> "WISCONSIN"),
+        ("WY" -> "WYOMING")
+    )
+
+    val usList = List("AL", "AK", "AS", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "GU", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "MP", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "VI", "WA", "WV", "WI", "WY")
+
+    def printStates() : Unit = {
+        val list = usStates.toList
+        println(list)
+        println(list(1)._1)
+    }
 
     def run(spark: SparkSession) : Unit = {
         import spark.implicits._
@@ -28,6 +96,7 @@ object TwitterStream {
             tweetStreamToDir(bearerToken, queryString = "?tweet.fields=geo,lang,public_metrics,created_at&expansions=geo.place_id")
         }
 
+        
 
         var start = System.currentTimeMillis()
 
@@ -35,7 +104,7 @@ object TwitterStream {
 
         while(!filesFoundInDir && (System.currentTimeMillis()-start) < 30000) {
             filesFoundInDir = Files.list(Paths.get("twitterstream")).findFirst().isPresent()
-            Thread.sleep(100)
+            Thread.sleep(500)
         }
 
         if(!filesFoundInDir) {
@@ -108,6 +177,7 @@ object TwitterStream {
         //val streamDf = spark.readStream.schema(staticDf.schema).json("twitterstream")
 
         val df = spark.read.json("twitterstream")
+        val millis = System.currentTimeMillis()
         
         staticDf
             .filter(!functions.isnull($"includes.places"))
@@ -122,7 +192,7 @@ object TwitterStream {
                 ($"data.created_at").as("Created At")
             )
             .write
-            .json("tweetstream-geo")
+            .json(s"tweetstream-geo-$millis")
 
 
             /*.writeStream
@@ -132,6 +202,55 @@ object TwitterStream {
             .start()
             .awaitTermination()*/
 
+    }
+
+    def analyzeData(spark: SparkSession) : Unit = {
+        import spark.implicits._
+
+        val staticDf = spark.read.json("twitterstream")
+        staticDf.printSchema()
+
+        val millis = System.currentTimeMillis()
+
+        val hashtags = ".*([#,@][a-zA-Z0-9]+).*".r
+
+
+        staticDf
+            //.filter(staticDf("Language") === "en")
+            //.filter(usStates.contains(staticDf("Place").toString().split(" ")(1)))
+            //.cache()
+            //.filter(col("Place").isin(usList:_*))
+           // .select(
+                //($"Place"),
+
+                //functions.size((functions.split(functions.col("data.text"), " "))),
+                //($"data.lang").as("lang"),
+                //($"data.created_at"),
+                //($"data.public_metrics.retweet_count").as("retweet_count")
+            //)
+            //.withColumn("word", functions.explode(functions.split(functions.col("data.text"),  " ")))
+            .filter($"data.text".contains("#kpop") //|| 
+                    //$"data.text".contains("#k_pop") ||
+                    //$"data.text".contains("@kpop") ||
+                    //$"data.text".contains("@k_pop")
+            )
+            .select($"data.text")
+            .as[String]
+            .flatMap(text => {
+                text match {
+                    case hashtags(handle) => Some{(handle)}
+                    case notFound => None
+                }
+            })
+            .groupBy("value")
+            .count()
+            .sort($"count".desc)
+            //.groupBy("lang")
+            //.sum("retweet_count")
+            //.sort($"sum(retweet_count)".desc)
+            .write
+            .json(s"tweetstream-largest-tags-$millis")
+            //.show()
     }
 
 }
