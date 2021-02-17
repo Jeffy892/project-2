@@ -19,14 +19,14 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * What is the distribution of languages tweeting about BTS? 
 - **How is the #BTS distributed over different geo-locations? (Mindy Jen)**
 
-## To-DO
+## Resposibilities
 
 -  Learn/Understand Twitter API
 -  Learn/Understand Spark/Scala (and other useful technologies and frameworks related to our project)
-- Create queries related to our questions
-- Execute queries and analyze
-- Create Google slides for the presentation 
-- Practice Presentation 
+-  Create queries related to our questions
+-  Execute queries and analyze
+-  Create Google slides for the presentation 
+-  Practice Presentation 
 
 ## Technologies
 
@@ -42,8 +42,8 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [seaborn](https://www.anaconda.com/products/individual)
 - [jupyter notebook](https://www.anaconda.com/products/individual)
 - [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
-- PySpark
-- Docker
+- PySpark (optional for project 3)
+- Docker (optional for project 3)
 - Git + GitHub
 
 ## Twitter Data Query
@@ -52,7 +52,9 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ### EDA
 
-### Word Counting
+## To-do Features in the Future 
 
-## Twitter Data Modeling
+* Word Counting (optional for project 3)
+
+* Twitter Data Modeling (optional for project 3)
 
