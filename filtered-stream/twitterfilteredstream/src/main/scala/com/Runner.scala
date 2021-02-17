@@ -30,7 +30,6 @@ object run {
     import spark.implicits._
     spark.sparkContext.setLogLevel("WARN")
 
-
     // streamTweets()
     // langCount(spark)
     getLang(spark)
@@ -72,13 +71,13 @@ object run {
       twitterStream.shutdown
     }
 
-
     def langCount(spark: SparkSession): Unit = {
       import spark.implicits._
       val df = spark.read
         .csv("tweets/bts.csv")
         .withColumnRenamed("_c0", "lang")
 
+      println("langCount df schema")
       df.printSchema()
       df.show(false)
 
@@ -107,8 +106,28 @@ object run {
 
       val df = spark.read
         .json("tweets/bts.json")
-        df.printSchema()
-        df.show()
+        .select("data.lang")
+
+      println("getLang df schema")
+      df.printSchema()
+      df.show()
+
+      println("Sample Data Analysis")
+      df.createOrReplaceTempView("languages")
+
+      println("total tweets about BTS")
+      val numTweets = spark.sql("SELECT COUNT(lang) as total_tweets FROM languages").show(false)
+
+      println("count per language")
+      val countPerLang = spark.sql("SELECT COUNT(lang) as count_per_lang FROM languages GROUP BY lang")
+
+      println("language count / total tweets = ratio")
+      val ratio = spark
+        .sql(
+          "SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc"
+        )
+        .show(false)
+
     }
   }
 }
