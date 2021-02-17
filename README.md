@@ -39,11 +39,13 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [python 3.8.3](https://www.anaconda.com/products/individual)
 - [pandas](https://www.anaconda.com/products/individual)
 - [numpy](https://www.anaconda.com/products/individual)
+- [matplotlib.pyplot](https://www.anaconda.com/products/individual)
 - [seaborn](https://www.anaconda.com/products/individual)
 - [jupyter notebook](https://www.anaconda.com/products/individual)
 - [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
-- PySpark (optional for project 3)
-- Docker (optional for project 3)
+- PySpark (optional for project 2)
+- Docker (optional for project 2)
+- Machine Learning (optional for project 2)
 - Git + GitHub
 
 ## Twitter Data Query
@@ -54,7 +56,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## To-do Features in the Future 
 
-* Word Counting (optional for project 3)
+* Word Counting (optional for project 2, will do in project 3)
 
-* Twitter Data Modeling (optional for project 3)
+* Twitter Data Modeling using Machine Learning (optional for project 2, will do in project 3)
 
