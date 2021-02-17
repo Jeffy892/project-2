@@ -42,7 +42,6 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [matplotlib.pyplot](https://www.anaconda.com/products/individual)
 - [seaborn](https://www.anaconda.com/products/individual)
 - [jupyter notebook](https://www.anaconda.com/products/individual)
-- [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
 - PySpark (optional for project 2)
 - Docker (optional for project 2)
 - Machine Learning (optional for project 2)
