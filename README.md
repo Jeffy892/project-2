@@ -36,5 +36,9 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - HDFS and/or S3
 - Scala 2.12.10
 - Twitter API
+- pandas
+- numpy
+- seaborn
+- jupyter notebook
 - Git + GitHub
 
