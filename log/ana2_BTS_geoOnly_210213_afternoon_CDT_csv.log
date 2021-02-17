@@ -1,0 +1,33 @@
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+|      Date| Hr|Language|Likes|Min|               Place|Quotes|Replies|Retweets|Sec|                Time|                           Tweet|index|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+|2021-02-13| 14|      en|    0|  4|   [Des Plaines, IL]|     0|      0|       0| 10|2021-02-13T14:04:...|            #BTS look at Cook...|    1|
+|2021-02-13| 14|      in|    0| 34| [Sajira, Indonesia]|     0|      0|       0| 32|2021-02-13T14:34:...|            [INFO] 📰 
+
+Hobi ...|    3|
+|2021-02-13| 14|      in|    1| 36| [Sajira, Indonesia]|     0|      0|       0| 35|2021-02-13T14:36:...|            [INFO] 📰 
+
+Hobi ...|    4|
+|2021-02-13| 14|      es|    0| 36|[Bogotá, D.C., Co...|     0|      0|       0| 41|2021-02-13T14:36:...|            Cuantas fans de #...|    5|
+|2021-02-13| 14|      ko|    0| 46|    [Pesaro, Marche]|     0|      0|       0| 32|2021-02-13T14:46:...|내 마음 편견에 해피 발렌타인 ...|    8|
+|2021-02-13| 14|      it|    0| 47|   [Vicenza, Veneto]|     0|      0|       0| 44|2021-02-13T14:47:...|            #Dynamite a c'è p...|    9|
+|2021-02-13| 14|      en|    0| 54|   [Los Angeles, CA]|     0|      0|       0| 23|2021-02-13T14:54:...|            Edited some more ...|   11|
+|2021-02-13| 15|      ru|    1| 13|    [Tambov, Russia]|     0|      0|       0| 24|2021-02-13T15:13:...|            Жили-были братья ...|   13|
+|2021-02-13| 15|      en|    0| 31|  [Barcelona, Spain]|     0|      0|       0| 35|2021-02-13T15:31:...|            #club #bar #soul ...|   16|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+
+root
+ |-- Date: string (nullable = true)
+ |-- Hr: integer (nullable = true)
+ |-- Language: string (nullable = true)
+ |-- Likes: integer (nullable = true)
+ |-- Min: integer (nullable = true)
+ |-- Place: string (nullable = true)
+ |-- Quotes: integer (nullable = true)
+ |-- Replies: integer (nullable = true)
+ |-- Retweets: integer (nullable = true)
+ |-- Sec: integer (nullable = true)
+ |-- Time: string (nullable = true)
+ |-- Tweet: string (nullable = true)
+ |-- index: integer (nullable = true)
+
