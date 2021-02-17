@@ -1,0 +1,139 @@
++--------------------+--------------------+--------------------+
+|                data|            includes|      matching_rules|
++--------------------+--------------------+--------------------+
+|[2021-02-16T00:03...|[[[United States,...|[[135995679370355...|
+|[2021-02-16T03:33...|[[[Japan, JP, Min...|[[135995679370355...|
+|[2021-02-16T00:03...|[[[United States,...|[[135995679370355...|
+|[2021-02-16T00:50...|[[[Japan, JP, Kit...|[[135995679370355...|
+|[2021-02-16T00:59...|[[[United States,...|[[135995679370355...|
+|[2021-02-16T01:30...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T01:50...|[[[Indonesia, ID,...|[[135995679370355...|
+|[2021-02-16T01:54...|[[[India, IN, Ind...|[[135995679370355...|
+|[2021-02-16T01:56...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T01:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T01:59...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:02...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:57...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:57...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
+|[2021-02-16T02:58...|[[[Republic of Ko...|[[135995679370355...|
++--------------------+--------------------+--------------------+
+only showing top 20 rows
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- coordinates: struct (nullable = true)
+ |    |    |    |-- coordinates: array (nullable = true)
+ |    |    |    |    |-- element: double (containsNull = true)
+ |    |    |    |-- type: string (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- country: string (nullable = true)
+ |    |    |    |-- country_code: string (nullable = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
+== Parsed Logical Plan ==
+'Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour('data.created_at, None) AS Hr#21, minute('data.created_at, None) AS Min#22, second('data.created_at, None) AS Sec#23, 'includes.places.full_name AS Place#24, 'data.lang AS Language#25, 'data.public_metrics.retweet_count AS Retweets#26, 'data.public_metrics.reply_count AS Replies#27, 'data.public_metrics.like_count AS Likes#28, 'data.public_metrics.quote_count AS Quotes#29, 'data.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+Time: timestamp, Date: date, Hr: int, Min: int, Sec: int, Place: array<string>, Language: string, Retweets: bigint, Replies: bigint, Likes: bigint, Quotes: bigint, Tweet: string
+Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(1) Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/BTSkpop_geoOnly_210215_9pm-1..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<coordinates:struct<coordinates:array<double>,type...
+(1) MapPartitionsRDD[11] at rdd at tweetMoreSparkSql.scala:41 []
+ |  SQLExecutionRDD[10] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[9] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[8] at rdd at tweetMoreSparkSql.scala:41 []
+ |  FileScanRDD[7] at rdd at tweetMoreSparkSql.scala:41 []
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|Time               |Date      |Hr |Min|Sec|Place                           |Language|Retweets|Replies|Likes|Quotes|Tweet                                                                                                                                                                                                                                                                                                          |index|
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|2021-02-15 18:03:27|2021-02-16|18 |3  |27 |[Garden City, NY]               |en      |0       |0      |0    |0     |But actually this is my favorite song then Danger on this album. #BTS old outros was hitting. I hope the BTS BE Essential album has an intro and outdo track to make it more special💜💜💜💜💜💜💜#BTSARMY #BTSonMTV #BTSUnplugged #BTSBE #KPOP #KpopTwitter #kpopstan @bts_bighit https://t.co/miFLxK9QXk     |1    |
+|2021-02-15 18:03:27|2021-02-16|18 |3  |27 |[Garden City, NY]               |en      |0       |0      |0    |0     |But actually this is my favorite song then Danger on this album. #BTS old outros was hitting. I hope the BTS BE Essential album has an intro and outdo track to make it more special💜💜💜💜💜💜💜#BTSARMY #BTSonMTV #BTSUnplugged #BTSBE #KPOP #KpopTwitter #kpopstan @bts_bighit https://t.co/miFLxK9QXk     |2    |
+|2021-02-15 18:50:50|2021-02-16|18 |50 |50 |[Kita-ku, Okayama]              |ja      |0       |0      |2    |0     |LEAD-ENT Regular class
+
+2月のLessonは
+🎧Not Shy.WANNABE/ITZY
+
+①週目Lesson‼️
+30分で振り入れしました！
+2週目3週目とどんどん固めていきます！
+
+LEAD-entertainment
+毎週水曜日　19:00-21:00
+スタジオバース問屋町3スタジオ
+@studio_lead 
+@maikey1006 
+
+#dance #岡山　#LEAD #kpop  #韓国　#itzy https://t.co/Gec93tWWG1|3    |
+|2021-02-15 18:59:31|2021-02-16|18 |59 |31 |[Fenton, MI]                    |en      |0       |0      |0    |0     |I NEED to try this Pepsi #kpop #IZONE #PEPSIXIZONE_Zero_Attitude #PEPSIxSTARSHIP #PEPSI https://t.co/nLFpetMoL9                                                                                                                                                                                                |4    |
+|2021-02-15 19:30:25|2021-02-16|19 |30 |25 |[Changwon-si, Republic of Korea]|ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #vlive #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine #발렌타인데이 https://t.co/j8fl91j6Z2                                                                                                         |5    |
+|2021-02-15 19:50:16|2021-02-16|19 |50 |16 |[Gambir, Indonesia]             |in      |0       |0      |0    |0     |Masuk Fyp ,jadi suka lagu ini beat nya enak, Bang Bang by G-Dragon #kpop #GDRAGON https://t.co/dTCmuJnvU9                                                                                                                                                                                                      |6    |
+|2021-02-15 19:54:07|2021-02-16|19 |54 |7  |[India]                         |en      |0       |0      |0    |0     |That’s me today as it’s the last ep😢
+#JCWLoveIndia
+#IndianFansArk
+#jichangwookindia #jichangwooklovers #jichangwook #jichangwookfanpage #jichangwookfans #fangirl #kpop #koreanactor #kdrama #wookie #oppa #jcw #지창욱 #lovestruckinthecity #kimjiwon https://t.co/xgfq7yKpXd                                |7    |
+|2021-02-15 19:56:18|2021-02-16|19 |56 |18 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music
+https://t.co/zWwdAP9P7p https://t.co/ydBdPVfV52                                                                                                          |8    |
+|2021-02-15 19:58:15|2021-02-16|19 |58 |15 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music
+https://t.co/DB3YtCxa7h https://t.co/hCGOvAwffH                                                                                                          |9    |
+|2021-02-15 19:59:00|2021-02-16|19 |59 |0  |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music
+https://t.co/JFwuZxbqoV https://t.co/4u8GTv5GGc                                                                                                          |10   |
+|2021-02-15 20:02:11|2021-02-16|20 |2  |11 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music
+https://t.co/Gs5UMaZasn https://t.co/byoA7Pj8Ej                                                                                                          |11   |
+|2021-02-15 20:57:35|2021-02-16|20 |57 |35 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/NfU0iyMpE6                                                                                                                                  |12   |
+|2021-02-15 20:57:54|2021-02-16|20 |57 |54 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/zhcKmeK6He                                                                                                                                  |13   |
+|2021-02-15 20:58:06|2021-02-16|20 |58 |6  |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/jlIjdPlHiI                                                                                                                                  |14   |
+|2021-02-15 20:58:17|2021-02-16|20 |58 |17 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/ZyLEOGA6kd                                                                                                                                  |15   |
+|2021-02-15 20:58:25|2021-02-16|20 |58 |25 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/mrMoCrAFkc                                                                                                                                  |16   |
+|2021-02-15 20:58:33|2021-02-16|20 |58 |33 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/2Ln98hMo29                                                                                                                                  |17   |
+|2021-02-15 20:58:42|2021-02-16|20 |58 |42 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/Ifng7UGXdb                                                                                                                                  |18   |
+|2021-02-15 20:58:51|2021-02-16|20 |58 |51 |[Changwon-si, Republic of Korea]|und     |0       |0      |0    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/uOsSk8dH8u                                                                                                                                  |19   |
+|2021-02-15 20:59:00|2021-02-16|20 |59 |0  |[Changwon-si, Republic of Korea]|und     |0       |0      |1    |0     |#영탁신곡 #영탁 #영탁이불 #사랑의콜센타영탁 #뽕숭아학당영탁 #comforter #영탁의불쑥TV #youngtak #ktrot영탁 #노래추천 #좋아요 #daily #mood #kpop #music https://t.co/miJcPhRWOT                                                                                                                                  |20   |
+|2021-02-15 21:20:19|2021-02-16|21 |20 |19 |[El Paso, TX]                   |en      |0       |0      |0    |0     |It’s all ready been 11 Years Thank U All Friends An$ followers for best 11Years💜💜💜 #MyTwitterAnniversary #11years #kpop #army #bts #myfamily #myfollowers https://t.co/I873t6f2TQ                                                                                                                           |21   |
+|2021-02-15 21:23:48|2021-02-16|21 |23 |48 |[Rio de Janeiro, Brazil]        |en      |0       |0      |0    |0     |Dance makes me feel alive, for me and how to breathe...
+
+#kpopper #dancer #kpop 
+#followforfollowback #add em Palácio De La Potrinyh - Malvinas https://t.co/SmnfPW5Jvw                                                                                                                                        |22   |
+|2021-02-15 21:33:41|2021-02-16|21 |33 |41 |[Minato-ku, Tokyo]              |ja      |0       |0      |0    |0     |パリオン 新メンバーが続々とデビュー‼️まだまだ #メンバー募集 しております！
+
+ご興味ある方はお気軽にDM下さい📩
+
+#パリオン #バーレスク東京 #メンズアイドル #イケメン #アイドル #kpop    #ジャニヲタ #韓流 #韓国ファッション  #BTS  #ダンサー募集   #シンガー募集 #パフォーマー募集 https://t.co/dLE5mrbMqV        |23   |
+|2021-02-15 21:33:41|2021-02-16|21 |33 |41 |[Minato-ku, Tokyo]              |ja      |0       |0      |0    |0     |パリオン 新メンバーが続々とデビュー‼️まだまだ #メンバー募集 しております！
+
+ご興味ある方はお気軽にDM下さい📩
+
+#パリオン #バーレスク東京 #メンズアイドル #イケメン #アイドル #kpop    #ジャニヲタ #韓流 #韓国ファッション  #BTS  #ダンサー募集   #シンガー募集 #パフォーマー募集 https://t.co/dLE5mrbMqV        |24   |
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+
