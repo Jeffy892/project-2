@@ -44,7 +44,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [jupyter notebook](https://www.anaconda.com/products/individual)
 - PySpark (optional for project 2)
 - Docker (optional for project 2)
-- Machine Learning (optional for project 2)
+- Scikit-learn (optional for project 2)
 - Git + GitHub
 
 ## Twitter Data Query
