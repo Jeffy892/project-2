@@ -1,0 +1,31 @@
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+|      Date| Hr|Language|Likes|Min|               Place|Quotes|Replies|Retweets|Sec|                Time|                           Tweet|index|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+|2021-02-15|  9|     und|    0| 30|[Montevideo, Urug...|     0|      0|       0| 55|2021-02-15T09:30:...|            Mi sol precioso d...|    1|
+|2021-02-15|  9|     und|    0| 31|[Montevideo, Urug...|     0|      0|       0| 39|2021-02-15T09:31:...|            Mi sol precioso d...|    2|
+|2021-02-15|  9|      en|    0| 36|[Chatuchak, Thail...|     0|      0|       0| 13|2021-02-15T09:36:...|            I #VoteBTSGlobal ...|    3|
+|2021-02-15| 10|      en|    0| 11|     [Paris, France]|     0|      0|       0| 21|2021-02-15T10:11:...|            This is my first ...|    4|
+|2021-02-15| 10|      ru|    0| 23|    [Moscow, Russia]|     0|      0|       0| 17|2021-02-15T10:23:...|            Так прошло мое 14...|    5|
+|2021-02-15| 10|     und|    0| 26|           [Tunisia]|     0|      0|       0| 30|2021-02-15T10:26:...|            #BlackOutBTS  yes...|    6|
+|2021-02-15| 10|      ko|    0| 52|[Gwangjin-gu, Rep...|     0|      0|       0|  2|2021-02-15T10:52:...|카페봄 다녀왔어요~~!항상 친절...|    7|
+|2021-02-15| 10|     und|    0| 53|[Ribeirão Pires, ...|     0|      0|       0| 55|2021-02-15T10:53:...|            #loststars #jungk...|    8|
+|2021-02-15| 11|     und|    0| 28|[Dubai, United Ar...|     0|      0|       0|  7|2021-02-15T11:28:...|            #Brothers @BTS_tw...|    9|
+|2021-02-15| 11|      pl|    0| 28|[Dubai, United Ar...|     0|      0|       0| 36|2021-02-15T11:28:...|            KOOKIEEEEE 💜😅 @...|   10|
+|2021-02-15| 11|      ru|    0| 38|[Saint Petersburg...|     0|      0|       0| 55|2021-02-15T11:38:...|            Полезла в закладк...|   11|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------------------+-----+
+
+root
+ |-- Date: string (nullable = true)
+ |-- Hr: integer (nullable = true)
+ |-- Language: string (nullable = true)
+ |-- Likes: integer (nullable = true)
+ |-- Min: integer (nullable = true)
+ |-- Place: string (nullable = true)
+ |-- Quotes: integer (nullable = true)
+ |-- Replies: integer (nullable = true)
+ |-- Retweets: integer (nullable = true)
+ |-- Sec: integer (nullable = true)
+ |-- Time: string (nullable = true)
+ |-- Tweet: string (nullable = true)
+ |-- index: integer (nullable = true)
+
