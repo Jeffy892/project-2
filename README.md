@@ -42,6 +42,8 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [seaborn](https://www.anaconda.com/products/individual)
 - [jupyter notebook](https://www.anaconda.com/products/individual)
 - [anaconda3](https://docs.anaconda.com/anaconda/install/index.html) 
+- PySpark
+- Docker
 - Git + GitHub
 
 ## Twitter Data Query
