@@ -1,0 +1,22 @@
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+|      Date| Hr|Language|Likes|Min|               Place|Quotes|Replies|Retweets|Sec|                Time|               Tweet|index|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+|2021-02-16| 19|      en|    0| 13|[São João da Boa ...|     0|      0|       0| 32|2021-02-15T19:13:...|☀Happy Birthday J...|    1|
+|2021-02-16| 20|      en|    0|  3|     [Nashville, TN]|     0|      0|       0| 20|2021-02-15T20:03:...|I would like to p...|    2|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+
+root
+ |-- Date: string (nullable = true)
+ |-- Hr: integer (nullable = true)
+ |-- Language: string (nullable = true)
+ |-- Likes: integer (nullable = true)
+ |-- Min: integer (nullable = true)
+ |-- Place: string (nullable = true)
+ |-- Quotes: integer (nullable = true)
+ |-- Replies: integer (nullable = true)
+ |-- Retweets: integer (nullable = true)
+ |-- Sec: integer (nullable = true)
+ |-- Time: string (nullable = true)
+ |-- Tweet: string (nullable = true)
+ |-- index: integer (nullable = true)
+
