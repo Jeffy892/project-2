@@ -71,17 +71,31 @@ object run {
 
     def langCount(spark: SparkSession): Unit = {
       import spark.implicits._
-      val df = spark.read.csv("tweets/bts.csv")
+      val df = spark.read
+        .csv("tweets/bts.csv")
         .withColumnRenamed("_c0", "lang")
+
       df.printSchema()
       df.show(false)
-      
-      println("count per language")
-      val countPerLang = df.groupBy("lang").count()
-      countPerLang.show(false)
 
       println("count number of languages")
       val countLangs = df.select(countDistinct("lang")).show(false)
+
+      println("count per language")
+      val countPerLang =
+        df.groupBy("lang").count.sort(desc("count")).show(false)
+
+      df.createOrReplaceTempView("languages")
+
+      println("total tweets")
+      val numTweets = spark.sql("SELECT COUNT(lang) FROM languages").show(false)
+
+      println("language count / total tweets = ratio")
+      val ratio = spark
+        .sql(
+          "SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc"
+        )
+        .show(false)
     }
   }
 }
