@@ -1,0 +1,43 @@
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+|      Date| Hr|Language|Likes|Min|               Place|Quotes|Replies|Retweets|Sec|                Time|               Tweet|index|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+|2021-02-14| 16|      en|    0|  4|[Saladoblanco, Co...|     0|      0|       0| 27|2021-02-14T16:04:...|@BTSNEWSLATINOA1 ...|    1|
+|2021-02-14| 16|      en|    0|  7|  [South Apopka, FL]|     0|      0|       0|  5|2021-02-14T16:07:...|Valentine thinkin...|    2|
+|2021-02-14| 16|      en|    0|  8|                null|     0|      0|       0| 24|2021-02-14T16:08:...|   @BTS_twt gorgeous|    3|
+|2021-02-14| 16|      en|    0|  9|[Saladoblanco, Co...|     0|      0|       0|  5|2021-02-14T16:09:...|@shawnbts_ @Sprin...|    4|
+|2021-02-14| 16|      en|    0|  9|[Saladoblanco, Co...|     0|      0|       0| 27|2021-02-14T16:09:...|@mariapaularico3 ...|    5|
+|2021-02-14| 16|      es|    0|  9|                null|     0|      0|      29| 31|2021-02-14T16:09:...|RT @kookeur: Me e...|    6|
+|2021-02-14| 16|      en|    0|  9|[Saladoblanco, Co...|     0|      0|       0| 45|2021-02-14T16:09:...|@BTScrystal_snow ...|    7|
+|2021-02-14| 16|      es|    0|  9|                null|     0|      0|      30| 50|2021-02-14T16:09:...|RT @kookeur: Me e...|    8|
+|2021-02-14| 16|      en|    0|  9|[Saladoblanco, Co...|     0|      0|       0| 59|2021-02-14T16:09:...|@mimiluuvs @BTS_t...|    9|
+|2021-02-14| 16|      en|    0| 10|[Saladoblanco, Co...|     0|      0|       0| 41|2021-02-14T16:10:...|@kimtaniee13 @BTS...|   10|
+|2021-02-14| 16|      es|    0| 10|                null|     0|      0|       1| 42|2021-02-14T16:10:...|RT @miracIejin: M...|   11|
+|2021-02-14| 16|      en|    0| 11|[Saladoblanco, Co...|     0|      0|       0| 25|2021-02-14T16:11:...|@8578bf223eb343b ...|   12|
+|2021-02-14| 16|      en|    0| 11|[Saladoblanco, Co...|     0|      0|       0| 36|2021-02-14T16:11:...|@Lachimolala_02 @...|   13|
+|2021-02-14| 16|      en|    0| 11|                null|     0|      0|       0| 54|2021-02-14T16:11:...|He is so gorgeous...|   14|
+|2021-02-14| 16|      es|    0| 12|                null|     0|      0|       0|  6|2021-02-14T16:12:...|este video me pon...|   15|
+|2021-02-14| 16|      es|    0| 12|                null|     0|      0|      31| 38|2021-02-14T16:12:...|RT @kookeur: Me e...|   16|
+|2021-02-14| 16|      en|    0| 13|[Bekasi Timur, In...|     0|      0|       0|  9|2021-02-14T16:13:...|Morning ..
+
+I #Vo...|   17|
+|2021-02-14| 16|      es|    0| 13|                null|     0|      0|      75| 31|2021-02-14T16:13:...|RT @vanteprecious...|   18|
+|2021-02-14| 16|      es|    0| 13|                null|     0|      0|      75| 39|2021-02-14T16:13:...|RT @vanteprecious...|   19|
+|2021-02-14| 16|      en|    0| 13|[Saladoblanco, Co...|     0|      0|       0| 39|2021-02-14T16:13:...|@jovisbtsbiased @...|   20|
++----------+---+--------+-----+---+--------------------+------+-------+--------+---+--------------------+--------------------+-----+
+only showing top 20 rows
+
+root
+ |-- Date: string (nullable = true)
+ |-- Hr: integer (nullable = true)
+ |-- Language: string (nullable = true)
+ |-- Likes: integer (nullable = true)
+ |-- Min: integer (nullable = true)
+ |-- Place: string (nullable = true)
+ |-- Quotes: integer (nullable = true)
+ |-- Replies: integer (nullable = true)
+ |-- Retweets: integer (nullable = true)
+ |-- Sec: integer (nullable = true)
+ |-- Time: string (nullable = true)
+ |-- Tweet: string (nullable = true)
+ |-- index: integer (nullable = true)
+
