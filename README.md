@@ -50,5 +50,9 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Twitter Data Analysis
 
+### EDA
+
+### Word Counting
+
 ## Twitter Data Modeling
 
