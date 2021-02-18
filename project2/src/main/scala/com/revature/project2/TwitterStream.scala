@@ -204,7 +204,15 @@ object TwitterStream {
 
     }
 
-    def analyzeData(spark: SparkSession) : Unit = {
+    /**
+      * Function analyzes the twitterstream data provided to retrieve the most used # and @ in tweets
+      * that contains #kpop, #k_pop, @kpop, @k_pop in the tweet text. 
+      * 
+      * Note: it does not filter the # or @ that has the kpop or k_pop (ex: #kpop, #k_pop, @kpop, @k_pop)
+      *
+      * @param spark
+      */
+    def popularKpopAnalysis(spark: SparkSession) : Unit = {
         import spark.implicits._
 
         val staticDf = spark.read.json("twitterstream")
@@ -216,25 +224,7 @@ object TwitterStream {
 
 
         staticDf
-            //.filter(staticDf("Language") === "en")
-            //.filter(usStates.contains(staticDf("Place").toString().split(" ")(1)))
-            //.cache()
-            //.filter(col("Place").isin(usList:_*))
-           // .select(
-                //($"Place"),
-
-                //functions.size((functions.split(functions.col("data.text"), " "))),
-                //($"data.lang").as("lang"),
-                //($"data.created_at"),
-                //($"data.public_metrics.retweet_count").as("retweet_count")
-            //)
-            //.withColumn("word", functions.explode(functions.split(functions.col("data.text"),  " ")))
-            .filter($"data.text".contains("#kpop") //|| 
-                    //$"data.text".contains("#k_pop") ||
-                    //$"data.text".contains("@kpop") ||
-                    //$"data.text".contains("@k_pop")
-            )
-            .select($"data.text")
+            .select(functions.split($"data.text", " "))
             .as[String]
             .flatMap(text => {
                 text match {
@@ -245,11 +235,86 @@ object TwitterStream {
             .groupBy("value")
             .count()
             .sort($"count".desc)
-            //.groupBy("lang")
-            //.sum("retweet_count")
-            //.sort($"sum(retweet_count)".desc)
             .write
             .json(s"tweetstream-largest-tags-$millis")
+            
+            //.show()
+    }
+
+    /**
+      * 
+      *
+      * @param spark
+      */
+    
+    def trendingKpopArtist(spark: SparkSession) : Unit = {
+        import spark.implicits._
+
+        val staticDf = spark.read.json("twitterstream")
+        staticDf.printSchema()
+
+        val millis = System.currentTimeMillis()
+
+        val hashtags = ".*([#,@][a-zA-Z0-9]+).*".r
+
+
+        staticDf
+    
+            .filter($"data.text".contains("#kpop") || 
+                    $"data.text".contains("#k_pop") ||
+                    $"data.text".contains("@kpop") ||
+                    $"data.text".contains("@k_pop")
+            )
+            .filter($"data.text".contains("#reminniescence"))
+            .select($"data.text", $"data.public_metrics.retweet_count")
+            .groupBy($"text")
+            .sum()
+            .sort($"sum(retweet_count)".desc)
+            .show(50, false)
+            //.write
+            //.json(s"tweetstream-topretweets-states-$millis")
+            
+    }
+
+    /**
+      * Analyzes data from the twitter stream data that returns the amount of kpop tweets in each region or are interms of country
+      * or city
+      *
+      * Note: The twitterstream data does not guarantee that the tweets will contain the geo location of the tweet therefore some of the data
+      * that does not have any geolocation to them will be filtered out the analysis.
+      * 
+      * @param spark
+      */
+    def countriesPopular(spark: SparkSession) : Unit = {
+        import spark.implicits._
+
+        val staticDf = spark.read.json("tweetstream-geo-1613586499053")
+        staticDf.printSchema()
+
+        val millis = System.currentTimeMillis()
+
+
+        staticDf
+            //.filter(staticDf("Language") === "en")
+            //.filter($"Place".contains(usList.toDS()))
+            // .filter($"Tweet".contains("#kpop") || 
+            //         $"Tweet".contains("#k_pop") ||
+            //         $"Tweet".contains("@kpop") ||
+            //         $"Tweet".contains("@k_pop") ||
+            //         $"Tweet".contains("#BTS") ||
+            //         $"Tweet".contains("@BTS")
+            // )
+            .select(
+                ("Place"),
+                ("Language"),
+                ("Created At")
+                //($"data.public_metrics.retweet_count").as("retweet_count")
+            )
+            .groupBy("Place")
+            .count()
+            .sort($"count".desc)
+            .write
+            .json(s"tweetstream-kpopcountry-states-$millis")
             //.show()
     }
 

@@ -21,8 +21,9 @@ object Runner {
 
         //TwitterStream.run(spark)
         //TwitterStream.readData(spark)
-        TwitterStream.analyzeData(spark)
-
+        //TwitterStream.popularKpopAnalysis(spark)
+        TwitterStream.countriesPopular(spark)
+        //TwitterStream.trendingKpopArtist(spark)
         //TwitterStream.printStates()
     }
 }
