@@ -8120,3 +8120,2313 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.02.17 12:52:41 INFO  time: imported build in 0.52s[0m
 [0m2021.02.17 12:52:53 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
 [0m2021.02.17 12:52:53 INFO  time: indexed workspace in 11s[0m
+[0m2021.02.17 13:14:13 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2226377753990443961/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 13:14:21 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 13:14:24 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:14:26 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 13:14:28 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:14:28 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 13:14:41 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 13:14:44 INFO  [success] Total time: 15 s, completed Feb 17, 2021 1:14:44 PM[0m
+[0m2021.02.17 13:14:45 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 13:14:45 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 13:14:48 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 13:14:55 INFO  [success] Total time: 9 s, completed Feb 17, 2021 1:14:55 PM[0m
+[0m2021.02.17 13:14:55 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 13:14:56 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 13:15:00 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 13:15:00 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 13:15:00 INFO  [success] Total time: 4 s, completed Feb 17, 2021 1:15:01 PM[0m
+[0m2021.02.17 13:15:00 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 13:15:01 INFO  time: ran 'sbt bloopInstall' in 47s[0m
+[0m2021.02.17 13:15:01 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 13:15:02 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 13:15:02 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 13:15:03 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:15:03 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3334459561592800367/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3334459561592800367/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3334459561592800367/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:15:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:15:09 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 13:15:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2419590739852409496/bsp.socket'...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7451059967549482882/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2419590739852409496/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2419590739852409496/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7451059967549482882/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7451059967549482882/bsp.socket...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:15:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:15:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:15:10 INFO  time: connected to build server in 6.59s[0m
+[0m2021.02.17 13:15:10 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 13:15:16 INFO  time: imported build in 5.6s[0m
+Caught unexpected io exception handling event for /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala-2
+java.nio.file.NoSuchFileException: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala-2
+	at com.swoval.files.NativeDirectoryLister.fillResults(NativeDirectoryLister.java:93)
+	at com.swoval.files.NativeDirectoryLister.apply(NativeDirectoryLister.java:48)
+	at com.swoval.files.SimpleFileTreeView$Lister.impl(SimpleFileTreeView.java:149)
+	at com.swoval.files.SimpleFileTreeView$Lister.fillResults(SimpleFileTreeView.java:140)
+	at com.swoval.files.SimpleFileTreeView.list(SimpleFileTreeView.java:50)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:568)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:557)
+	at com.swoval.files.FileCacheDirectoryTree.newCachedDirectory(FileCacheDirectoryTree.java:623)
+	at com.swoval.files.FileCacheDirectoryTree.handleEvent(FileCacheDirectoryTree.java:298)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:79)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:73)
+	at com.swoval.files.Observers.onNext(Observers.java:31)
+	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:423)
+	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:447)
+	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)
+	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)
+[0m2021.02.17 13:16:28 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 13:16:32 INFO  time: indexed workspace in 1m15s[0m
+[0m2021.02.17 13:20:32 ERROR code navigation does not work for the file '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala' because the SemanticDB file '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root/bloop-bsp-clients-classes/classes-Metals-OG6mRaTqQqSk2dvYve3Itg==/META-INF/semanticdb/src/main/scala/com/Runner.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+[0m2021.02.17 13:20:41 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals3223588256621851261/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 13:20:48 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 13:20:51 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:20:53 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 13:20:56 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:20:56 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 13:21:08 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+Feb 17, 2021 1:21:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 336
+[0m2021.02.17 13:21:08 INFO  [success] Total time: 13 s, completed Feb 17, 2021 1:21:09 PM[0m
+[0m2021.02.17 13:21:10 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 13:21:10 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 13:21:15 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 13:21:34 INFO  [success] Total time: 24 s, completed Feb 17, 2021 1:21:34 PM[0m
+[0m2021.02.17 13:21:37 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 13:21:37 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 13:21:42 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 13:21:42 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 13:21:42 INFO  [success] Total time: 4 s, completed Feb 17, 2021 1:21:42 PM[0m
+[0m2021.02.17 13:21:42 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 13:21:43 INFO  time: ran 'sbt bloopInstall' in 1m1s[0m
+[0m2021.02.17 13:21:43 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 13:21:44 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.02.17 13:21:45 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:21:45 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:21:45 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7823973217104949521/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7823973217104949521/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7823973217104949521/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:21:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:21:47 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 13:21:47 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8824192422952220278/bsp.socket'...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6092805936120413744/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8824192422952220278/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8824192422952220278/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:21:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6092805936120413744/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6092805936120413744/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+No more data in the client stdin, exiting...
+[0m2021.02.17 13:22:22 ERROR Timeout waiting for 'build/initialize' response[0m
+[0m2021.02.17 13:22:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:22:22 WARN  Retrying connection to the build server Bloop[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3713786743734970224/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3713786743734970224/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3713786743734970224/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:22:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:22:22 INFO  time: connected to build server in 36s[0m
+[0m2021.02.17 13:22:22 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+Feb 17, 2021 1:23:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 338
+Feb 17, 2021 1:41:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 353
+[0m2021.02.17 13:41:45 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals8238729538991220816/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 13:41:55 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 13:42:06 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:42:09 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 13:42:20 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 13:42:20 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 13:42:29 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 13:42:29 INFO  [success] Total time: 8 s, completed Feb 17, 2021 1:42:30 PM[0m
+[0m2021.02.17 13:42:30 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 13:42:30 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 13:42:37 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 13:42:53 INFO  [success] Total time: 22 s, completed Feb 17, 2021 1:42:53 PM[0m
+[0m2021.02.17 13:42:53 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 13:42:54 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 13:43:01 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 13:43:01 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 13:43:01 INFO  [success] Total time: 6 s, completed Feb 17, 2021 1:43:01 PM[0m
+[0m2021.02.17 13:43:01 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 13:43:02 INFO  time: ran 'sbt bloopInstall' in 1m16s[0m
+[0m2021.02.17 13:43:02 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 13:43:04 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:43:04 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:43:04 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 13:43:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6988820756183297837/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6988820756183297837/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6988820756183297837/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:43:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:43:05 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 13:43:05 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8576155227507818716/bsp.socket'...
+Starting the bsp launcher for bloop...
+Waiting for the bsp connection to come up...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8037851067227142264/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8576155227507818716/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8576155227507818716/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:43:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8037851067227142264/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8037851067227142264/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 13:43:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 13:43:06 INFO  time: connected to build server in 2.6s[0m
+[0m2021.02.17 13:43:06 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 13:43:08 INFO  time: imported build in 1.16s[0m
+Feb 17, 2021 1:43:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 362
+[0m2021.02.17 13:43:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 13:44:53 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 13:44:53 INFO  time: indexed workspace in 1m45s[0m
+[0m2021.02.17 13:48:03 INFO  time: compiled root in 4m8s[0m
+Exception in thread "Thread-40" Exception in thread "Thread-105" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Thread-76" java.lang.OutOfMemoryError: Java heap space
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.addWaiter(AbstractQueuedSynchronizer.java:606)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1018)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:409)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$1(Protocol.scala:216)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2233/1133776888.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol$$anon$1.run(Protocol.scala:304)
+Exception in thread "Thread-78" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "Thread-111" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3236)
+	at java.nio.charset.CharsetEncoder.replaceWith(CharsetEncoder.java:301)
+	at java.nio.charset.CharsetEncoder.<init>(CharsetEncoder.java:207)
+	at java.nio.charset.CharsetEncoder.<init>(CharsetEncoder.java:233)
+	at sun.nio.cs.UTF_8$Encoder.<init>(UTF_8.java:558)
+	at sun.nio.cs.UTF_8$Encoder.<init>(UTF_8.java:554)
+	at sun.nio.cs.UTF_8.newEncoder(UTF_8.java:72)
+	at java.lang.StringCoding.encode(StringCoding.java:348)
+	at java.lang.String.getBytes(String.java:941)
+	at bloop.shaded.snailgun.protocol.Protocol.sendChunk(Protocol.scala:157)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$2(Protocol.scala:230)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2316/1480169681.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol.swallowExceptionsIfServerFinished(Protocol.scala:281)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$1(Protocol.scala:221)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2233/1133776888.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol$$anon$1.run(Protocol.scala:304)
+Exception in thread "Thread-93" java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 368
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 369
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 370
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 393
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 394
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 400
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 403
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 405
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 409
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 398
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 410
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 411
+Feb 17, 2021 2:02:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 415
+Feb 17, 2021 2:02:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 416
+Feb 17, 2021 2:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 423
+Feb 17, 2021 2:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 426
+Feb 17, 2021 2:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 424
+Feb 17, 2021 2:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 425
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 435
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 436
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 434
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 437
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 440
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 439
+Feb 17, 2021 2:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+Feb 17, 2021 2:02:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 443
+[0m2021.02.17 14:03:00 INFO  time: code lens generation in 2.05s[0m
+Feb 17, 2021 2:04:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 463
+Feb 17, 2021 2:04:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 462
+[0m2021.02.17 14:04:03 INFO  time: code lens generation in 22s[0m
+Feb 17, 2021 2:04:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 466
+Feb 17, 2021 2:04:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 484
+Feb 17, 2021 2:04:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 488
+[0m2021.02.17 18:23:21 INFO  Started: Metals version 0.9.10 in workspace '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream' for client vscode 1.53.2.[0m
+[0m2021.02.17 18:23:22 INFO  time: initialize in 1.38s[0m
+[0m2021.02.17 18:23:29 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6893875234419213199/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 18:23:32 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 18:23:40 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 18:23:57 WARN  no build target for: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala[0m
+Waiting for the bsp connection to come up...
+Feb 17, 2021 6:23:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Feb 17, 2021 6:23:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Waiting for the bsp connection to come up...
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+Feb 17, 2021 6:24:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 34
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 38
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 48
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 47
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 49
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 58
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 62
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61
+Waiting for the bsp connection to come up...
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+Feb 17, 2021 6:24:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 70
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 65
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 75
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 74
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 88
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 87
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 92
+Feb 17, 2021 6:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 91
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop'...
+[0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6893875234419213199/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6893875234419213199/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:24:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+Feb 17, 2021 6:24:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 104
+[0m2021.02.17 18:24:05 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 18:24:05 Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4691980850684814783/bsp.socket'...INFO  
+Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2895249063613092547/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 18:24:06 WARN  no build target for: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4691980850684814783/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4691980850684814783/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2895249063613092547/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2895249063613092547/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:24:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:24:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:24:07 INFO  time: connected to build server in 37s[0m
+[0m2021.02.17 18:24:07 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 18:24:13 INFO  time: imported build in 6.22s[0m
+[0m2021.02.17 18:24:33 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 18:24:40 INFO  time: indexed workspace in 26s[0m
+[0m2021.02.17 18:24:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 18:27:57 INFO  time: compiled root in 3m7s[0m
+[0m2021.02.17 18:28:02 INFO  time: code lens generation in 5.38s[0m
+[0m2021.02.17 18:32:15 INFO  time: code lens generation in 4.33s[0m
+Feb 17, 2021 6:32:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 131
+[0m2021.02.17 18:32:25 INFO  time: code lens generation in 1.36s[0m
+Feb 17, 2021 6:32:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 152
+Feb 17, 2021 6:32:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 156
+Feb 17, 2021 6:32:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 163
+Feb 17, 2021 6:34:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 214
+[0m2021.02.17 18:34:50 INFO  time: code lens generation in 4.83s[0m
+Feb 17, 2021 6:34:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 212
+[0m2021.02.17 18:34:57 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals6032435636209203574/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 18:35:11 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 18:35:17 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:35:20 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 18:35:25 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:35:25 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 18:35:34 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 18:35:36 INFO  [success] Total time: 11 s, completed Feb 17, 2021 6:35:36 PM[0m
+[0m2021.02.17 18:35:38 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 18:35:38 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 18:35:41 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 18:36:04 INFO  [success] Total time: 26 s, completed Feb 17, 2021 6:36:04 PM[0m
+[0m2021.02.17 18:36:04 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 18:36:05 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 18:36:09 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 18:36:09 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 18:36:09 INFO  [success] Total time: 4 s, completed Feb 17, 2021 6:36:09 PM[0m
+[0m2021.02.17 18:36:13 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 18:36:13 INFO  time: ran 'sbt bloopInstall' in 1m15s[0m
+[0m2021.02.17 18:36:13 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 18:36:15 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:36:15 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:36:15 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:36:15 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3267556401478425575/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3267556401478425575/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3267556401478425575/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:36:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:36:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 18:36:18 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6154518930372135088/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher329607746547746916/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6154518930372135088/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6154518930372135088/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:36:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher329607746547746916/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher329607746547746916/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:36:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:36:18 INFO  time: connected to build server in 2.81s[0m
+[0m2021.02.17 18:36:18 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 18:36:25 INFO  time: imported build in 6.87s[0m
+Caught unexpected io exception handling event for /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2
+java.nio.file.NoSuchFileException: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2
+	at com.swoval.files.NativeDirectoryLister.fillResults(NativeDirectoryLister.java:93)
+	at com.swoval.files.NativeDirectoryLister.apply(NativeDirectoryLister.java:48)
+	at com.swoval.files.SimpleFileTreeView$Lister.impl(SimpleFileTreeView.java:149)
+	at com.swoval.files.SimpleFileTreeView$Lister.fillResults(SimpleFileTreeView.java:140)
+	at com.swoval.files.SimpleFileTreeView.list(SimpleFileTreeView.java:50)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:568)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:557)
+	at com.swoval.files.FileCacheDirectoryTree.newCachedDirectory(FileCacheDirectoryTree.java:623)
+	at com.swoval.files.FileCacheDirectoryTree.handleEvent(FileCacheDirectoryTree.java:298)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:79)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:73)
+	at com.swoval.files.Observers.onNext(Observers.java:31)
+	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:423)
+	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:447)
+	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)
+	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)
+[0m2021.02.17 18:36:34 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 18:36:34 INFO  time: indexed workspace in 9.07s[0m
+Feb 17, 2021 6:47:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 255
+Feb 17, 2021 6:47:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 256
+[0m2021.02.17 18:47:24 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals867750481241973135/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 18:47:35 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 18:47:37 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:47:39 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 18:47:43 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:47:43 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 18:47:50 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 18:47:50 INFO  [success] Total time: 7 s, completed Feb 17, 2021 6:47:51 PM[0m
+[0m2021.02.17 18:47:53 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 18:47:53 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 18:47:55 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 18:48:08 INFO  [success] Total time: 15 s, completed Feb 17, 2021 6:48:08 PM[0m
+[0m2021.02.17 18:48:08 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 18:48:09 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 18:48:13 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 18:48:13 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 18:48:13 INFO  [success] Total time: 3 s, completed Feb 17, 2021 6:48:13 PM[0m
+[0m2021.02.17 18:48:13 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 18:48:13 INFO  time: ran 'sbt bloopInstall' in 49s[0m
+[0m2021.02.17 18:48:13 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 18:48:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:48:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:48:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:48:16 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2881628102840322902/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2881628102840322902/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2881628102840322902/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:48:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:48:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...[0m
+2021.02.17 18:48:18 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2401422874322805069/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2178846024474537391/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2401422874322805069/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2401422874322805069/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:48:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2178846024474537391/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2178846024474537391/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:48:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:48:18 INFO  time: connected to build server in 2.6s[0m
+[0m2021.02.17 18:48:18 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 18:48:25 INFO  time: imported build in 0.34s[0m
+[0m2021.02.17 18:48:30 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 18:48:30 INFO  time: indexed workspace in 5.66s[0m
+[0m2021.02.17 18:49:54 INFO  Deduplicating compilation of root from bsp client 'Metals 0.9.10' (since 1m 35.793s)[0m
+[0m2021.02.17 18:49:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 18:49:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 18:50:30 INFO  time: compiled root in 35s[0m
+[0m2021.02.17 18:50:39 INFO  time: code lens generation in 1.83s[0m
+Feb 17, 2021 6:50:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 347
+Feb 17, 2021 6:50:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 354
+[0m2021.02.17 18:51:49 INFO  time: code lens generation in 55s[0m
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 356
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 358
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 364
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 351
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 366
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 363
+Feb 17, 2021 6:51:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 370
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 372
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 376
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 368
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 379
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 385
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 386
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 378
+Feb 17, 2021 6:51:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 393
+Feb 17, 2021 6:51:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 399
+Feb 17, 2021 6:51:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 402
+Feb 17, 2021 6:51:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 406
+Feb 17, 2021 6:51:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 419
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 422
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 431
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 434
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 383
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 435
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 439
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 433
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 440
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 441
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 442
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 446
+Feb 17, 2021 6:51:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 447
+Feb 17, 2021 6:51:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 436
+Feb 17, 2021 6:52:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 480
+Feb 17, 2021 6:52:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 482
+Feb 17, 2021 6:52:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 484
+Feb 17, 2021 6:52:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 521
+Feb 17, 2021 6:52:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 524
+Feb 17, 2021 6:52:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 530
+Feb 17, 2021 6:52:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 547
+Feb 17, 2021 6:53:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 560
+Feb 17, 2021 6:53:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 592
+[0m2021.02.17 18:54:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 18:55:01 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals4711880391738535183/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 18:55:12 INFO  time: compiled root in 21s[0m
+[0m2021.02.17 18:55:13 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 18:55:17 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:55:19 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 18:55:25 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 18:55:25 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 18:55:33 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 18:55:33 INFO  [success] Total time: 8 s, completed Feb 17, 2021 6:55:34 PM[0m
+[0m2021.02.17 18:55:35 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 18:55:36 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 18:55:42 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 18:55:49 INFO  [success] Total time: 13 s, completed Feb 17, 2021 6:55:49 PM[0m
+[0m2021.02.17 18:55:49 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 18:55:49 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 18:55:54 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 18:55:54 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 18:55:54 INFO  [success] Total time: 4 s, completed Feb 17, 2021 6:55:54 PM[0m
+[0m2021.02.17 18:55:54 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 18:55:55 INFO  time: ran 'sbt bloopInstall' in 53s[0m
+[0m2021.02.17 18:55:55 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 18:55:55 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 18:55:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 18:55:57 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 18:55:57 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher244560396502722935/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher244560396502722935/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher244560396502722935/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:55:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:55:58 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 18:55:58 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher725559263262543669/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher761812326501305019/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher761812326501305019/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher761812326501305019/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher725559263262543669/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher725559263262543669/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 18:55:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:55:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 18:55:58 INFO  time: connected to build server in 1.25s[0m
+[0m2021.02.17 18:55:58 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 18:55:58 INFO  time: imported build in 0.32s[0m
+[0m2021.02.17 18:56:38 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 18:56:38 INFO  time: indexed workspace in 39s[0m
+[0m2021.02.17 19:11:32 ERROR code navigation does not work for the file '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala' because the SemanticDB file '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root/bloop-bsp-clients-classes/classes-Metals-sXTqPQeDSE6mfqLErxMIbg==/META-INF/semanticdb/src/main/scala/com/Runner.scala.semanticdb' doesn't exist. There can be many reasons for this error. [0m
+Feb 17, 2021 7:18:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 776
+[0m2021.02.17 19:22:35 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals4462023000694385977/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 19:22:46 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 19:22:48 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:22:50 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 19:22:53 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:22:53 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 19:23:01 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 19:23:04 INFO  [success] Total time: 10 s, completed Feb 17, 2021 7:23:04 PM[0m
+[0m2021.02.17 19:23:04 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 19:23:04 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 19:23:10 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 19:23:20 INFO  [success] Total time: 15 s, completed Feb 17, 2021 7:23:20 PM[0m
+[0m2021.02.17 19:23:20 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 19:23:21 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 19:23:25 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 19:23:25 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 19:23:25 INFO  [success] Total time: 4 s, completed Feb 17, 2021 7:23:25 PM[0m
+[0m2021.02.17 19:23:25 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 19:23:26 INFO  time: ran 'sbt bloopInstall' in 51s[0m
+[0m2021.02.17 19:23:26 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 19:23:27 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 19:23:27 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 19:23:28 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:23:28 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1504676953354400270/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1504676953354400270/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1504676953354400270/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:23:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:23:31 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 19:23:31 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3345901917918328272/bsp.socket'...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher114357636588787948/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher114357636588787948/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher114357636588787948/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:23:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3345901917918328272/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3345901917918328272/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:23:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:23:31 INFO  time: connected to build server in 2.76s[0m
+[0m2021.02.17 19:23:31 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 19:23:38 INFO  time: imported build in 6.74s[0m
+[0m2021.02.17 19:25:08 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 19:25:08 INFO  time: indexed workspace in 1m30s[0m
+Exception in thread "Thread-45" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.StringCoding.encode(StringCoding.java:350)
+	at java.lang.String.getBytes(String.java:941)
+	at bloop.shaded.snailgun.protocol.Protocol.sendChunk(Protocol.scala:157)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$2(Protocol.scala:230)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2737/421826128.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol.swallowExceptionsIfServerFinished(Protocol.scala:281)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$1(Protocol.scala:221)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2624/870847966.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol$$anon$1.run(Protocol.scala:304)
+Exception in thread "Thread-33" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2737/421826128.get$Lambda(Unknown Source)
+	at java.lang.invoke.LambdaForm$DMH/125993742.invokeStatic_L3_L(LambdaForm$DMH)
+	at java.lang.invoke.LambdaForm$MH/231786897.linkToTargetMethod(LambdaForm$MH)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$createHeartbeatAndShutdownThread$1(Protocol.scala:221)
+	at bloop.shaded.snailgun.protocol.Protocol$$Lambda$2624/870847966.apply$mcV$sp(Unknown Source)
+	at bloop.shaded.snailgun.protocol.Protocol$$anon$1.run(Protocol.scala:304)
+[0m2021.02.17 19:32:30 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7242701395799295789/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 19:32:36 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 19:32:40 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:32:41 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 19:32:45 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:32:45 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 19:32:54 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 19:32:54 INFO  [success] Total time: 9 s, completed Feb 17, 2021 7:32:55 PM[0m
+[0m2021.02.17 19:32:56 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 19:32:56 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 19:32:57 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 19:33:10 INFO  [success] Total time: 14 s, completed Feb 17, 2021 7:33:10 PM[0m
+[0m2021.02.17 19:33:12 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 19:33:12 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 19:33:16 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 19:33:16 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 19:33:16 INFO  [success] Total time: 3 s, completed Feb 17, 2021 7:33:16 PM[0m
+[0m2021.02.17 19:33:16 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 19:33:17 INFO  time: ran 'sbt bloopInstall' in 46s[0m
+[0m2021.02.17 19:33:17 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 19:33:18 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 19:33:18 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 19:33:19 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:33:19 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7600695648088343699/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7600695648088343699/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7600695648088343699/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:33:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:33:27 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 19:33:27 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7429101813545917194/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2003902799975243360/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2003902799975243360/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2003902799975243360/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7429101813545917194/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7429101813545917194/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m2021.02.17 19:33:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:33:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:33:28 INFO  time: connected to build server in 8.6s[0m
+[0m2021.02.17 19:33:28 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 19:33:32 INFO  time: imported build in 3.99s[0m
+Caught unexpected io exception handling event for /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2
+java.nio.file.NoSuchFileException: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2
+	at com.swoval.files.NativeDirectoryLister.fillResults(NativeDirectoryLister.java:93)
+	at com.swoval.files.NativeDirectoryLister.apply(NativeDirectoryLister.java:48)
+	at com.swoval.files.SimpleFileTreeView$Lister.impl(SimpleFileTreeView.java:149)
+	at com.swoval.files.SimpleFileTreeView$Lister.fillResults(SimpleFileTreeView.java:140)
+	at com.swoval.files.SimpleFileTreeView.list(SimpleFileTreeView.java:50)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:568)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:557)
+	at com.swoval.files.FileCacheDirectoryTree.newCachedDirectory(FileCacheDirectoryTree.java:623)
+	at com.swoval.files.FileCacheDirectoryTree.handleEvent(FileCacheDirectoryTree.java:298)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:79)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:73)
+	at com.swoval.files.Observers.onNext(Observers.java:31)
+	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:423)
+	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:447)
+	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)
+	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)
+[0m2021.02.17 19:34:34 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 19:34:34 INFO  time: indexed workspace in 1m1s[0m
+Exception in thread "Thread-63" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "Thread-61" Exception in thread "Thread-85" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "Thread-25" Exception in thread "Thread-6" Exception in thread "Thread-70" java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "pool-2-thread-1" java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+[0m2021.02.17 19:44:25 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals6857833073171798180/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 19:44:39 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 19:45:43 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 19:45:43 INFO  [success] Total time: 9 s, completed Feb 17, 2021 7:45:12 PM[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 19:45:43 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 19:45:43 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+Feb 17, 2021 7:45:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 849
+Feb 17, 2021 7:45:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 854
+[0m2021.02.17 19:45:54 INFO  [success] Total time: 34 s, completed Feb 17, 2021 7:45:54 PM[0m
+[0m2021.02.17 19:45:55 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 19:45:59 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 19:46:04 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 19:46:04 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 19:46:04 INFO  [success] Total time: 4 s, completed Feb 17, 2021 7:46:04 PM[0m
+[0m2021.02.17 19:46:04 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 19:46:05 INFO  time: ran 'sbt bloopInstall' in 1m39s[0m
+[0m2021.02.17 19:46:05 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 19:46:07 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:46:07 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:46:07 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:46:07 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7004376426273667512/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7004376426273667512/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7004376426273667512/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:46:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:46:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 19:46:09 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4259737686320803604/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8881918308677932153/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4259737686320803604/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4259737686320803604/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:46:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8881918308677932153/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8881918308677932153/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:46:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:46:10 INFO  time: connected to build server in 2.81s[0m
+[0m2021.02.17 19:46:10 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 19:46:14 INFO  time: imported build in 1.92s[0m
+[0m2021.02.17 19:47:07 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 19:47:07 INFO  time: indexed workspace in 53s[0m
+[0m2021.02.17 19:47:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 19:48:09 INFO  time: compiled root in 53s[0m
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 873
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 874
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 888
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 887
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 892
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 895
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 889
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 897
+Feb 17, 2021 7:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 898
+[0m2021.02.17 19:48:09 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5229517648718268851/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 19:48:23 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 19:48:36 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:48:41 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 19:48:53 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 19:48:53 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 19:49:04 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 19:49:04 INFO  [success] Total time: 11 s, completed Feb 17, 2021 7:49:05 PM[0m
+[0m2021.02.17 19:49:06 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 19:49:06 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 19:49:13 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 19:50:10 INFO  [success] Total time: 22 s, completed Feb 17, 2021 7:49:28 PM[0m
+[0m2021.02.17 19:50:10 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 19:50:10 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 19:50:10 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 19:50:10 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 19:50:10 INFO  [success] Total time: 22 s, completed Feb 17, 2021 7:49:55 PM[0m
+[0m2021.02.17 19:50:10 INFO  sbt bloopInstall exit: 0[0m
+Feb 17, 2021 7:50:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 931
+[0m2021.02.17 19:50:10 INFO  time: ran 'sbt bloopInstall' in 2m[0m
+[0m2021.02.17 19:50:10 INFO  Disconnecting from Bloop session...[0m
+Feb 17, 2021 7:50:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 934
+Feb 17, 2021 7:50:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 936
+Exception in thread "pool-10-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+[0m2021.02.17 19:50:11 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.02.17 19:50:13 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:50:13 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 19:50:13 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3807906740151135775/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3807906740151135775/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3807906740151135775/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:50:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:50:14 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 19:50:14 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6567025995178333290/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8942715297546600094/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8942715297546600094/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8942715297546600094/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:50:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6567025995178333290/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6567025995178333290/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 19:50:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 19:50:14 INFO  time: connected to build server in 1.65s[0m
+[0m2021.02.17 19:50:14 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+Feb 17, 2021 7:50:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 954
+Feb 17, 2021 7:50:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 958
+Feb 17, 2021 7:50:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 959
+[0m2021.02.17 19:50:23 INFO  time: imported build in 6.33s[0m
+Feb 17, 2021 7:50:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 969
+[0m2021.02.17 19:50:57 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 19:50:57 INFO  time: indexed workspace in 34s[0m
+[0m2021.02.17 19:53:12 INFO  time: code lens generation in 2.73s[0m
+[0m2021.02.17 19:53:21 INFO  compiling root (1 scala source)[0m
+Feb 17, 2021 7:53:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1003
+[0m2021.02.17 19:54:15 INFO  time: compiled root in 54s[0m
+Feb 17, 2021 7:55:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1034
+Feb 17, 2021 7:55:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1047
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1091
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1095
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1098
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1096
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1101
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1104
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1100
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1105
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1109
+Feb 17, 2021 7:56:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1102
+Feb 17, 2021 7:56:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1111
+Feb 17, 2021 7:57:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1117
+Feb 17, 2021 7:57:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1118
+Feb 17, 2021 7:57:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1116
+Feb 17, 2021 7:57:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1126
+Feb 17, 2021 7:57:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1128
+Feb 17, 2021 7:57:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1135
+Feb 17, 2021 7:57:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1136
+Feb 17, 2021 7:57:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1150
+Feb 17, 2021 7:57:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1194
+Feb 17, 2021 7:58:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1199
+Feb 17, 2021 7:58:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1200
+Exception in thread "pool-11-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Feb 17, 2021 8:01:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1250
+Feb 17, 2021 8:01:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1251
+Feb 17, 2021 8:01:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1255
+Feb 17, 2021 8:01:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1252
+Feb 17, 2021 8:01:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1260
+Feb 17, 2021 8:01:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1265
+Feb 17, 2021 8:01:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1264
+Feb 17, 2021 8:01:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1267
+Feb 17, 2021 8:01:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1276
+Feb 17, 2021 8:01:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1278
+Feb 17, 2021 8:01:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1286
+Feb 17, 2021 8:01:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1290
+Feb 17, 2021 8:01:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1289
+Feb 17, 2021 8:01:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1302
+Feb 17, 2021 8:01:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1304
+Feb 17, 2021 8:01:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1305
+Feb 17, 2021 8:01:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1306
+Feb 17, 2021 8:01:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.CompletionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+[0m2021.02.17 20:02:17 INFO  time: code lens generation in 1.14s[0m
+Feb 17, 2021 8:02:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1343
+[0m2021.02.17 20:02:28 INFO  time: code lens generation in 2.33s[0m
+Feb 17, 2021 8:02:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1356
+[0m2021.02.17 20:02:59 INFO  time: code lens generation in 1.36s[0m
+[0m2021.02.17 20:03:03 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals3499437706177860194/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:03:03 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2244522444106278772/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:03:07 ERROR [info] waiting for lock on /home/melissawhite/.sbt/boot/sbt.boot.lock to be available...[0m
+[0m2021.02.17 20:03:13 INFO  time: ran 'sbt bloopInstall' in 10s[0m
+[0m2021.02.17 20:03:13 INFO  sbt bloopInstall exit: 2[0m
+[0m2021.02.17 20:03:14 ERROR sbt command failed: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2244522444106278772/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+[0m2021.02.17 20:03:13 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:03:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:03:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:03:16 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:03:16 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:03:40 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:03:58 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:03:58 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:03:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:04:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:04:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:04:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:04:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:04:02 INFO  time: connected to build server in 45s[0m
+[0m2021.02.17 20:04:02 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:04:26 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:04:26 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 20:04:43 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:04:43 INFO  [success] Total time: 16 s, completed Feb 17, 2021 8:04:44 PM[0m
+[0m2021.02.17 20:04:53 INFO  [warn] In the last 10 seconds, 7.912 (80.8%) were spent in GC. [Heap: 0.20GB free of 0.24GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 20:04:55 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:04:56 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:05:12 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:07:36 INFO  [warn] In the last 59 seconds, 5.872 (10.0%) were spent in GC. [Heap: 0.19GB free of 0.25GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 20:07:38 INFO  [success] Total time: 95 s (01:35), completed Feb 17, 2021 8:06:31 PM[0m
+[0m2021.02.17 20:07:38 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 20:07:38 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 20:07:38 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 20:07:38 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 20:07:38 INFO  [success] Total time: 17 s, completed Feb 17, 2021 8:07:05 PM[0m
+[0m2021.02.17 20:07:38 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 20:07:38 INFO  time: ran 'sbt bloopInstall' in 4m35s[0m
+[0m2021.02.17 20:07:38 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:07:39 ERROR build shutdown: bloop
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Broken pipe
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:81)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:78)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Broken pipe
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy9.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:81)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:78)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:60)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:167)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78)
+	at java.nio.channels.Channels.writeFully(Channels.java:98)
+	at java.nio.channels.Channels.access$000(Channels.java:61)
+	at java.nio.channels.Channels$1.write(Channels.java:174)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at java.nio.channels.Channels$1.write(Channels.java:155)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:125)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at com.sun.proxy.$Proxy9.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:81)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:78)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+[0m2021.02.17 20:08:01 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:08:01 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:08:01 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:08:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:08:42 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:08:42 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:08:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:08:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:08:42 INFO  time: connected to build server in 40s[0m
+[0m2021.02.17 20:08:42 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:08:43 INFO  time: imported build in 1.47s[0m
+[0m2021.02.17 20:10:17 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals9194541889787971114/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:11:09 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:11:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 20:11:30 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:11:46 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:13:11 INFO  [warn] In the last 45 seconds, 11.179 (25.3%) were spent in GC. [Heap: 0.20GB free of 0.24GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 20:13:23 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:13:23 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 20:13:44 INFO  [warn] In the last 65 seconds, 10.666 (16.6%) were spent in GC. [Heap: 0.19GB free of 0.24GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 20:14:05 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:14:18 INFO  [success] Total time: 81 s (01:21), completed Feb 17, 2021 8:14:14 PM[0m
+[0m2021.02.17 20:14:28 INFO  [warn] In the last 188 seconds, 6.568 (3.5%) were spent in GC. [Heap: 0.27GB free of 0.31GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 20:14:28 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:14:28 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:14:55 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:15:24 INFO  time: compiled root in 4m15s[0m
+[0m2021.02.17 20:23:24 INFO  Started: Metals version 0.9.10 in workspace '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream' for client vscode 1.53.2.[0m
+[0m2021.02.17 20:23:27 INFO  time: initialize in 2.3s[0m
+[0m2021.02.17 20:23:33 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1009340562966017528/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:23:34 INFO  skipping build import with status 'Started'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:23:52 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+error: The command bsp --protocol local --socket /tmp/bsp-launcher1009340562966017528/bsp.socket returned with an error
+> No server running at 127.0.0.1:8212, let's fire one...
+> Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+> Attempting a connection to the server...
+> Starting bloop server at 127.0.0.1:8212...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop'...
+> [0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root-test.json'
+> [0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root.json'
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+> [0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+> error: Unexpected error forces client exit!
+> java.io.EOFException
+> 	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+> 	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$processChunkFromServer$1(Protocol.scala:181)
+> 	at scala.util.Try$.apply(Try.scala:213)
+> 	at bloop.shaded.snailgun.protocol.Protocol.processChunkFromServer(Protocol.scala:180)
+> 	at bloop.shaded.snailgun.protocol.Protocol.sendCommand(Protocol.scala:108)
+> 	at bloop.shaded.snailgun.TcpClient.run(TcpClient.scala:34)
+> 	at bloop.bloopgun.BloopgunCli.executeCmd$1(Bloopgun.scala:268)
+> 	at bloop.bloopgun.BloopgunCli.fireCommand(Bloopgun.scala:286)
+> 	at bloop.bloopgun.BloopgunCli.run(Bloopgun.scala:230)
+> 	at bloop.launcher.bsp.BspBridge$$anon$1.run(BspBridge.scala:82)
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 24984'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:25:40 INFO  Started: Metals version 0.9.10 in workspace '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream' for client vscode 1.53.2.[0m
+[0m2021.02.17 20:25:41 INFO  time: initialize in 1.31s[0m
+[0m2021.02.17 20:25:43 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4749796135534825454/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:25:44 INFO  skipping build import with status 'Started'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:25:55 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:26:15 ERROR text document: file:///home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:181)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2684)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:84)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.decorations.SyntheticsDecorationProvider.currentDocument(SyntheticsDecorationProvider.scala:243)
+	at scala.meta.internal.decorations.SyntheticsDecorationProvider.publishSynthetics(SyntheticsDecorationProvider.scala:66)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:895)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m
+error: The command bsp --protocol local --socket /tmp/bsp-launcher4749796135534825454/bsp.socket returned with an error
+> No server running at 127.0.0.1:8212, let's fire one...
+> Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+> Starting bloop server at 127.0.0.1:8212...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> Attempting a connection to the server...
+> [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+> [0m[32m[D][0m Loading 2 projects from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop'...
+> [0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root-test.json'
+> [0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root.json'
+> [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+> [0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+> [0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+> [0m[32m[D][0m Missing analysis file for project 'root-test'
+> error: Unexpected error forces client exit!
+> java.net.SocketException: Connection reset
+> 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+> 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+> 	at java.net.SocketInputStream.read(SocketInputStream.java:224)
+> 	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+> 	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$processChunkFromServer$1(Protocol.scala:181)
+> 	at scala.util.Try$.apply(Try.scala:213)
+> 	at bloop.shaded.snailgun.protocol.Protocol.processChunkFromServer(Protocol.scala:180)
+> 	at bloop.shaded.snailgun.protocol.Protocol.sendCommand(Protocol.scala:108)
+> 	at bloop.shaded.snailgun.TcpClient.run(TcpClient.scala:34)
+> 	at bloop.bloopgun.BloopgunCli.executeCmd$1(Bloopgun.scala:268)
+> 	at bloop.bloopgun.BloopgunCli.fireCommand(Bloopgun.scala:286)
+> 	at bloop.bloopgun.BloopgunCli.run(Bloopgun.scala:230)
+> 	at bloop.launcher.bsp.BspBridge$$anon$1.run(BspBridge.scala:82)
+error: Trying a tcp-based connection to the server instead...
+Opening a bsp server connection with 'bsp --protocol tcp --port 32369'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:26:17 WARN  no build target for: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala[0m
+[0m2021.02.17 20:26:54 INFO  Started: Metals version 0.9.10 in workspace '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream' for client vscode 1.53.2.[0m
+[0m2021.02.17 20:26:56 INFO  time: initialize in 1.33s[0m
+[0m2021.02.17 20:26:57 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7649215597528387393/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:26:59 INFO  skipping build import with status 'Started'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:27:07 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop'...
+[0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7649215597528387393/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7649215597528387393/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:27:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:27:20 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7290432512677478520/bsp.socket'...
+[0m2021.02.17 20:27:20 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6418796069943993159/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6418796069943993159/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6418796069943993159/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7290432512677478520/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7290432512677478520/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m2021.02.17 20:27:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:27:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:27:21 INFO  time: connected to build server in 23s[0m
+[0m2021.02.17 20:27:21 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:27:22 WARN  no build target for: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala[0m
+[0m2021.02.17 20:27:24 INFO  time: imported build in 3.32s[0m
+[0m2021.02.17 20:27:26 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals4941882361723021760/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+Exception in thread "pool-5-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+[0m2021.02.17 20:27:48 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 20:27:55 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:28:02 INFO  time: indexed workspace in 38s[0m
+[0m2021.02.17 20:28:13 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:28:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 20:28:38 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:28:38 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:28:38 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+Feb 17, 2021 8:28:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 34
+[0m2021.02.17 20:28:41 INFO  time: compiled root in 27s[0m
+Feb 17, 2021 8:28:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+Feb 17, 2021 8:28:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 51
+[0m2021.02.17 20:29:07 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:29:11 INFO  [success] Total time: 31 s, completed Feb 17, 2021 8:29:11 PM[0m
+[0m2021.02.17 20:29:13 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:29:13 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:29:18 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:29:42 INFO  [success] Total time: 20 s, completed Feb 17, 2021 8:29:34 PM[0m
+[0m2021.02.17 20:29:42 INFO  [info] loading settings for project root from build.sbt ...[0m
+Feb 17, 2021 8:29:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 76
+[0m2021.02.17 20:29:44 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+Feb 17, 2021 8:29:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 81
+Feb 17, 2021 8:29:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+Feb 17, 2021 8:29:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+Feb 17, 2021 8:29:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 87
+Feb 17, 2021 8:29:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 89
+Feb 17, 2021 8:29:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 91
+[0m2021.02.17 20:29:46 INFO  time: code lens generation in 1.08s[0m
+[0m2021.02.17 20:29:54 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 20:29:54 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 20:29:54 INFO  [success] Total time: 5 s, completed Feb 17, 2021 8:29:54 PM[0m
+[0m2021.02.17 20:29:57 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 20:29:57 INFO  time: ran 'sbt bloopInstall' in 2m31s[0m
+[0m2021.02.17 20:29:57 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:29:59 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 20:29:59 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 20:29:59 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:29:59 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4589978022988802755/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4589978022988802755/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4589978022988802755/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:30:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:30:03 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 20:30:03 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8775507031302480416/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2862386546032913743/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2862386546032913743/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2862386546032913743/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8775507031302480416/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8775507031302480416/bsp.socket...
+[0m2021.02.17 20:30:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:30:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:30:03 INFO  time: connected to build server in 4.03s[0m
+[0m2021.02.17 20:30:03 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:30:05 INFO  time: imported build in 1.54s[0m
+[0m2021.02.17 20:30:09 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 20:30:09 INFO  time: indexed workspace in 4.41s[0m
+[0m2021.02.17 20:30:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 20:30:21 INFO  time: compiled root in 9.27s[0m
+Feb 17, 2021 8:30:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 96
+Feb 17, 2021 8:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 97
+Feb 17, 2021 8:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 103
+Feb 17, 2021 8:30:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 112
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 114
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 117
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 119
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 121
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 104
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 124
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 129
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 122
+Feb 17, 2021 8:30:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 134
+Feb 17, 2021 8:30:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 139
+Feb 17, 2021 8:30:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 148
+Feb 17, 2021 8:30:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 125
+Feb 17, 2021 8:30:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 154
+Feb 17, 2021 8:30:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 156
+Feb 17, 2021 8:30:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 157
+[0m2021.02.17 20:33:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 20:33:03 INFO  time: compiled root in 2.77s[0m
+Feb 17, 2021 8:34:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 256
+[0m2021.02.17 20:35:28 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals4225288712339694988/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:35:34 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:35:41 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:35:44 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:35:48 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:35:48 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 20:36:00 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:36:02 INFO  [success] Total time: 14 s, completed Feb 17, 2021 8:36:02 PM[0m
+[0m2021.02.17 20:36:03 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:36:03 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:36:08 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:36:14 INFO  [success] Total time: 10 s, completed Feb 17, 2021 8:36:14 PM[0m
+[0m2021.02.17 20:36:14 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 20:36:15 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 20:36:19 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 20:36:19 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 20:36:19 INFO  [success] Total time: 3 s, completed Feb 17, 2021 8:36:19 PM[0m
+[0m2021.02.17 20:36:19 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 20:36:19 INFO  time: ran 'sbt bloopInstall' in 50s[0m
+[0m2021.02.17 20:36:19 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:36:20 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 20:36:20 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 20:36:21 ERROR timeout: build server 'bloop' during shutdown[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 20:36:22 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2968418636760958135/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2968418636760958135/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2968418636760958135/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:36:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:36:23 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 20:36:23 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3114602302526765009/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher534273501009500696/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher534273501009500696/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher534273501009500696/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:36:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3114602302526765009/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3114602302526765009/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:36:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:36:23 INFO  time: connected to build server in 1.33s[0m
+[0m2021.02.17 20:36:23 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:36:23 INFO  time: imported build in 0.3s[0m
+[0m2021.02.17 20:36:40 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 20:36:40 INFO  time: indexed workspace in 16s[0m
+[0m2021.02.17 20:39:27 INFO  compiling root (1 scala source)[0m
+Feb 17, 2021 8:39:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.02.17 20:40:23 INFO  time: compiled root in 56s[0m
+[0m2021.02.17 20:44:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 20:44:01 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals9016183631023813623/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:44:19 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:44:24 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:44:27 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:44:38 INFO  time: compiled root in 36s[0m
+[0m2021.02.17 20:44:39 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:44:39 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 20:44:49 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:44:57 INFO  [success] Total time: 16 s, completed Feb 17, 2021 8:44:57 PM[0m
+[0m2021.02.17 20:44:58 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:44:58 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:45:00 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:45:07 INFO  [success] Total time: 9 s, completed Feb 17, 2021 8:45:07 PM[0m
+[0m2021.02.17 20:45:07 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 20:45:08 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 20:45:11 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 20:45:11 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 20:45:11 INFO  [success] Total time: 2 s, completed Feb 17, 2021 8:45:11 PM[0m
+[0m2021.02.17 20:45:11 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 20:45:12 INFO  time: ran 'sbt bloopInstall' in 1m10s[0m
+[0m2021.02.17 20:45:12 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:45:12 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 20:45:12 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 20:45:14 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:45:14 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5631156208751916225/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5631156208751916225/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5631156208751916225/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:45:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:45:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6319398472706342413/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.17 20:45:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8425411087224418766/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6319398472706342413/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6319398472706342413/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:45:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8425411087224418766/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8425411087224418766/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:45:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:45:18 INFO  time: connected to build server in 4.35s[0m
+[0m2021.02.17 20:45:18 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:45:18 INFO  time: imported build in 0.27s[0m
+[0m2021.02.17 20:45:30 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 20:45:30 INFO  time: indexed workspace in 11s[0m
+Feb 17, 2021 8:48:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 400
+Feb 17, 2021 8:48:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 401
+Feb 17, 2021 8:48:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 404
+Feb 17, 2021 8:48:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 397
+Feb 17, 2021 8:48:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 407
+Feb 17, 2021 8:48:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 408
+Feb 17, 2021 8:49:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": "git:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala?%7B%22path%22%3A%22%2Fhome%2Fmelissawhite%2Frevature-project2%2Fproject-2%2Ffiltered-stream%2Ftwitterfilteredstream%2Fsrc%2Fmain%2Fscala%2Fcom%2FRunner.scala%22%2C%22ref%22%3A%22%22%7D"
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:440)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:437)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:934)
+	... 16 more
+
+Feb 17, 2021 8:53:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 468
+[0m2021.02.17 20:53:51 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5039519027312519632/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 20:53:58 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 20:54:00 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:54:05 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 20:54:08 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 20:54:08 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+Exception in thread "pool-8-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+[0m2021.02.17 20:54:14 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 20:54:14 INFO  [success] Total time: 6 s, completed Feb 17, 2021 8:54:15 PM[0m
+[0m2021.02.17 20:54:15 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 20:54:15 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 20:54:20 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 20:54:26 INFO  time: code lens generation in 1.31s[0m
+[0m2021.02.17 20:54:31 INFO  [success] Total time: 15 s, completed Feb 17, 2021 8:54:31 PM[0m
+[0m2021.02.17 20:54:31 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 20:54:32 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 20:54:40 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 20:54:40 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 20:54:40 INFO  [success] Total time: 7 s, completed Feb 17, 2021 8:54:40 PM[0m
+[0m2021.02.17 20:54:40 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 20:54:41 INFO  time: ran 'sbt bloopInstall' in 49s[0m
+[0m2021.02.17 20:54:41 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 20:54:41 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 20:54:41 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.17 20:54:43 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 20:54:43 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4881108598907239103/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4881108598907239103/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4881108598907239103/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:54:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:54:44 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 20:54:44 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3285827750405165778/bsp.socket'...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher589310873174830729/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3285827750405165778/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3285827750405165778/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:54:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher589310873174830729/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher589310873174830729/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 20:54:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 20:54:45 INFO  time: connected to build server in 1.83s[0m
+[0m2021.02.17 20:54:45 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 20:54:45 INFO  time: imported build in 0.36s[0m
+Caught unexpected io exception handling event for /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2
+java.nio.file.NoSuchFileException: /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/src/main/scala-2
+	at com.swoval.files.NativeDirectoryLister.fillResults(NativeDirectoryLister.java:93)
+	at com.swoval.files.NativeDirectoryLister.apply(NativeDirectoryLister.java:48)
+	at com.swoval.files.SimpleFileTreeView$Lister.impl(SimpleFileTreeView.java:149)
+	at com.swoval.files.SimpleFileTreeView$Lister.fillResults(SimpleFileTreeView.java:140)
+	at com.swoval.files.SimpleFileTreeView.list(SimpleFileTreeView.java:50)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:568)
+	at com.swoval.files.CachedDirectoryImpl.init(CachedDirectoryImpl.java:557)
+	at com.swoval.files.FileCacheDirectoryTree.newCachedDirectory(FileCacheDirectoryTree.java:623)
+	at com.swoval.files.FileCacheDirectoryTree.handleEvent(FileCacheDirectoryTree.java:298)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:79)
+	at com.swoval.files.FileTreeRepositories$1.onNext(FileTreeRepositories.java:73)
+	at com.swoval.files.Observers.onNext(Observers.java:31)
+	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:423)
+	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:447)
+	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)
+	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)
+	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)
+[0m2021.02.17 20:55:26 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 20:55:26 INFO  time: indexed workspace in 40s[0m
+[0m2021.02.17 20:56:27 INFO  time: code lens generation in 2.27s[0m
+[0m2021.02.17 20:58:14 INFO  time: code lens generation in 1.17s[0m
+Exception in thread "pool-9-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess$$anonfun$onCompilerJobQueue$1.apply$mcV$sp(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Feb 17, 2021 9:02:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 681
+Feb 17, 2021 9:02:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 703
+Feb 17, 2021 9:02:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 720
+[0m2021.02.17 21:06:51 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals354312492217330595/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 21:07:05 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 21:07:09 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+[0m2021.02.17 21:07:11 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 21:07:31 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 21:07:31 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 21:07:42 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 21:07:42 INFO  [success] Total time: 10 s, completed Feb 17, 2021 9:07:43 PM[0m
+[0m2021.02.17 21:07:43 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 21:07:43 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 21:07:45 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 21:07:55 INFO  [success] Total time: 11 s, completed Feb 17, 2021 9:07:55 PM[0m
+[0m2021.02.17 21:07:55 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 21:07:56 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+[0m2021.02.17 21:08:02 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 21:08:02 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 21:08:02 INFO  [success] Total time: 6 s, completed Feb 17, 2021 9:08:02 PM[0m
+[0m2021.02.17 21:08:02 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 21:08:03 INFO  time: ran 'sbt bloopInstall' in 1m11s[0m
+[0m2021.02.17 21:08:03 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 21:08:03 INFO  Shut down connection with build server.[0m
+[0m2021.02.17 21:08:05 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 21:08:05 ERROR timeout: build server 'bloop' during shutdown[0m
+No more data in the client stdin, exiting...
+[0m2021.02.17 21:08:05 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5428460912817110065/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5428460912817110065/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5428460912817110065/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 21:08:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 21:08:06 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.17 21:08:06 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8801590136645260278/bsp.socket'...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher874262197588384040/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8801590136645260278/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8801590136645260278/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher874262197588384040/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher874262197588384040/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.17 21:08:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 21:08:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/melissawhite/.cache/metals/bsp.trace.json[0m
+[0m2021.02.17 21:08:07 INFO  time: connected to build server in 1.59s[0m
+[0m2021.02.17 21:08:07 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.17 21:08:08 INFO  time: imported build in 0.93s[0m
+[0m2021.02.17 21:09:07 WARN  Could not find java sources in Some(/usr/lib/jvm/java-8-openjdk-amd64). Java symbols will not be available.[0m
+[0m2021.02.17 21:09:07 INFO  time: indexed workspace in 59s[0m
+Exception in thread "pool-10-thread-1" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "pool-1-thread-133" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at com.sun.proxy.$Proxy9.buildTargetCompile(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$compile$1(BuildServerConnection.scala:102)
+	at scala.meta.internal.metals.BuildServerConnection$$Lambda$3501/1908837793.apply(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:214)
+	at scala.meta.internal.metals.BuildServerConnection$$Lambda$3022/129727888.apply(Unknown Source)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+	at scala.concurrent.Future$$Lambda$274/124108683.apply(Unknown Source)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.Promise$$Lambda$275/695353374.apply(Unknown Source)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Feb 17, 2021 9:09:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 844
+Exception in thread "pool-10-thread-2" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Feb 17, 2021 9:10:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 849
+Feb 17, 2021 9:10:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 860
+Feb 17, 2021 9:10:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 856
+Feb 17, 2021 9:10:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+Exception in thread "pool-10-thread-3" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Exception in thread "pool-10-thread-4" java.lang.OutOfMemoryError: GC overhead limit exceeded
+Feb 17, 2021 9:15:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 894
+Feb 17, 2021 9:15:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 899
+Feb 17, 2021 9:15:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 904
+[0m2021.02.17 21:15:33 ERROR code navigation does not work for the file '/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala/com/Runner.scala' because the build target root is being compiled. Wait until compilation is finished and try again.[0m
+Feb 17, 2021 9:15:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 905
+Feb 17, 2021 9:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 914
+Feb 17, 2021 9:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 915
+Feb 17, 2021 9:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 919
+Feb 17, 2021 9:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 921
+Feb 17, 2021 9:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 923
+Feb 17, 2021 9:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 913
+Feb 17, 2021 9:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 922
+Feb 17, 2021 9:15:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 926
+Feb 17, 2021 9:15:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 931
+Feb 17, 2021 9:15:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 927
+Feb 17, 2021 9:15:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 916
+[0m2021.02.17 21:15:44 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals399573075733039825/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.17 21:15:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.17 21:16:09 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.17 21:16:58 INFO  [warn] In the last 26 seconds, 8.35 (33.1%) were spent in GC. [Heap: 0.08GB free of 0.12GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 21:17:03 INFO  [info] loading settings for project twitterfilteredstream-build-build-build from metals.sbt ...[0m
+Exception in thread "pool-10-thread-5" java.lang.OutOfMemoryError: GC overhead limit exceeded
+[0m2021.02.17 21:17:14 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project/project[0m
+[0m2021.02.17 21:17:49 INFO  [info] loading settings for project twitterfilteredstream-build-build from metals.sbt ...[0m
+[0m2021.02.17 21:17:49 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/project[0m
+[0m2021.02.17 21:18:11 INFO  [success] Generated .bloop/twitterfilteredstream-build-build.json[0m
+[0m2021.02.17 21:18:15 INFO  [success] Total time: 23 s, completed Feb 17, 2021 9:18:14 PM[0m
+[0m2021.02.17 21:18:21 INFO  [warn] In the last 8 seconds, 6.18 (85.9%) were spent in GC. [Heap: 0.26GB free of 0.30GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 21:18:22 INFO  [info] loading settings for project twitterfilteredstream-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.17 21:18:22 INFO  [info] loading project definition from /home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project[0m
+[0m2021.02.17 21:18:27 INFO  [success] Generated .bloop/twitterfilteredstream-build.json[0m
+[0m2021.02.17 21:18:34 INFO  [success] Total time: 11 s, completed Feb 17, 2021 9:18:34 PM[0m
+[0m2021.02.17 21:18:36 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.17 21:18:38 INFO  [info] set current project to twitterfilteredstream (in build file:/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/)[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.17 21:18:50 INFO  [warn] In the last 9 seconds, 5.828 (70.8%) were spent in GC. [Heap: 0.23GB free of 0.30GB, max 0.68GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m2021.02.17 21:18:54 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.17 21:18:54 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.17 21:18:54 INFO  [success] Total time: 12 s, completed Feb 17, 2021 9:18:54 PM[0m
+[0m2021.02.17 21:18:54 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.17 21:18:55 INFO  time: ran 'sbt bloopInstall' in 3m10s[0m
+[0m2021.02.17 21:18:55 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.17 21:18:57 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 21:18:57 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 21:18:57 ERROR timeout: build server 'bloop' during shutdown[0m
+[0m2021.02.17 21:19:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.17 21:23:41 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:118)
+	at scala.meta.internal.metals.BloopServers$$anon$1.run(BloopServers.scala:159)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m

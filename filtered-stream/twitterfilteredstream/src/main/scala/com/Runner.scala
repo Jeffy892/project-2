@@ -31,8 +31,9 @@ object run {
     spark.sparkContext.setLogLevel("WARN")
 
     // streamTweets()
+    //langTweetStream(spark)
     // langCount(spark)
-    getLang(spark)
+    getLangStat(spark)
 
     def statuslistener = new StatusListener() {
       def onStatus(status: Status) {
@@ -47,14 +48,13 @@ object run {
 
       def printToFile(status: Status, file: String) {
         val filewriter = new FileWriter(file, true)
-        println("filewriter start")
         filewriter.write(s"${status.getLang}\n")
         filewriter.flush()
         filewriter.close()
-        println("------------------------")
+        println("-------------")
       }
     }
-
+    
     def streamTweets(): Unit = {
       val twitterStream = new TwitterStreamFactory(config).getInstance
       val query = new FilterQuery()
@@ -71,6 +71,16 @@ object run {
       twitterStream.shutdown
     }
 
+    // def langTweetStream(spark): Unit {
+    //   import scala.concurrent.ExecutionContext.Implicits.global
+    //   Future {
+    //     streamTweets()
+    //   }
+    //   val staticDf = spark.read.csv("tweets/bts.csv")
+    //   staticDf.
+
+    // }
+
     def langCount(spark: SparkSession): Unit = {
       import spark.implicits._
       val df = spark.read
@@ -79,14 +89,13 @@ object run {
 
       println("langCount df schema")
       df.printSchema()
-      df.show(false)
+      df.show(100, false)
 
       println("count number of languages")
-      val countLangs = df.select(countDistinct("lang")).show(false)
+      val countLangs = df.select(countDistinct("lang")).show(100, false)
 
       println("count per language")
-      val countPerLang =
-        df.groupBy("lang").count.sort(desc("count")).show(false)
+      val countPerLang = df.groupBy("lang").count.sort(desc("count")).show(100, false)
 
       df.createOrReplaceTempView("languages")
 
@@ -94,18 +103,16 @@ object run {
       val numTweets = spark.sql("SELECT COUNT(lang) FROM languages").show(false)
 
       println("language count / total tweets = ratio")
-      val ratio = spark
-        .sql(
-          "SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc"
-        )
-        .show(false)
+      val ratio = spark.sql("SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc")
+      ratio.show(100, false)
     }
+
     //get languages from json sample data
-    def getLang(spark: SparkSession): Unit = {
+    def getLangStat(spark: SparkSession): Unit = {
       import spark.implicits._
 
       val df = spark.read
-        .json("tweets/sampled-data/*")
+        .json("tweets-sampled-data/*")
         // .json("tweets/bts.json") //test sample
         .select("data.lang")
 
@@ -113,26 +120,25 @@ object run {
       df.printSchema()
       df.show()
 
-      println("Sample Data Analysis")
+      println("--------Sample Data Analysis--------")
       df.createOrReplaceTempView("languages")
 
       println("total tweets about BTS")
-      val numTweets = spark
-        .sql("SELECT COUNT(lang) as total_tweets FROM languages")
-        .show(false)
+      val numTweets = spark.sql("SELECT COUNT(lang) as total_tweets FROM languages")
+      numTweets.show(false)
+
+      println("number of languages")
+      val countLangs = df.select(countDistinct("lang"))
+      countLangs.show(100, false)
+
 
       println("count per language")
-      val countPerLang = spark.sql(
-        "SELECT COUNT(lang) as count_per_lang FROM languages GROUP BY lang"
-      )
+      val countPerLang = spark.sql("SELECT lang, COUNT(lang) as count_per_lang FROM languages GROUP BY lang ORDER BY count_per_lang desc")
+      countPerLang.show(100, false)
 
       println("language count / total tweets = ratio")
-      val ratio = spark
-        .sql(
-          "SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc"
-        )
-        .show(false)
-
+      val ratio = spark.sql("SELECT lang, COUNT(lang) as count, (COUNT(lang) / (SELECT count(lang) FROM languages as total)) as lang_to_total_ratio FROM languages GROUP BY lang ORDER BY count desc")
+      ratio.show(100, false)
     }
   }
 }
