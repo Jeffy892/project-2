@@ -53,9 +53,9 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 * Rank countries where most twitter users are located. 
 
-02/13 morning             |  02/13 afternoon
-:-------------------------:|:-------------------------:
-![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig1.png)
+02/12 all day              | 02/13 morning             |  02/13 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0212_allday_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig1.png)
 
 * Count different spoken languages which twitter users in each country tweet in their texts. 
   ![fig2](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig2.png)
