@@ -255,19 +255,17 @@ object TwitterStream {
 
 
         staticDf
-    
             .filter($"data.text".contains("#kpop") || 
                     $"data.text".contains("#k_pop") ||
                     $"data.text".contains("@kpop") ||
                     $"data.text".contains("@k_pop")
             )
-            .filter($"data.text".contains("#reminniescence"))
             .select($"data.text", $"data.public_metrics.retweet_count")
             .groupBy($"text")
             .sum()
             .sort($"sum(retweet_count)".desc)
             .write
-            .json(s"tweetstream-topretweets-states-$millis")
+            .json(s"tweetstream-topretweets-$millis")
     }
 
     /**

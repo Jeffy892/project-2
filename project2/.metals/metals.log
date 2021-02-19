@@ -18930,3 +18930,1044 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.02.18 18:16:59 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
 [0m2021.02.18 18:17:00 WARN  Could not find java sources in None. Java symbols will not be available.[0m
 [0m2021.02.18 18:17:00 INFO  time: indexed workspace in 1.3s[0m
+[0m2021.02.18 18:18:05 INFO  shutting down Metals[0m
+[0m2021.02.18 18:18:05 INFO  Shut down connection with build server.[0m
+[0m2021.02.18 18:18:05 INFO  Shut down connection with build server.[0m
+[0m2021.02.18 18:18:05 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.19 08:11:24 INFO  Started: Metals version 0.9.10 in workspace '/home/jeffy892/project2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.19 08:11:24 INFO  time: initialize in 0.25s[0m
+[0m2021.02.19 08:11:24 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1872452102565496756/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.19 08:11:24 INFO  skipping build import with status 'Installed'[0m
+[0m2021.02.19 08:11:26 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/jeffy892/project2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/jeffy892/project2/project2/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/jeffy892/project2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/jeffy892/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/jeffy892/project2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1872452102565496756/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1872452102565496756/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 08:11:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/jeffy892/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 08:11:27 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.19 08:11:27 Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3393013613171035361/bsp.socket'...INFO 
+ Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher568750594761817835/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3393013613171035361/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3393013613171035361/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher568750594761817835/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher568750594761817835/bsp.socket...
+[0m2021.02.19 08:11:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/jeffy892/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 08:11:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/jeffy892/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 08:11:27 INFO  time: connected to build server in 2.22s[0m
+[0m2021.02.19 08:11:27 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.19 08:11:27 INFO  time: imported build in 0.14s[0m
+[0m2021.02.19 08:11:29 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.19 08:11:29 INFO  time: indexed workspace in 1.94s[0m
+[0m2021.02.19 08:11:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:40 INFO  time: compiled root in 1.72s[0m
+[0m2021.02.19 08:11:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:40 INFO  time: compiled root in 0.16s[0m
+[0m2021.02.19 08:11:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:40 INFO  time: compiled root in 0.15s[0m
+[0m2021.02.19 08:11:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:40 INFO  time: compiled root in 0.1s[0m
+[0m2021.02.19 08:11:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:42 INFO  time: compiled root in 76ms[0m
+[0m2021.02.19 08:11:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:42 INFO  time: compiled root in 0.11s[0m
+[0m2021.02.19 08:11:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:42 INFO  time: compiled root in 71ms[0m
+[0m2021.02.19 08:11:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:42 INFO  time: compiled root in 70ms[0m
+[0m2021.02.19 08:11:43 INFO  compiling root (1 scala source)[0m
+Feb 19, 2021 8:11:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 48
+[0m2021.02.19 08:11:43 INFO  time: compiled root in 0.11s[0m
+[0m2021.02.19 08:11:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:43 INFO  time: compiled root in 92ms[0m
+[0m2021.02.19 08:11:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:43 INFO  time: compiled root in 67ms[0m
+[0m2021.02.19 08:11:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:45 INFO  time: compiled root in 66ms[0m
+[0m2021.02.19 08:11:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:45 INFO  time: compiled root in 81ms[0m
+[0m2021.02.19 08:11:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:45 INFO  time: compiled root in 66ms[0m
+[0m2021.02.19 08:11:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:46 INFO  time: compiled root in 67ms[0m
+[0m2021.02.19 08:11:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:46 INFO  time: compiled root in 65ms[0m
+[0m2021.02.19 08:11:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:47 INFO  time: compiled root in 0.1s[0m
+[0m2021.02.19 08:11:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:47 INFO  time: compiled root in 64ms[0m
+[0m2021.02.19 08:11:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:47 INFO  time: compiled root in 70ms[0m
+[0m2021.02.19 08:11:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:47 INFO  time: compiled root in 66ms[0m
+[0m2021.02.19 08:11:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:48 INFO  time: compiled root in 63ms[0m
+[0m2021.02.19 08:11:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:48 INFO  time: compiled root in 91ms[0m
+[0m2021.02.19 08:11:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:50 INFO  time: compiled root in 62ms[0m
+[0m2021.02.19 08:11:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:50 INFO  time: compiled root in 0.46s[0m
+[0m2021.02.19 08:11:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:51 INFO  time: compiled root in 0.54s[0m
+[0m2021.02.19 08:11:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:51 INFO  time: compiled root in 0.1s[0m
+[0m2021.02.19 08:11:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:51 INFO  time: compiled root in 93ms[0m
+[0m2021.02.19 08:11:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:52 INFO  time: compiled root in 0.17s[0m
+[0m2021.02.19 08:11:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:52 INFO  time: compiled root in 94ms[0m
+[0m2021.02.19 08:11:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:52 INFO  time: compiled root in 99ms[0m
+[0m2021.02.19 08:11:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:54 INFO  time: compiled root in 0.12s[0m
+[0m2021.02.19 08:11:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:54 INFO  time: compiled root in 86ms[0m
+[0m2021.02.19 08:11:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:54 INFO  time: compiled root in 83ms[0m
+[0m2021.02.19 08:11:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:54 INFO  time: compiled root in 80ms[0m
+[0m2021.02.19 08:11:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:55 INFO  time: compiled root in 0.12s[0m
+[0m2021.02.19 08:11:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:55 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:11:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:57 INFO  time: compiled root in 0.45s[0m
+[0m2021.02.19 08:11:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:57 INFO  time: compiled root in 82ms[0m
+[0m2021.02.19 08:11:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:58 INFO  time: compiled root in 0.28s[0m
+[0m2021.02.19 08:11:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:11:58 INFO  time: compiled root in 91ms[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 83ms[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 87ms[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 88ms[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 82ms[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 0.12s[0m
+[0m2021.02.19 08:12:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:00 INFO  time: compiled root in 81ms[0m
+[0m2021.02.19 08:12:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:01 INFO  time: compiled root in 78ms[0m
+[0m2021.02.19 08:12:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:01 INFO  time: compiled root in 78ms[0m
+[0m2021.02.19 08:12:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:01 INFO  time: compiled root in 81ms[0m
+[0m2021.02.19 08:12:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:01 INFO  time: compiled root in 87ms[0m
+[0m2021.02.19 08:12:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:02 INFO  time: compiled root in 79ms[0m
+[0m2021.02.19 08:12:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:02 INFO  time: compiled root in 87ms[0m
+[0m2021.02.19 08:12:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:02 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.19 08:12:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:03 INFO  time: compiled root in 0.45s[0m
+[0m2021.02.19 08:12:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:03 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:12:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:05 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:05 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:06 INFO  time: compiled root in 0.51s[0m
+[0m2021.02.19 08:12:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:07 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:08 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:10 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:10 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:10 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:10 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:11 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:12:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:11 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:12 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:12 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:14 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:14 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:15 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:12:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:15 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:19 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:19 INFO  time: compiled root in 0.51s[0m
+[0m2021.02.19 08:12:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:20 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:12:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:20 INFO  time: compiled root in 0.33s[0m
+[0m2021.02.19 08:12:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:22 INFO  time: compiled root in 0.33s[0m
+[0m2021.02.19 08:12:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:25 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:25 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:26 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:26 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:28 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:29 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:29 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:30 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:30 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:31 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:31 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:21: stale bloop error: unclosed string literal
+            println("Please select the following actions)
+                    ^[0m
+[0m2021.02.19 08:12:31 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:21: stale bloop error: unclosed string literal
+            println("Please select the following actions)
+                    ^[0m
+[0m2021.02.19 08:12:31 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:12:31 INFO  time: compiled root in 69ms[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:21: stale bloop error: unclosed string literal
+            println("Please select the following actions)
+                    ^[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:21: stale bloop error: unclosed string literal
+            println("Please select the following actions)
+                    ^[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:21: stale bloop error: unclosed string literal
+            println("Please select the following actions)
+                    ^[0m
+[0m2021.02.19 08:12:32 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:12:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:31 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:58: stale bloop error: unclosed string literal
+            println("Please select the following actions"")
+                                                         ^[0m
+[0m2021.02.19 08:12:31 INFO  time: compiled root in 62ms[0m
+[0m2021.02.19 08:12:33 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:58: stale bloop error: unclosed string literal
+            println("Please select the following actions"")
+                                                         ^[0m
+[0m2021.02.19 08:12:33 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:10:58: stale bloop error: unclosed string literal
+            println("Please select the following actions"")
+                                                         ^[0m
+[0m2021.02.19 08:12:34 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:34 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:34 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:34 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:41 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:41 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:12:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:42 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:12:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:45 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:45 INFO  time: compiled root in 79ms[0m
+[0m2021.02.19 08:12:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:45 INFO  time: compiled root in 80ms[0m
+[0m2021.02.19 08:12:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 79ms[0m
+[0m2021.02.19 08:12:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 0.11s[0m
+[0m2021.02.19 08:12:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 0.11s[0m
+[0m2021.02.19 08:12:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 78ms[0m
+[0m2021.02.19 08:12:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 82ms[0m
+[0m2021.02.19 08:12:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:46 INFO  time: compiled root in 78ms[0m
+Feb 19, 2021 8:12:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 328
+Feb 19, 2021 8:12:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 330
+Feb 19, 2021 8:12:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 331
+Feb 19, 2021 8:12:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 332
+[0m2021.02.19 08:12:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:47 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:47 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:12:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:49 INFO  time: compiled root in 0.49s[0m
+[0m2021.02.19 08:12:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:49 INFO  time: compiled root in 0.47s[0m
+[0m2021.02.19 08:12:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:51 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:12:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:52 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:52 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:53 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:12:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:53 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:54 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:12:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:54 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:57 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:57 INFO  time: compiled root in 90ms[0m
+[0m2021.02.19 08:12:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:57 INFO  time: compiled root in 96ms[0m
+[0m2021.02.19 08:12:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:57 INFO  time: compiled root in 76ms[0m
+[0m2021.02.19 08:12:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:58 INFO  time: compiled root in 72ms[0m
+[0m2021.02.19 08:12:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:58 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:12:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:12:58 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:21: stale bloop error: unclosed string literal
+            println("
+                    ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:21: stale bloop error: unclosed string literal
+            println("
+                    ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:13:13: stale bloop error: unclosed string literal
+            ")
+            ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:15:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:13:00 INFO  time: compiled root in 63ms[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:21: stale bloop error: unclosed string literal
+            println("
+                    ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:13:13: stale bloop error: unclosed string literal
+            ")
+            ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:15:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:12:21: stale bloop error: unclosed string literal
+            println("
+                    ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:13:13: stale bloop error: unclosed string literal
+            ")
+            ^[0m
+[0m2021.02.19 08:13:00 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:15:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:13:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:00 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:04 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:13:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:13:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:08 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:13:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:09 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:13:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:13 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:18 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:18 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.19 08:13:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:19 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:13:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:19 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:13:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:24 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:30 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:13:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:30 INFO  time: compiled root in 0.52s[0m
+[0m2021.02.19 08:13:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:31 INFO  time: compiled root in 0.48s[0m
+[0m2021.02.19 08:13:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:31 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:32 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:40 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:40 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:41 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:41 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:43 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:47 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:47 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:48 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:13:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:49 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:13:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:52 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:13:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:56 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:13:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:56 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:13:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:13:58 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:04 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:11 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:11 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:12 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:12 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:12 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:14 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:14 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.19 08:14:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:15 INFO  time: compiled root in 0.56s[0m
+[0m2021.02.19 08:14:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:16 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:16 INFO  time: compiled root in 0.59s[0m
+[0m2021.02.19 08:14:17 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:17 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:17 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:17 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:17 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:19 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:19 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:14:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:19 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:20 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:20 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:21 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:21 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:21 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:22 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:22 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:24 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:24 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:14:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:25 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:27 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:27 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:28 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:28 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:14:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:30 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:30 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:31 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:31 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:32 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:32 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:33 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:37 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:37 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:37 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:39 INFO  time: compiled root in 0.7s[0m
+[0m2021.02.19 08:14:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:39 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:39 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:40 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:41 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:41 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:42 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:14:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:42 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:14:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:42 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:43 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:43 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:14:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:44 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:44 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:45 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:45 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:47 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:47 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:14:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:48 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:48 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:50 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:54 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:54 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:55 INFO  time: compiled root in 0.3s[0m
+[0m2021.02.19 08:14:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:55 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:57 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:14:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:57 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:58 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:14:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:58 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:14:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:59 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:14:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:14:59 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:00 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:15:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:00 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:02 INFO  time: compiled root in 0.54s[0m
+[0m2021.02.19 08:15:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:03 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:04 INFO  time: compiled root in 0.59s[0m
+[0m2021.02.19 08:15:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:04 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:04 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:07 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:07 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:08 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:08 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:08 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:08 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:09 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:11 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:11 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:12 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:12 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:13 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:13 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:15 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:15 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:15 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:16 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:16 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:15:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:17 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:17 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:17 INFO  time: compiled root in 0.37s[0m
+Feb 19, 2021 8:15:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 838
+Feb 19, 2021 8:15:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 843
+Feb 19, 2021 8:15:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 851
+Feb 19, 2021 8:15:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 857
+[0m2021.02.19 08:15:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:38 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:38 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:39 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:15:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:39 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:40 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:15:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:40 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:40 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:15:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:41 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:42 INFO  time: compiled root in 0.56s[0m
+[0m2021.02.19 08:15:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:42 INFO  time: compiled root in 0.68s[0m
+[0m2021.02.19 08:15:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:44 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:44 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:45 INFO  time: compiled root in 0.35s[0m
+[0m2021.02.19 08:15:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:45 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:45 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:47 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:48 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:49 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:49 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:50 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:15:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:50 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:50 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.19 08:15:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:52 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:52 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:53 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:15:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:54 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:15:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:54 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:15:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:15:55 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:16:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:01 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:16:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:01 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:32: stale bloop error: unclosed string literal
+            println("trending "")
+                               ^[0m
+[0m2021.02.19 08:16:01 INFO  time: compiled root in 63ms[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:32: stale bloop error: unclosed string literal
+            println("trending "")
+                               ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:32: stale bloop error: unclosed string literal
+            println("trending "")
+                               ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:32: stale bloop error: unclosed string literal
+            println("trending "")
+                               ^[0m
+[0m2021.02.19 08:16:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:01 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending )
+                    ^[0m
+[0m2021.02.19 08:16:01 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending )
+                    ^[0m
+[0m2021.02.19 08:16:01 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:01 INFO  time: compiled root in 64ms[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending )
+                    ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending )
+                    ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending )
+                    ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:02 INFO  time: compiled root in 62ms[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:02 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:02 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:02 INFO  time: compiled root in 83ms[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:03 INFO  time: compiled root in 58ms[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:21: stale bloop error: unclosed string literal
+            println("trending :)
+                    ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:18:9: stale bloop error: ')' expected but '}' found.
+        }
+        ^[0m
+[0m2021.02.19 08:16:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  time: compiled root in 59ms[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:04 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:03 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:03 INFO  time: compiled root in 58ms[0m
+[0m2021.02.19 08:16:06 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:06 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:16:33: stale bloop error: unclosed string literal
+            println("trending :"")
+                                ^[0m
+[0m2021.02.19 08:16:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:06 INFO  time: compiled root in 0.36s[0m
+Feb 19, 2021 8:16:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 973
+Feb 19, 2021 8:16:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 981
+Feb 19, 2021 8:16:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 987
+Feb 19, 2021 8:16:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 992
+[0m2021.02.19 08:16:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:22 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:16:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:23 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:23 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:23 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:23 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:23 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.19 08:16:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:24 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:26 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:16:26 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:26 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:26 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:26 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:27 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:16:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:27 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:16:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:28 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:16:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:28 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:29 INFO  time: compiled root in 0.6s[0m
+[0m2021.02.19 08:16:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:29 INFO  time: compiled root in 0.68s[0m
+[0m2021.02.19 08:16:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:30 INFO  time: compiled root in 0.36s[0m
+Feb 19, 2021 8:16:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1029
+[0m2021.02.19 08:16:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:45 INFO  time: compiled root in 1.75s[0m
+[0m2021.02.19 08:16:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:49 INFO  time: compiled root in 1.05s[0m
+Feb 19, 2021 8:16:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1062
+[0m2021.02.19 08:16:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:55 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:16:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:55 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:57 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:16:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:57 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.19 08:16:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:57 INFO  time: compiled root in 0.24s[0m
+[0m2021.02.19 08:16:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:58 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:16:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:58 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:16:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:59 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:16:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:16:59 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:17:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:05 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 08:17:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:05 INFO  time: compiled root in 80ms[0m
+[0m2021.02.19 08:17:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:05 INFO  time: compiled root in 62ms[0m
+[0m2021.02.19 08:17:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:06 INFO  time: compiled root in 84ms[0m
+[0m2021.02.19 08:17:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:06 INFO  time: compiled root in 62ms[0m
+[0m2021.02.19 08:17:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:06 INFO  time: compiled root in 77ms[0m
+[0m2021.02.19 08:17:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:06 INFO  time: compiled root in 75ms[0m
+[0m2021.02.19 08:17:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:07 INFO  time: compiled root in 87ms[0m
+[0m2021.02.19 08:17:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:07 INFO  time: compiled root in 63ms[0m
+[0m2021.02.19 08:17:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:09 INFO  time: compiled root in 91ms[0m
+[0m2021.02.19 08:17:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:09 INFO  time: compiled root in 83ms[0m
+[0m2021.02.19 08:17:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:09 INFO  time: compiled root in 89ms[0m
+[0m2021.02.19 08:17:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:12 INFO  time: compiled root in 95ms[0m
+[0m2021.02.19 08:17:12 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:12 INFO  time: compiled root in 92ms[0m
+Feb 19, 2021 8:17:13 AM scala.meta.internal.pc.CompilerAccess scala$meta$internal$pc$CompilerAccess$$retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.02.19 08:17:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:14 INFO  time: compiled root in 91ms[0m
+[0m2021.02.19 08:17:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:14 INFO  time: compiled root in 61ms[0m
+[0m2021.02.19 08:17:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:14 INFO  time: compiled root in 92ms[0m
+[0m2021.02.19 08:17:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:16 INFO  time: compiled root in 89ms[0m
+[0m2021.02.19 08:17:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:16 INFO  time: compiled root in 87ms[0m
+[0m2021.02.19 08:17:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:18 INFO  time: compiled root in 59ms[0m
+[0m2021.02.19 08:17:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:18 INFO  time: compiled root in 82ms[0m
+[0m2021.02.19 08:17:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:20 INFO  time: compiled root in 75ms[0m
+[0m2021.02.19 08:17:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:20 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.19 08:17:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:21 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:17:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:22 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:17:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:22 INFO  time: compiled root in 0.39s[0m
+[0m2021.02.19 08:17:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:23 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:27 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.19 08:17:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:27 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:17:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:28 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.19 08:17:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:32 INFO  time: compiled root in 72ms[0m
+[0m2021.02.19 08:17:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:32 INFO  time: compiled root in 77ms[0m
+[0m2021.02.19 08:17:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:32 INFO  time: compiled root in 79ms[0m
+[0m2021.02.19 08:17:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:32 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:33 INFO  time: compiled root in 65ms[0m
+[0m2021.02.19 08:17:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:33 INFO  time: compiled root in 73ms[0m
+[0m2021.02.19 08:17:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:33 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:34 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:34 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:38 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.19 08:17:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:39 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.19 08:17:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:39 INFO  time: compiled root in 0.45s[0m
+[0m2021.02.19 08:17:41 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:41 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:35:10: stale bloop error: Invalid literal number
+         0else if(args(0) == "run")TwitterStream.popularKpopAnalysis(spark)
+         ^[0m
+[0m2021.02.19 08:17:41 INFO  time: compiled root in 71ms[0m
+[0m2021.02.19 08:17:42 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:35:10: stale bloop error: Invalid literal number
+         0else if(args(0) == "run")TwitterStream.popularKpopAnalysis(spark)
+         ^[0m
+[0m2021.02.19 08:17:42 INFO  /home/jeffy892/project2/project2/src/main/scala/com/revature/project2/Runner.scala:35:10: stale bloop error: Invalid literal number
+         0else if(args(0) == "run")TwitterStream.popularKpopAnalysis(spark)
+         ^[0m
+[0m2021.02.19 08:17:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:43 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:46 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.19 08:17:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:48 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.19 08:17:48 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:49 INFO  time: compiled root in 0.43s[0m
+[0m2021.02.19 08:17:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:17:57 INFO  time: compiled root in 0.43s[0m
+[0m2021.02.19 08:18:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:18:13 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.19 08:18:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:18:15 INFO  time: compiled root in 0.63s[0m
+[0m2021.02.19 08:18:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:18:16 INFO  time: compiled root in 1s[0m
+Feb 19, 2021 8:18:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1379
+Feb 19, 2021 8:19:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1394
+Feb 19, 2021 8:19:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1400
+Feb 19, 2021 8:20:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1409
+Feb 19, 2021 8:20:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1420
+[0m2021.02.19 08:20:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:20:32 INFO  time: compiled root in 0.83s[0m
+[0m2021.02.19 08:20:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 08:20:33 INFO  time: compiled root in 0.82s[0m
+Feb 19, 2021 8:23:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1487
+Feb 19, 2021 8:23:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1510
+Feb 19, 2021 8:24:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1567
