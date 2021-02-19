@@ -39,7 +39,6 @@ object Runner {
 
         import scala.concurrent.ExecutionContext.Implicits.global
 
-        /**
         Future {
             tweetStreamToDir(bearerToken, queryString = "")
         }
@@ -54,14 +53,14 @@ object Runner {
           println("Error: Unable to populate tweetstream after 30 seconds.  Exiting..")
           System.exit(1)
         }
-        */
-        val staticDf = spark.read.json("twitterstream")
+        
+        val staticDf = spark.read.json("file:///home/clair/project-2/hashtagassociation/twitterstream")
 
         staticDf.printSchema()
 
-        val streamDf = spark.readStream.schema(staticDf.schema).json("twitterstream")
+        val streamDf = spark.readStream.schema(staticDf.schema).json("file:///home/clair/project-2/hashtagassociation/twitterstream")
 
-        val pattern = "#BTS +(#[a-zA-Z]+)".r
+        val pattern = ".* +#[Bb][Tt][Ss] +(#[a-zA-Z0-9]+) +.*".r
 
         streamDf
           .select($"data.text")
@@ -83,7 +82,7 @@ object Runner {
 
     def tweetStreamToDir(
       bearerToken: String,
-      dirname: String = "twitterstream",
+      dirname: String = "file:///home/clair/project-2/hashtagassociation/twitterstream",
       linesPerFile: Int = 1000,
       queryString: String = ""
   ) = {

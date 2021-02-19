@@ -417,3 +417,12 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.02.12 13:37:59 INFO  time: imported build in 0.18s[0m
 [0m2021.02.12 13:38:04 WARN  Could not find java sources in None. Java symbols will not be available.[0m
 [0m2021.02.12 13:38:08 INFO  time: indexed workspace in 9.19s[0m
+[0m2021.02.12 13:43:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.12 13:43:34 INFO  time: compiled root in 7.07s[0m
+[0m2021.02.12 14:11:55 INFO  shutting down Metals[0m
+[0m2021.02.12 14:11:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.02.12 14:11:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.02.12 14:11:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
