@@ -17,9 +17,9 @@
     - `trending` : it will filter and count all the retweets for each tags.
 
 #### Responsibilities
-    - Learn and use the Twitter API
-    - Collect information from tweets using Twitter API and Spark Streaming
-    - Write SparkSQL code to analyze the twitter data to answer the questions
-    - Managed the team's project github repo
-    - Wrote curl commands that request specific tweets with enough information using the twitter API
-    - Created google slides that explains the results of my analysis
+- Learn and use the Twitter API
+- Collect information from tweets using Twitter API and Spark Streaming
+- Write SparkSQL code to analyze the twitter data to answer the questions
+- Managed the team's project github repo
+- Wrote curl commands that request specific tweets with enough information using the twitter API
+- Created google slides that explains the results of my analysis
