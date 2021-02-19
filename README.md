@@ -71,3 +71,6 @@ curl -X POST 'https://api.twitter.com/2/tweets/search/stream/rules' \
 The jar files that are used in this project are contained in the `jar files` folder.
 
 
+### Google Slide Presentation
+
+https://docs.google.com/presentation/d/1MCluH6Jtp52zT6qFNj7vkehwvd70PPPzB8jWmgj6Ed4/edit?usp=sharing
