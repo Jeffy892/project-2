@@ -53,7 +53,11 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ### EDA
 
-## To-do Features in the Future 
+## List of features 
+
+* Top15 countries where most twitter users are located. [fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
+
+## TODOs for future development
 
 * Word Counting (optional for project 2, will do in project 3)
 
