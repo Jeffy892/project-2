@@ -49,15 +49,15 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Twitter Data Query
 
-## Twitter Data Analysis
+## Twitter Data Analysis: List of Features 
 
-### EDA
-
-## List of features 
-
-* List countries where twitter users are located. [fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
-* Count languages which twitter users from different countries are used in their texts. [fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
-* Identify languages to which the country, where twitter users are located, corresponds. [ig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
+* Rank countries where most twitter users are located. 
+  ![fig1-1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png?raw=true)
+  ![fig1-2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_afternoon_fig1.png?raw=true)
+* Count different spoken languages which twitter users in each country tweet in their texts. 
+  ![fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
+* Identify languages to which each given country, where twitter users post tweets, corresponds. 
+  ![fig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
 
 ## TODOs for future development
 
