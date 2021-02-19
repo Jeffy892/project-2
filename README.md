@@ -41,7 +41,8 @@ Project 2 is a twitter data analysis project where we use Twitter API to analyze
 
 We used the curl command line below to gather filtered stream using twitter API.
 
-``` curl 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name' -H "Authorization: Bearer $TWITTER_BEARER_TOKEN"
+``` 
+curl 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name' -H "Authorization: Bearer $TWITTER_BEARER_TOKEN"
 ```
 
 In the twitter API we added rules that will allow twitter's filtered stream to return tweets that contains `#kpop`, `@kpop`, `#k_pop`, `@k_pop`, `#BTS`, `@BTS` tags.
