@@ -5,19 +5,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Specific Questions to Answer
 
-- How often is the BTS hashtag used with other hashtags? 
-  * What are some of these other hashtags associated with?
-- What is the average of likes that a common BTS post gets?
-- What are common words that people have used with the BTS hashtag?
-  * How has this varied over time?
-- How is Kpop being compared/linked to American pop?
-  * Which other Kpop artists are famous in the americas?
-  * Which artist is the most trending on Twitter?
-  * Which states/country tweets the most about Kpop?
-- Analysis on tweets with BTS/BTS-related hashtags and mentions in different languages
-  * How many languages are tweeting about BTS?
-  * What is the distribution of languages tweeting about BTS? 
-- **How is the #BTS distributed over different geo-locations? (Mindy Jen)**
+- **How is #BTS distributed globally? (Mindy Jen)**
 
 ## Resposibilities
 
@@ -51,9 +39,9 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Twitter Data Analysis: List of features 
 
-* List countries where twitter users are located. [fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
-* Count languages which twitter users from different countries are used in their texts. [fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
-* Identify languages to which the country, where twitter users are located, corresponds. [ig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
+* List countries where twitter users are located. ![fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
+* Count languages which twitter users from different countries are used in their texts. ![fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
+* Identify languages to which the country, where twitter users are located, corresponds. ![fig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
 
 ## TODOs for future development
 
