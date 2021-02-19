@@ -1,0 +1,109 @@
++--------------------+--------------------+--------------------+
+|                data|            includes|      matching_rules|
++--------------------+--------------------+--------------------+
+|[2021-02-15T22:13...|[[[Ukraine, 084d0...|[[136141668834486...|
+|[2021-02-15T22:15...|[[[Japan, 06ef846...|[[136141668834486...|
+|[2021-02-15T22:20...|[[[Iki-shi, Nagas...|[[136141668834486...|
+|[2021-02-15T22:22...|[[[Tampico, Tamau...|[[136141668834486...|
+|[2021-02-15T22:30...|[[[Neyagawa-shi, ...|[[136141668834486...|
+|[2021-02-15T21:47...|[[[Grand Prairie,...|[[136141668834486...|
+|[2021-02-15T21:49...|[[[Ukraine, 084d0...|[[136141668834486...|
+|[2021-02-15T21:50...|[[[Central Coast,...|[[136141668834486...|
+|[2021-02-15T21:59...|[[[Bangkalan, Ind...|[[136141668834486...|
++--------------------+--------------------+--------------------+
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
+== Parsed Logical Plan ==
+'Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour('data.created_at, None) AS Hr#21, minute('data.created_at, None) AS Min#22, second('data.created_at, None) AS Sec#23, 'includes.places.full_name AS Place#24, 'data.lang AS Language#25, 'data.public_metrics.retweet_count AS Retweets#26, 'data.public_metrics.reply_count AS Replies#27, 'data.public_metrics.like_count AS Likes#28, 'data.public_metrics.quote_count AS Quotes#29, 'data.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+Time: timestamp, Date: date, Hr: int, Min: int, Sec: int, Place: array<string>, Language: string, Retweets: bigint, Replies: bigint, Likes: bigint, Quotes: bigint, Tweet: string
+Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(1) Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/BTS_geoOnly_210215_1pm-2pm_C..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<place_id:string>,id:string,lang:string,public_met...
+(1) MapPartitionsRDD[11] at rdd at tweetMoreSparkSql.scala:41 []
+ |  SQLExecutionRDD[10] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[9] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[8] at rdd at tweetMoreSparkSql.scala:41 []
+ |  FileScanRDD[7] at rdd at tweetMoreSparkSql.scala:41 []
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|Time               |Date      |Hr |Min|Sec|Place                           |Language|Retweets|Replies|Likes|Quotes|Tweet                                                                                                                                                                                                                                                                                                     |index|
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|2021-02-15 15:47:11|2021-02-15|15 |47 |11 |[Grand Prairie, TX]             |und     |0       |0      |1    |0     |☃️❄️💜@BTS_twt #BTS #BTSARMY #SnowDay https://t.co/s3QM00N5Kr                                                                                                                                                                                                                                             |1    |
+|2021-02-15 15:49:54|2021-02-15|15 |49 |54 |[Ukraine]                       |ru      |0       |0      |1    |0     |@Mashitrique @Laety_KC [RUS]
+🔴 #КРАСНАЯЛИНИЯСТРАХА часть 14
+« Ты не знаешь меня »
+14/28
+#BTS #JIMIN #DREADLINE #TAEHYUNG #VMIN https://t.co/JLPipY8iJr                                                                                                                                                   |2    |
+|2021-02-15 15:50:10|2021-02-15|15 |50 |10 |[Central Coast, New South Wales]|en      |0       |0      |0    |0     |Do you remember when you joined Twitter just for #BTS? I do! My life has never been the same!! 😁
+
+THANK YOU @BTS_twt
+THANK YOU #BTSARMY
+3 YEARS TODAY!! 🥳🥳
+ALSO FOR THE FUTURE BEST YEARS OF MY LIFE!!
+#BTS_SAVED_ME 
+Thank you xoxo
+😘💜🥺😍🎶🕺🇦🇺💯
+
+ #MyTwitterAnniversary https://t.co/IIsaPF4lGv|3    |
+|2021-02-15 15:59:49|2021-02-15|15 |59 |49 |[Bangkalan, Indonesia]          |in      |0       |0      |1    |0     |bangga banget banget bangettt sama bayik satu ini 😭💜🖤apasiii yg uri jungkook gabisa 😝🤣🖤 thanks for ur hard work baby❤prod bgt❤💜
+#JUNGKOOK #BTS @BTS_twt https://t.co/FIVO4kFysg                                                                                                                    |4    |
+|2021-02-15 16:13:37|2021-02-15|16 |13 |37 |[Ukraine]                       |ru      |0       |0      |1    |0     |@Mashitrique @Laety_KC [RUS]
+🔴 #КРАСНАЯЛИНИЯСТРАХА часть 15
+« Новое начало над облаками »
+15/28
+#BTS #JIMIN #DREADLINE #TAEHYUNG #VMIN https://t.co/7QRm4zUDMt                                                                                                                                           |5    |
+|2021-02-15 16:15:36|2021-02-15|16 |15 |36 |[Japan]                         |ja      |0       |0      |0    |0     |シグナル主題歌👏Back  numberとコラボ❗️今夜はタリョラ💞楽しみいっぱい〜
+#BTS 
+#방탄소년단
+#テテ
+#シグナル主題歌
+#runbtsep84 https://t.co/5S6iYE6f15                                                                                                                                                        |6    |
+|2021-02-15 16:20:49|2021-02-15|16 |20 |49 |[Iki-shi, Nagasaki]             |ja      |0       |0      |0    |0     |『#ダイナマイト って、あの国民的人気グループの人気曲の。懐かしいなぁ』ってそっちじゃないのね。
+
+『その曲知らないやー』と思ってたら、わりと聴いたことある曲だったわ...
+
+#BTS #SMAP #ダイナマイト #おじさんあるある #おじある
+
+https://t.co/ZE3l833qFa                                                      |7    |
+|2021-02-15 16:22:02|2021-02-15|16 |22 |2  |[Tampico, Tamaulipas]           |es      |0       |0      |0    |0     |#BTS #blackswanshop #bedeluxe #bts_twt #ARMYBTSEstaClaro  envíos a toda la República Mexicana #Tampico #madero #altamira a sus órdenes https://t.co/1jqz8Nvu15                                                                                                                                            |8    |
+|2021-02-15 16:30:52|2021-02-15|16 |30 |52 |[Neyagawa-shi, Osaka]           |ja      |0       |0      |0    |0     |backnumberとBTS…
+あかん時代の流れに着いていけない！
+よし聞いてみよ！
+#backnumber
+#BTS
+#時代
+
+https://t.co/OopIpG85bA                                                                                                                                                                                      |9    |
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+

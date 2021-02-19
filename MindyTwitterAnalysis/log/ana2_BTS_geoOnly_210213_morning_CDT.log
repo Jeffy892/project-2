@@ -1,0 +1,605 @@
++--------------------+------------------------------+--------------------+
+|                data|                      includes|      matching_rules|
++--------------------+------------------------------+--------------------+
+|[2021-02-13T12:59...|          [[[Щекино, Тульск...|[[135995859914608...|
+|[2021-02-13T13:39...|          [[[Massachusetts,...|[[135995859914608...|
+|[2021-02-13T13:52...|          [[[Botswana, 8a92...|[[135995859914608...|
+|[2021-02-13T13:53...|          [[[Pajangan, Indo...|[[135995859914608...|
+|[2021-02-13T13:54...|          [[[Lemahabang, In...|[[135995859914608...|
+|[2021-02-13T13:56...|[[[방탄소년단 버스정류장 BT...|[[135995859914608...|
+|[2021-02-13T13:56...|          [[[Bengaluru Sout...|[[135995859914608...|
+|[2021-02-13T13:57...|          [[[Нытвенский рай...|[[135995859914608...|
+|[2021-02-13T13:02...|          [[[Myanmar, 765e4...|[[135995859914608...|
+|[2021-02-13T14:02...|          [[[Botswana, 8a92...|[[135995859914608...|
+|[2021-02-13T14:09...|          [[[Seongdong-gu, ...|[[135995859914608...|
+|[2021-02-13T13:19...|     [[[桃谷商店街, 0fc3af6...|[[135995859914608...|
+|[2021-02-13T13:20...|          [[[Santa Maria, I...|[[135995859914608...|
+|[2021-02-13T13:22...|          [[[Kasaoka-shi, O...|[[135995859914608...|
+|[2021-02-13T13:23...|          [[[Rivers, Nigeri...|[[135995859914608...|
+|[2021-02-13T13:31...|          [[[Carapicuíba, B...|[[135995859914608...|
+|[2021-02-13T14:40...|          [[[Mungyeong-si, ...|[[135995859914608...|
+|[2021-02-13T14:41...|          [[[Montevideo, Ur...|[[135995859914608...|
+|[2021-02-13T14:41...|          [[[Georgia, 60fcb...|[[135995859914608...|
+|[2021-02-13T15:44...|          [[[Grajaú, Brasil...|[[135995859914608...|
++--------------------+------------------------------+--------------------+
+only showing top 20 rows
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- coordinates: struct (nullable = true)
+ |    |    |    |-- coordinates: array (nullable = true)
+ |    |    |    |    |-- element: double (containsNull = true)
+ |    |    |    |-- type: string (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
+== Parsed Logical Plan ==
+'Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour('data.created_at, None) AS Hr#21, minute('data.created_at, None) AS Min#22, second('data.created_at, None) AS Sec#23, 'includes.places.full_name AS Place#24, 'data.lang AS Language#25, 'data.public_metrics.retweet_count AS Retweets#26, 'data.public_metrics.reply_count AS Replies#27, 'data.public_metrics.like_count AS Likes#28, 'data.public_metrics.quote_count AS Quotes#29, 'data.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+Time: timestamp, Date: date, Hr: int, Min: int, Sec: int, Place: array<string>, Language: string, Retweets: bigint, Replies: bigint, Likes: bigint, Quotes: bigint, Tweet: string
+Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(1) Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/twitterFilteredStream_210213..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<coordinates:struct<coordinates:array<double>,type...
+(1) MapPartitionsRDD[11] at rdd at tweetMoreSparkSql.scala:41 []
+ |  SQLExecutionRDD[10] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[9] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[8] at rdd at tweetMoreSparkSql.scala:41 []
+ |  FileScanRDD[7] at rdd at tweetMoreSparkSql.scala:41 []
++-------------------+----------+---+---+---+------------------------------------+--------+--------+-------+-----+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|Time               |Date      |Hr |Min|Sec|Place                               |Language|Retweets|Replies|Likes|Quotes|Tweet                                                                                                                                                                                                                                                                                           |index|
++-------------------+----------+---+---+---+------------------------------------+--------+--------+-------+-----+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |1    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |2    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |3    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |4    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |5    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |6    |
+|2021-02-13 06:59:25|2021-02-13|6  |59 |25 |[Щекино, Тульская область]          |en      |0       |0      |0    |0     |@BTS_twt 
+#V congratulations on the victory! You are now officially the most handsome male idol of 2021. Congratulations from the bottom of my heart, you deserve it!
+#BTS #TaehyungYouArePerfect #TaehyunOurShiningStar #TAEHYUNG #topface2021 #taehyungweloveyou https://t.co/zWCEntgMrN      |7    |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |8    |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |9    |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |10   |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |11   |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |12   |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |13   |
+|2021-02-13 07:02:23|2021-02-13|7  |2  |23 |[Myanmar]                           |en      |0       |0      |0    |0     |My country is internet would be down so l wish for our sunshine today😌
+Happy birthday to you 💜
+#JHOPE 
+#BTS                                                                                                                                                                                   |14   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|15   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|16   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|17   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|18   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|19   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|20   |
+|2021-02-13 07:19:06|2021-02-13|7  |19 |6  |[桃谷商店街]                        |ja      |0       |0      |0    |0     |💞J-HOPE💞のセンイルを
+お祝いして
+カップホルダーイベントを
+開催致します。
+
+🗓️：2021.2.18 ~ 2.21
+         11時 ~ 15時
+🏖️:  Sarang Cafe　
+ 
+詳細は公知を参照にしてください
+
+#ジェイホープ #BTSカップホルダー
+#정호석 #호석 #제이홉  #BTS 
+#제이홉컵홀더
+#my_galaxy_JHope https://t.co/kwaK4XXaN3|21   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |29   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |30   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |31   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |32   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |33   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |34   |
+|2021-02-13 07:22:36|2021-02-13|7  |22 |36 |[Kasaoka-shi, Okayama]              |ja      |0       |0      |0    |0     |#ぺこぱ風 にいえば、原爆Tシャツを着て謝りもしない #BTS がちやほやされるんだから、女性を論じただけで謝って、それでもゆるされない森喜朗がちやほやされる時代が、
+
+あったって、いい。                                                                                                               |35   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |36   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |37   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |38   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |39   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |40   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |41   |
+|2021-02-13 07:23:15|2021-02-13|7  |23 |15 |[Rivers, Nigeria]                   |en      |0       |0      |0    |0     |Soul soothing🥺 just came across namjoons photo card in our Map of the soul 7 album, never knew its been there all this while😍
+#btsarmys #mots7 #KimNamjoon #BTS #Armys #lifegoeson https://t.co/QqWh4wKzTa                                                                                    |42   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |50   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |51   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |52   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |53   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |54   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |55   |
+|2021-02-13 07:39:22|2021-02-13|7  |39 |22 |[Massachusetts, USA]                |en      |0       |0      |0    |0     |Sitting at my desk at work and thinking to myself.... Will I ever be able to see @BTS_twt in concert? With this whole pandemic....my hope is slowly fading🥺😕😔 #bts #savemebts                                                                                                                |56   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |57   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |58   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |59   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |60   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |61   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |62   |
+|2021-02-13 07:52:06|2021-02-13|7  |52 |6  |[Botswana]                          |en      |0       |0      |0    |0     |ARMY ONCE AGAIN BE CAREFUL OF WHOM YOU ARE VOTING FOR! ONLY VOTE FOR J-HOPE!!!!!🚨 #JHOPE @BTS_twt https://t.co/OhnhkrZJtO                                                                                                                                                                      |63   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |78   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |79   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |80   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |81   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |82   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |83   |
+|2021-02-13 07:56:33|2021-02-13|7  |56 |33 |[방탄소년단 버스정류장 BTS Bus Stop]|und     |0       |0      |0    |0     |#4YearsWithSpringDay 🌸
+#BTS #방탄소년단 @BTS_twt https://t.co/8u3iOdMOJP                                                                                                                                                                                                                       |84   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |92   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |93   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |94   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |95   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |96   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |97   |
+|2021-02-13 07:57:59|2021-02-13|7  |57 |59 |[Нытвенский район, Россия]          |ru      |0       |0      |0    |0     |Два месяца шли браслеты с Алика
+Старая и малая арми уписались от счастья
+#BTS #ARMY https://t.co/aRASFvfeKV                                                                                                                                                                                     |98   |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |99   |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |100  |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |101  |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |102  |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |103  |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |104  |
+|2021-02-13 08:02:12|2021-02-13|8  |2  |12 |[Botswana]                          |en      |0       |0      |0    |0     |ARMY BE CAREFUL THE GAP IS DECREASING!!!!!🚨🚨🚨🚨🚨🚨 ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE! ONLY VOTE FOR J-HOPE!!! ONLY VOTE FOR J-HOPE!!! #JHOPE @BTS_twt
+https://t.co/cZtObA2cc9                                                                                                      |105  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |119  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |120  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |121  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |122  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |123  |
+|2021-02-13 08:25:57|2021-02-13|8  |25 |57 |[Botswana]                          |en      |1       |0      |1    |0     |We've lost the lead within 20 hours 3 minutes! If you haven't voted, please do it now cause we can't lose yet another birthday ad votings for J-Hope!!!! #JHOPE @BTS_twt https://t.co/cZtObA2cc9                                                                                                |124  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |149  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |150  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |151  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |152  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |153  |
+|2021-02-13 08:37:24|2021-02-13|8  |37 |24 |[Guayaquil, Ecuador]                |es      |0       |0      |0    |0     |Para quien vive y respira música es un alivio mantener al menos un álbum no explorado. Solo me quedó el #kpop https://t.co/qOV0RyZFqD                                                                                                                                                           |154  |
+|2021-02-13 08:39:10|2021-02-13|8  |39 |10 |[Botswana]                          |en      |0       |0      |0    |0     |Oh dear.... I hope Army will participate in this voting for our J-Hope!!!!! We have to support all the members! So let's do it right and vote for J-Hope!!!! He deserves to win the promotional banner in Thailand.❎💜 @BTS_twt #JHOPE
+https://t.co/cZtObA2cc9                                  |161  |
+|2021-02-13 08:39:10|2021-02-13|8  |39 |10 |[Botswana]                          |en      |0       |0      |0    |0     |Oh dear.... I hope Army will participate in this voting for our J-Hope!!!!! We have to support all the members! So let's do it right and vote for J-Hope!!!! He deserves to win the promotional banner in Thailand.❎💜 @BTS_twt #JHOPE
+https://t.co/cZtObA2cc9                                  |162  |
+|2021-02-13 08:39:10|2021-02-13|8  |39 |10 |[Botswana]                          |en      |0       |0      |0    |0     |Oh dear.... I hope Army will participate in this voting for our J-Hope!!!!! We have to support all the members! So let's do it right and vote for J-Hope!!!! He deserves to win the promotional banner in Thailand.❎💜 @BTS_twt #JHOPE
+https://t.co/cZtObA2cc9                                  |163  |
+|2021-02-13 08:39:10|2021-02-13|8  |39 |10 |[Botswana]                          |en      |0       |0      |0    |0     |Oh dear.... I hope Army will participate in this voting for our J-Hope!!!!! We have to support all the members! So let's do it right and vote for J-Hope!!!! He deserves to win the promotional banner in Thailand.❎💜 @BTS_twt #JHOPE
+https://t.co/cZtObA2cc9                                  |164  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |165  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |166  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |167  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |168  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |169  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |170  |
+|2021-02-13 08:40:27|2021-02-13|8  |40 |27 |[Mungyeong-si, Republic of Korea]   |en      |0       |0      |0    |0     |Long time no see🤭
+Hye Insta friends😉
+
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #Taetae #Bwi #Vie #BabyBear #210213 https://t.co/4MOmjdpQwK                                                         |171  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |186  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |187  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |188  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |189  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |190  |
+|2021-02-13 08:44:45|2021-02-13|8  |44 |45 |[Central, Paraguay]                 |es      |0       |0      |0    |0     |Cuando te dicen que debes de cuidarle a tu sobrino y que te comportes 😅 #Ddaeng  #BTS #jhope https://t.co/OuT1LcnTK9                                                                                                                                                                           |191  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |192  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |193  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |194  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |195  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |196  |
+|2021-02-13 08:50:30|2021-02-13|8  |50 |30 |[Dobong-gu, Republic of Korea]      |ko      |0       |0      |0    |0     |방탄에서 새해 복 많이 받으세요💜
+#BTS #ARMY #KimNamjoon #KimSeokjin #MinYoongi #JungHoseok #ParkJimin #KimTaehyung #JeonJungkook #RM #JIN #SUGA #JHOPE #JIMIN #V #JK #HNY #Seollal #210213 @ 새해복많이받으세요 https://t.co/JhwqZcpchl                                                         |197  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |198  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |199  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |200  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |201  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |202  |
+|2021-02-13 08:59:12|2021-02-13|8  |59 |12 |[Milan, Lombardy]                   |en      |0       |0      |0    |0     |The awards that BTS won at the 2021 Radio Planeta Awards: • Best pop song: Dynamite • Best K-pop group: BTS • You are my favorite person: Jungkook Cr: btsturkey. @bts.bighitofficial en Milan, Italy https://t.co/kMOtsW2nqg                                                                   |203  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |264  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |265  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |266  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |267  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |268  |
+|2021-02-13 09:08:19|2021-02-13|9  |8  |19 |[Chom Phon, Thailand]               |en      |0       |0      |0    |0     |6.13 will always be our lucky numbers @BTS_twt https://t.co/zsTLGuXYEL                                                                                                                                                                                                                          |269  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |270  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |271  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |272  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |273  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |274  |
+|2021-02-13 09:12:16|2021-02-13|9  |12 |16 |[Botswana]                          |en      |0       |0      |0    |0     |So we've went up to 933k for LGO but still we didn't make 1M views. Let's bring our energy back into streaming LGO before the release of BE Essential!!!! Let's increase all of our views starting now! @BTS_twt #BTS #RM #JIN #SUGA #JHOPE #JIMIN #V #JUNGKOOK https://t.co/PNoppbVnra         |275  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |282  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |283  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |284  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |285  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |286  |
+|2021-02-13 09:16:33|2021-02-13|9  |16 |33 |[Arizona, USA]                      |en      |0       |0      |0    |0     |@BTS_twt I love you guys BTS ❤️ #BTS #RM                                                                                                                                                                                                                                                        |287  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |288  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |289  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |290  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |291  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |292  |
+|2021-02-13 09:18:23|2021-02-13|9  |18 |23 |[Province of Novosibirsk, Russia]   |ru      |0       |0      |0    |0     |😭 Чимини добавил часы и столик...
+"На этих часах всегда 6:13"...
+
+#BTS #방탄소년단 #BTS_BE 
+#Curated_for_ARMY #Jimin #지민 https://t.co/4pla5EXdNu                                                                                                                                             |293  |
+|2021-02-13 09:31:35|2021-02-13|9  |31 |35 |[San José, Costa Rica]              |und     |0       |0      |0    |0     |@BTS twt https://t.co/stI2GDkEjQ                                                                                                                                                                                                                                                                |318  |
+|2021-02-13 09:31:35|2021-02-13|9  |31 |35 |[San José, Costa Rica]              |und     |0       |0      |0    |0     |@BTS twt https://t.co/stI2GDkEjQ                                                                                                                                                                                                                                                                |319  |
+|2021-02-13 09:31:35|2021-02-13|9  |31 |35 |[San José, Costa Rica]              |und     |0       |0      |0    |0     |@BTS twt https://t.co/stI2GDkEjQ                                                                                                                                                                                                                                                                |320  |
+|2021-02-13 09:31:35|2021-02-13|9  |31 |35 |[San José, Costa Rica]              |und     |0       |0      |0    |0     |@BTS twt https://t.co/stI2GDkEjQ                                                                                                                                                                                                                                                                |321  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |344  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |345  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |346  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |347  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |348  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |349  |
+|2021-02-13 09:48:07|2021-02-13|9  |48 |7  |[Ногинский район, Россия]           |und     |0       |0      |0    |0     |😍👍🏻👍🏻@BTS_twt #ARMY https://t.co/z5dXHumdbM                                                                                                                                                                                                                                                |350  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |351  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |352  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |353  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |354  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |355  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |356  |
+|2021-02-13 09:48:21|2021-02-13|9  |48 |21 |[Cilandak, Indonesia]               |en      |0       |0      |0    |0     |Wow @aliciakeys made Life Goes On soulful 💜💜💜💜💜 tag @bts_bighit @BTS_twt @BTSW_official @BTS_ARMY @BTS_jp_official @bts #BTS_twt #LifeGoesOn #BTS_BE #RM #BTSwithARMY #JIMIN https://t.co/st7eAW41Kx                                                                                       |357  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |358  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |359  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |360  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |361  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |362  |
+|2021-02-13 09:48:26|2021-02-13|9  |48 |26 |[Kalideres, Indonesia]              |und     |0       |0      |0    |0     |#GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt 🙆🏻‍♀️ https://t.co/UOGd6xiijo                                                                                                                                                                               |363  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |364  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |365  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |366  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |367  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |368  |
+|2021-02-13 09:49:25|2021-02-13|9  |49 |25 |[Montevideo, Uruguay]               |es      |0       |0      |0    |0     |Mi jiminieprecioso de mi vida te amo mi bebé 💜🌸🌹💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 지민 (Jimin)
+@BTS_twt
+
+🖼🎧 https://t.co/RpbeZorZ4b
+
+#Curated_for_ARMY #Jimin #지민 https://t.co/GDiCXleYWp                                                                                 |369  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |370  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |371  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |372  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |373  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |374  |
+|2021-02-13 09:50:31|2021-02-13|9  |50 |31 |[Kalideres, Indonesia]              |in      |0       |0      |0    |0     |saengil chukkae! 💜ternyata kita beda sehariii , doanya yang terbaik aja dalam segala hal 🙆🏻‍♀️  #GAWITHLILTANNIE #JHOPEBIRTHDAYPROJECT #URISUNSHINEHOBI #방탄소년단 #BTS @BTS_twt https://t.co/dOijTcS91w                                                                                    |375  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |388  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |390  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |392  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |394  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |396  |
+|2021-02-13 10:00:46|2021-02-13|10 |0  |46 |[Vicenza, Veneto]                   |en      |0       |0      |0    |0     |@bts_bighit #Curated_for_ARMY #JIMIN #BTS loveee you thank you💜💜💜💜💜💜💜💜💜💜💜                                                                                                                                                                                                            |398  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |412  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |413  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |414  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |415  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |416  |
+|2021-02-13 10:17:30|2021-02-13|10 |17 |30 |[India]                             |en      |0       |0      |0    |0     |Take and go BTS album batch 💜
+So blessed to jump from 4 orders to 30 albums all together.
+#BTS #btsmerch #kpopsupplier  #kpopshop #btsalbums https://t.co/oo8nQ7Je1m                                                                                                                           |417  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |430  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |431  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |432  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |433  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |434  |
+|2021-02-13 10:19:29|2021-02-13|10 |19 |29 |[Potsdam, Germany]                  |de      |0       |0      |0    |0     |#nowplaying #BTS ~ BTS | Dynamite ||| BB RADIO - In #Eberswalde #Brandenburg #GER auf 95.4                                                                                                                                                                                                      |435  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |436  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |437  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |438  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |439  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |440  |
+|2021-02-13 10:20:02|2021-02-13|10 |20 |2  |[Mumbai, India]                     |und     |0       |0      |0    |0     |#BTS https://t.co/7KzUFu3NoX                                                                                                                                                                                                                                                                    |441  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |442  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |443  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |444  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |445  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |446  |
+|2021-02-13 10:23:36|2021-02-13|10 |23 |36 |[Travelers Rest, SC]                |en      |0       |0      |0    |0     |This week was a hard one. Teaching in person during a pandemic is no joke. Thank god I have BTS and Kdramas for my mental health.  Are any Army teachers struggling too?💜😅 #BTS https://t.co/2deUXz1aqW                                                                                       |447  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |460  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |461  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |462  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |463  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |464  |
+|2021-02-13 10:46:15|2021-02-13|10 |46 |15 |[Pyeongtaek-si, Republic of Korea]  |ko      |0       |0      |0    |0     |위로받고 싶을 때 들어보세요 영탁 이불
+#영탁 #youngtak #영탁이불 #영탁신곡 #뮤직비디오 #영탁의불쑥tv #노래추천 #좋아요 #daily #mood #kpop #music #comforter #valentine 
+#발렌타인데이 https://t.co/mA4jFzoO8x                                                                                    |465  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |466  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |467  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |468  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |469  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |470  |
+|2021-02-13 10:49:54|2021-02-13|10 |49 |54 |[Hua Mak, Thailand]                 |und     |0       |0      |0    |0     |#JIN #김석진 #진 #BTS #방탄소년단진
+ #방탄소년단 #金碩珍 #BTSJIN  #防彈少年團 #KimSeokjin https://t.co/tpzS2uJozn                                                                                                                                                                               |471  |
+|2021-02-13 11:57:16|2021-02-13|11 |57 |16 |[Ukraine]                           |ru      |0       |0      |0    |0     |Я тону в тебе... без желания - выбраться...
+#JIMIN #BTS @BTS_twt https://t.co/XwEVksc224                                                                                                                                                                                                        |490  |
+|2021-02-13 11:57:16|2021-02-13|11 |57 |16 |[Ukraine]                           |ru      |0       |0      |0    |0     |Я тону в тебе... без желания - выбраться...
+#JIMIN #BTS @BTS_twt https://t.co/XwEVksc224                                                                                                                                                                                                        |491  |
++-------------------+----------+---+---+---+------------------------------------+--------+--------+-------+-----+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+

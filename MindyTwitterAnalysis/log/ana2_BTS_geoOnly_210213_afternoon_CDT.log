@@ -1,0 +1,110 @@
++--------------------+--------------------+--------------------+
+|                data|            includes|      matching_rules|
++--------------------+--------------------+--------------------+
+|[2021-02-13T20:04...|[[[Des Plaines, I...|[[136067812891862...|
+|[2021-02-13T20:17...|[[[Magé, Brasil, ...|[[136067812891862...|
+|[2021-02-13T20:34...|[[[Sajira, Indone...|[[136067812891862...|
+|[2021-02-13T20:36...|[[[Sajira, Indone...|[[136067812891862...|
+|[2021-02-13T20:36...|[[[Bogotá, D.C., ...|[[136067812891862...|
+|[2021-02-13T20:40...|[[[London, Englan...|[[136067812891862...|
+|[2021-02-13T20:42...|[[[Bexley, London...|[[136067812891862...|
+|[2021-02-13T20:46...|[[[Pesaro, Marche...|[[136067812891862...|
+|[2021-02-13T20:47...|[[[Vicenza, Venet...|[[136067812891862...|
+|[2021-02-13T20:50...|[[[Los Angeles, C...|[[136067812891862...|
+|[2021-02-13T20:54...|[[[Los Angeles, C...|[[136067812891862...|
+|[2021-02-13T21:11...|[[[Manhattan, NY,...|[[136067812891862...|
+|[2021-02-13T21:13...|[[[Tambov, Russia...|[[136067812891862...|
+|[2021-02-13T21:14...|[[[Paris, France,...|[[136067812891862...|
+|[2021-02-13T21:29...|[[[Tunisia, 5ddc8...|[[136067812891862...|
+|[2021-02-13T21:31...|[[[Barcelona, Spa...|[[136067812891862...|
++--------------------+--------------------+--------------------+
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- coordinates: struct (nullable = true)
+ |    |    |    |-- coordinates: array (nullable = true)
+ |    |    |    |    |-- element: double (containsNull = true)
+ |    |    |    |-- type: string (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
+== Parsed Logical Plan ==
+'Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour('data.created_at, None) AS Hr#21, minute('data.created_at, None) AS Min#22, second('data.created_at, None) AS Sec#23, 'includes.places.full_name AS Place#24, 'data.lang AS Language#25, 'data.public_metrics.retweet_count AS Retweets#26, 'data.public_metrics.reply_count AS Replies#27, 'data.public_metrics.like_count AS Likes#28, 'data.public_metrics.quote_count AS Quotes#29, 'data.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+Time: timestamp, Date: date, Hr: int, Min: int, Sec: int, Place: array<string>, Language: string, Retweets: bigint, Replies: bigint, Likes: bigint, Quotes: bigint, Tweet: string
+Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(1) Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/BTS_geoOnly_210213_2pm-4pm_C..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<coordinates:struct<coordinates:array<double>,type...
+(1) MapPartitionsRDD[11] at rdd at tweetMoreSparkSql.scala:41 []
+ |  SQLExecutionRDD[10] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[9] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[8] at rdd at tweetMoreSparkSql.scala:41 []
+ |  FileScanRDD[7] at rdd at tweetMoreSparkSql.scala:41 []
++-------------------+----------+---+---+---+------------------------+--------+--------+-------+-----+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|Time               |Date      |Hr |Min|Sec|Place                   |Language|Retweets|Replies|Likes|Quotes|Tweet                                                                                                                                                                                                                                                                                                        |index|
++-------------------+----------+---+---+---+------------------------+--------+--------+-------+-----+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|2021-02-13 14:04:10|2021-02-13|14 |4  |10 |[Des Plaines, IL]       |en      |0       |0      |0    |0     |#BTS look at Cook County’s Dept. of Transportation and Highways loading snow fighters at our facility in Des Plaines with 10 tons of salt to prepare for incoming wintry weather. #ilwx https://t.co/oThfrokSH2                                                                                              |1    |
+|2021-02-13 14:34:32|2021-02-13|14 |34 |32 |[Sajira, Indonesia]     |in      |0       |0      |0    |0     |[INFO] 📰 
+
+Hobi adalah artis pertama di dunia yang memiliki pengumuman ulang tahun di menara Times Square di New York - salah satu menara tertinggi di kota dengan ketinggian 111 meter! 
+
+Cr. BrazilWings
+
+ #BTS @BTS_twt #BTSARMY #JHOPE #HOSEOK 
+
+~ 🦋                                                   |3    |
+|2021-02-13 14:36:35|2021-02-13|14 |36 |35 |[Sajira, Indonesia]     |in      |0       |0      |1    |0     |[INFO] 📰 
+
+Hobi adalah artis pertama di dunia yang memiliki pengumuman ulang tahun di menara Times Square di New York - salah satu menara tertinggi di kota dengan ketinggian 111 meter! 
+
+Cr. BrazilWings
+
+ #BTS @BTS_twt #BTSARMY #JHOPE #HOSEOK 
+
+~ 🦋 
+https://t.co/gV8HchFE45                          |4    |
+|2021-02-13 14:36:41|2021-02-13|14 |36 |41 |[Bogotá, D.C., Colombia]|es      |0       |0      |0    |0     |Cuantas fans de #BTS #BTSARMY 🙋🏻‍♀️, lleva tus Post It coleccionables 😍, no te quedes sin el tuyo. 💜 https://t.co/EQ4ibhswYT                                                                                                                                                                             |5    |
+|2021-02-13 14:46:32|2021-02-13|14 |46 |32 |[Pesaro, Marche]        |ko      |0       |0      |0    |0     |내 마음 편견에 해피 발렌타인 데이 박지민 💜✨ 이날 나는 당신의 딤플 인용구로 불법 남자 친구 💜 당신에게 가까이 가고 싶습니다. 안타깝게도 나는 이탈리아 아하하이지만 널 향한 내 사랑 닿길 바래 💜 사랑해 지민 💜 
+
+#BTS @BTS_twt #tojimin #JIMIN #JiminOurValentine #HappyValentinesDay https://t.co/dXFKdrBHp8|8    |
+|2021-02-13 14:47:44|2021-02-13|14 |47 |44 |[Vicenza, Veneto]       |it      |0       |0      |0    |0     |#Dynamite a c'è posta per te😍😍😍😍😍😍😍😍 proud💜💜💜💜💜💜
+#BTS #Dynamite #ARMY #BTSWORLD #btsworlddominations 
+#BTS_BE_Essential #btsdynamite                                                                                                                                                           |9    |
+|2021-02-13 14:54:23|2021-02-13|14 |54 |23 |[Los Angeles, CA]       |en      |0       |0      |0    |0     |Edited some more #BTS of my time shooting with @miaV_me! Make up and footage by @Lilcarreiro! 
+
+Lingerie by @HoneyBirdette and  The End Lingerie https://t.co/TQWSa5ibzW                                                                                                                                     |11   |
+|2021-02-13 15:13:24|2021-02-13|15 |13 |24 |[Tambov, Russia]        |ru      |0       |0      |1    |0     |Жили-были братья Чон. 
+Каждый был лишь в них влюблён...
+
+#BTS #ATEEZ 🐰🦊
+#JUNGKOOK #WOOYOUNG https://t.co/LfyP11lNzn                                                                                                                                                                                        |13   |
+|2021-02-13 15:31:35|2021-02-13|15 |31 |35 |[Barcelona, Spain]      |en      |0       |0      |0    |0     |#club #bar #soul #dj #moscow #bts #jimin #jungkook #bangtanboys #parkjimin #suga #anime #jin #jhope #kimtaehyung #jeonjungkook #taehyung #v #kpop #cosplay en Barcelona, Spain https://t.co/QxTSqvlb0S                                                                                                       |16   |
++-------------------+----------+---+---+---+------------------------+--------+--------+-------+-----+------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+

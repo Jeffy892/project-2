@@ -1,0 +1,104 @@
++--------------------+--------------------+--------------------+
+|                data|            includes|      matching_rules|
++--------------------+--------------------+--------------------+
+|[2021-02-15T17:28...|[[[United Arab Em...|[[136098615688884...|
+|[2021-02-15T17:28...|[[[United Arab Em...|[[136098615688884...|
+|[2021-02-15T17:38...|[[[Russia, RU, Sa...|[[136098615688884...|
+|[2021-02-15T15:30...|[[[Uruguay, UY, M...|[[136098615688884...|
+|[2021-02-15T15:31...|[[[Uruguay, UY, M...|[[136098615688884...|
+|[2021-02-15T15:36...|[[[Thailand, TH, ...|[[136098615688884...|
+|[2021-02-15T16:11...|[[[France, FR, Pa...|[[136098615688884...|
+|[2021-02-15T16:23...|[[[Russia, RU, Mo...|[[136098615688884...|
+|[2021-02-15T16:26...|[[[Tunisia, TN, T...|[[136098615688884...|
+|[2021-02-15T16:52...|[[[Republic of Ko...|[[136098615688884...|
+|[2021-02-15T16:53...|[[[Brazil, BR, Ri...|[[136098615688884...|
++--------------------+--------------------+--------------------+
+
+root
+ |-- data: struct (nullable = true)
+ |    |-- created_at: string (nullable = true)
+ |    |-- geo: struct (nullable = true)
+ |    |    |-- place_id: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- lang: string (nullable = true)
+ |    |-- public_metrics: struct (nullable = true)
+ |    |    |-- like_count: long (nullable = true)
+ |    |    |-- quote_count: long (nullable = true)
+ |    |    |-- reply_count: long (nullable = true)
+ |    |    |-- retweet_count: long (nullable = true)
+ |    |-- text: string (nullable = true)
+ |-- includes: struct (nullable = true)
+ |    |-- places: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- country: string (nullable = true)
+ |    |    |    |-- country_code: string (nullable = true)
+ |    |    |    |-- full_name: string (nullable = true)
+ |    |    |    |-- id: string (nullable = true)
+ |-- matching_rules: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- id: long (nullable = true)
+ |    |    |-- tag: string (nullable = true)
+
+== Parsed Logical Plan ==
+'Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour('data.created_at, None) AS Hr#21, minute('data.created_at, None) AS Min#22, second('data.created_at, None) AS Sec#23, 'includes.places.full_name AS Place#24, 'data.lang AS Language#25, 'data.public_metrics.retweet_count AS Retweets#26, 'data.public_metrics.reply_count AS Replies#27, 'data.public_metrics.like_count AS Likes#28, 'data.public_metrics.quote_count AS Quotes#29, 'data.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Analyzed Logical Plan ==
+Time: timestamp, Date: date, Hr: int, Min: int, Sec: int, Place: array<string>, Language: string, Retweets: bigint, Replies: bigint, Likes: bigint, Quotes: bigint, Tweet: string
+Project [to_timestamp('data.created_at, None) AS Time#19, to_date('data.created_at, None) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Optimized Logical Plan ==
+Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- Relation[data#0,includes#1,matching_rules#2] json
+
+== Physical Plan ==
+*(1) Project [cast(data#0.created_at as timestamp) AS Time#19, cast(data#0.created_at as date) AS Date#20, hour(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Hr#21, minute(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Min#22, second(cast(data#0.created_at as timestamp), Some(America/Chicago)) AS Sec#23, includes#1.places.full_name AS Place#24, data#0.lang AS Language#25, data#0.public_metrics.retweet_count AS Retweets#26L, data#0.public_metrics.reply_count AS Replies#27L, data#0.public_metrics.like_count AS Likes#28L, data#0.public_metrics.quote_count AS Quotes#29L, data#0.text AS Tweet#30]
++- *(1) FileScan json [data#0,includes#1] Batched: false, Format: JSON, Location: InMemoryFileIndex[file:/home/cjen/210104-usf-bigdata/week6/tweetsapp/BTS_geoOnly_210215_morning_C..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<data:struct<created_at:string,geo:struct<place_id:string>,id:string,lang:string,public_met...
+(1) MapPartitionsRDD[11] at rdd at tweetMoreSparkSql.scala:41 []
+ |  SQLExecutionRDD[10] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[9] at rdd at tweetMoreSparkSql.scala:41 []
+ |  MapPartitionsRDD[8] at rdd at tweetMoreSparkSql.scala:41 []
+ |  FileScanRDD[7] at rdd at tweetMoreSparkSql.scala:41 []
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|Time               |Date      |Hr |Min|Sec|Place                           |Language|Retweets|Replies|Likes|Quotes|Tweet                                                                                                                                                                                                                                                                                                   |index|
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+|2021-02-15 09:30:55|2021-02-15|9  |30 |55 |[Montevideo, Uruguay]           |und     |0       |0      |0    |0     |Mi sol precioso de mi vida 🌹⚘💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 제이홉 (j-hope)
+
+🖼🎧 https://t.co/xuTavK6nns
+
+#Curated_for_ARMY #jhope #제이홉 https://t.co/0T662QKFO7                                                                                                                  |1    |
+|2021-02-15 09:31:39|2021-02-15|9  |31 |39 |[Montevideo, Uruguay]           |und     |0       |0      |0    |0     |Mi sol precioso de mi vida 🌹⚘💜
+
+#BTS #방탄소년단 #BTS_BE Curated for ARMY by 제이홉 (j-hope)
+
+🖼🎧 https://t.co/xuTavK6nns
+
+#Curated_for_ARMY #jhope #제이홉 @BTS_twt
+
+https://t.co/0T662QKFO7                                                                                                        |2    |
+|2021-02-15 09:36:13|2021-02-15|9  |36 |13 |[Chatuchak, Thailand]           |en      |0       |0      |0    |0     |I #VoteBTSGlobal  as the Favorite Global Music Star for 2021 #KCA      @BTS_twt https://t.co/kQmAIbHdyk                                                                                                                                                                                                 |3    |
+|2021-02-15 10:11:21|2021-02-15|10 |11 |21 |[Paris, France]                 |en      |0       |0      |0    |0     |This is my first time participating in #BlackOutBTS—how’d I do? 😅@BTS_twt https://t.co/ZrzlEIvnTE https://t.co/d6Mc47uPu9                                                                                                                                                                              |4    |
+|2021-02-15 10:23:17|2021-02-15|10 |23 |17 |[Moscow, Russia]                |ru      |0       |0      |0    |0     |Так прошло мое 14 февраля❤️🤡 #bts #love @BTS_twt https://t.co/6dIf1rXo5Q                                                                                                                                                                                                                               |5    |
+|2021-02-15 10:26:30|2021-02-15|10 |26 |30 |[Tunisia]                       |und     |0       |0      |0    |0     |#BlackOutBTS  yes! #JIMIN 🍯🖤
+
+#Hishemlopez #BTSARMY #bts #trendthis https://t.co/wq1j0JS6C0                                                                                                                                                                                                           |6    |
+|2021-02-15 10:52:02|2021-02-15|10 |52 |2  |[Gwangjin-gu, Republic of Korea]|ko      |0       |0      |0    |0     |카페봄 다녀왔어요~~!항상 친절한 사장님.
+그리고 넘 예쁜 호삭이 사진이랑 동영상을 보면서 항복했어요~!감사합니다! 
+롤케이크도 맛있어요~!
+@bluedream0218
+@bws30nHQPBgZLjs
+@Cafe_Bom0613 
+#happyhobiday
+#그대의_웃음은_항상_우리의하루를_밝혀줘요
+#jhope #BTS #제이홉
+#호비생일축하해 https://t.co/HTBAc1gVbZ|7    |
+|2021-02-15 10:53:55|2021-02-15|10 |53 |55 |[Ribeirão Pires, Brasil]        |und     |0       |0      |0    |0     |#loststars #jungkook #BTS                                                                                                                                                                                                                                                                               |8    |
+|2021-02-15 11:28:07|2021-02-15|11 |28 |7  |[Dubai, United Arab Emirates]   |und     |0       |0      |0    |0     |#Brothers @BTS_twt ❤️❤️❤️ https://t.co/zXPcJ3hzZM                                                                                                                                                                                                                                                       |9    |
+|2021-02-15 11:28:36|2021-02-15|11 |28 |36 |[Dubai, United Arab Emirates]   |pl      |0       |0      |0    |0     |KOOKIEEEEE 💜😅 @BTS_twt https://t.co/ZBArZX7qJE                                                                                                                                                                                                                                                        |10   |
+|2021-02-15 11:38:55|2021-02-15|11 |38 |55 |[Saint Petersburg, Russia]      |ru      |0       |0      |0    |0     |Полезла в закладки.. кончилась... простите... #jhope #BTS
+https://t.co/IdnCnTNvNz                                                                                                                                                                                                                       |11   |
++-------------------+----------+---+---+---+--------------------------------+--------+--------+-------+-----+------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----+
+
