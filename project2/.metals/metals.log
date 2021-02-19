@@ -771,3 +771,840 @@ WARNING: Unmatched cancel notification for request id 201
 [0m2021.02.12 13:55:00 INFO  time: compiled root in 1.2s[0m
 [0m2021.02.12 13:57:35 INFO  compiling root (1 scala source)[0m
 [0m2021.02.12 13:57:36 INFO  time: compiled root in 1.31s[0m
+Feb 12, 2021 2:35:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 372
+[0m2021.02.13 11:54:00 INFO  shutting down Metals[0m
+[0mNo more data in the server stdin, exiting...2021.02.13 11:54:01 INFO  Shut down connection with build server.
+[0m
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.14 15:54:07 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.1.[0m
+[0m2021.02.14 15:54:07 INFO  time: initialize in 0.39s[0m
+[0m2021.02.14 15:54:07 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5180066842723043094/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.14 15:54:07 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5180066842723043094/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5180066842723043094/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.14 15:54:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 15:54:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.14 15:54:09 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5186934776928012852/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3377977929619175938/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3377977929619175938/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3377977929619175938/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5186934776928012852/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5186934776928012852/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.14 15:54:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 15:54:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 15:54:09 INFO  time: connected to build server in 1.22s[0m
+[0m2021.02.14 15:54:09 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.14 15:54:09 INFO  time: imported build in 0.14s[0m
+[0m2021.02.14 15:54:10 INFO  no build target: using presentation compiler with only scala-library[0m
+Feb 14, 2021 3:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+[0m2021.02.14 15:54:15 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.14 15:54:15 INFO  time: indexed workspace in 6.53s[0m
+[0m2021.02.14 15:54:53 INFO  compiling root (1 scala source)[0m
+[0m2021.02.14 15:54:59 INFO  time: compiled root in 5.52s[0m
+[0m2021.02.14 15:56:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.14 15:56:35 INFO  time: compiled root in 2.37s[0m
+[0m2021.02.14 16:00:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.14 16:00:26 INFO  time: compiled root in 1.45s[0m
+[0m2021.02.14 16:01:05 INFO  compiling root (1 scala source)[0m
+[0m2021.02.14 16:01:06 INFO  time: compiled root in 1.58s[0m
+[0m2021.02.14 16:01:09 INFO  shutting down Metals[0m
+[0m2021.02.14 16:01:09 INFO  Shut down connection with build server.[0m
+[0m2021.02.14 16:01:09 INFO  Shut down connection with build server.[0m
+[0m2021.02.14 16:01:09 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.14 16:03:10 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.14 16:03:11 INFO  time: initialize in 0.4s[0m
+[0m2021.02.14 16:03:10 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1412558405982288156/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.14 16:03:11 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.14 16:03:14 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1412558405982288156/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1412558405982288156/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.14 16:03:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 16:03:19 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2640411793297731877/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.14 16:03:19 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher81980964886561063/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2640411793297731877/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2640411793297731877/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher81980964886561063/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher81980964886561063/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.14 16:03:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 16:03:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.14 16:03:20 INFO  time: connected to build server in 8.87s[0m
+[0m2021.02.14 16:03:20 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.14 16:03:20 INFO  time: imported build in 0.44s[0m
+[0m2021.02.14 16:03:28 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.14 16:03:29 INFO  time: indexed workspace in 8.84s[0m
+[0m2021.02.14 16:04:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.14 16:04:36 INFO  time: compiled root in 4.63s[0m
+Feb 14, 2021 5:48:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+[0m2021.02.15 16:13:09 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.15 16:13:09 INFO  time: initialize in 0.47s[0m
+[0m2021.02.15 16:13:10 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1981213628931699819/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.15 16:13:09 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1981213628931699819/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1981213628931699819/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.15 16:13:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.15 16:13:11 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.15 16:13:11 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3063715430172299925/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4511406811295349025/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4511406811295349025/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4511406811295349025/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.15 16:13:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3063715430172299925/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3063715430172299925/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.15 16:13:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.15 16:13:11 INFO  time: connected to build server in 0.97s[0m
+[0m2021.02.15 16:13:11 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.15 16:13:11 INFO  time: imported build in 0.13s[0m
+[0m2021.02.15 16:13:14 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.15 16:13:14 INFO  time: indexed workspace in 3.42s[0m
+[0m2021.02.15 16:14:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:14:28 INFO  time: compiled root in 6.77s[0m
+Feb 15, 2021 4:15:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 119
+[0m2021.02.15 16:18:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:18:15 INFO  time: compiled root in 0.63s[0m
+[0m2021.02.15 16:19:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:19:46 INFO  time: compiled root in 0.55s[0m
+[0m2021.02.15 16:20:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:20:09 INFO  time: compiled root in 2.1s[0m
+[0m2021.02.15 16:22:37 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:22:37 INFO  time: compiled root in 0.56s[0m
+[0m2021.02.15 16:22:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:22:49 INFO  time: compiled root in 0.45s[0m
+[0m2021.02.15 16:22:56 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: type mismatch;
+ found   : String(" ")
+ required: String => TraversableOnce[?]
+      .flatMap(" ")
+               ^^^[0m
+[0m2021.02.15 16:22:56 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: type mismatch;
+ found   : String(" ")
+ required: String => TraversableOnce[?]
+      .flatMap(" ")
+               ^^^[0m
+[0m2021.02.15 16:22:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:22:59 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.15 16:23:22 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: type mismatch;
+ found   : String("\\s+")
+ required: String => TraversableOnce[?]
+      .flatMap("\\s+")
+               ^^^^^^[0m
+[0m2021.02.15 16:23:22 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: type mismatch;
+ found   : String("\\s+")
+ required: String => TraversableOnce[?]
+      .flatMap("\\s+")
+               ^^^^^^[0m
+[0m2021.02.15 16:23:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:23:27 INFO  time: compiled root in 1.8s[0m
+[0m2021.02.15 16:28:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:28:14 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.15 16:28:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:28:25 INFO  time: compiled root in 0.44s[0m
+[0m2021.02.15 16:28:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:28:45 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.15 16:28:57 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:28:57 INFO  time: compiled root in 0.15s[0m
+[0m2021.02.15 16:29:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:29:53 INFO  time: compiled root in 1.45s[0m
+[0m2021.02.15 16:31:26 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:31:28 INFO  time: compiled root in 1.51s[0m
+[0m2021.02.15 16:35:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:35:52 INFO  time: compiled root in 1.33s[0m
+[0m2021.02.15 16:36:09 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:36:09 INFO  time: compiled root in 0.32s[0m
+[0m2021.02.15 16:36:19 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:46:16: stale bloop error: missing parameter type for expanded function ((x$2, x$3) => x$2.contains("a").unary_$bang.$bar$bar(x$3.contains("the").unary_$bang))
+      .filter(!_.contains("a") || !_.contains("the"))
+               ^[0m
+[0m2021.02.15 16:36:19 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:46:36: stale bloop error: missing parameter type for expanded function ((x$2: <error>, x$3) => x$2.contains("a").unary_$bang.$bar$bar(x$3.contains("the").unary_$bang))
+      .filter(!_.contains("a") || !_.contains("the"))
+                                   ^[0m
+[0m2021.02.15 16:36:19 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:46:16: stale bloop error: missing parameter type for expanded function ((x$2, x$3) => x$2.contains("a").unary_$bang.$bar$bar(x$3.contains("the").unary_$bang))
+      .filter(!_.contains("a") || !_.contains("the"))
+               ^[0m
+[0m2021.02.15 16:36:19 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:46:36: stale bloop error: missing parameter type for expanded function ((x$2: <error>, x$3) => x$2.contains("a").unary_$bang.$bar$bar(x$3.contains("the").unary_$bang))
+      .filter(!_.contains("a") || !_.contains("the"))
+                                   ^[0m
+[0m2021.02.15 16:36:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:36:45 INFO  time: compiled root in 1.43s[0m
+[0m2021.02.15 16:37:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:37:01 INFO  time: compiled root in 0.3s[0m
+[0m2021.02.15 16:37:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:37:15 INFO  time: compiled root in 1.29s[0m
+[0m2021.02.15 16:37:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:37:37 INFO  time: compiled root in 1.45s[0m
+[0m2021.02.15 16:39:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:39:49 INFO  time: compiled root in 1.67s[0m
+[0m2021.02.15 16:46:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.15 16:46:04 INFO  time: compiled root in 1.3s[0m
+[0m2021.02.15 16:56:14 INFO  shutting down Metals[0m
+[0m2021.02.15 16:56:14 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.15 16:56:14 INFO  Shut down connection with build server.[0m
+[0m2021.02.15 16:56:14 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.18 11:44:40 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.18 11:44:41 INFO  time: initialize in 0.52s[0m
+[0m2021.02.18 11:44:43 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5582627718066860371/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.18 11:44:44 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.02.18 11:44:46 INFO  no build target: using presentation compiler with only scala-library[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.6-21-464e4ec4...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5582627718066860371/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5582627718066860371/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 11:44:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 11:44:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2048118541399862883/bsp.socket'...[0m
+2021.02.18 11:44:50 INFO  Attempting to connect to the build server...[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher9032752217501166360/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher9032752217501166360/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher9032752217501166360/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 11:44:50[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2048118541399862883/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2048118541399862883/bsp.socket... INFO 
+ tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 11:44:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 11:44:50 INFO  time: connected to build server in 6.95s[0m
+[0m2021.02.18 11:44:50 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.18 11:44:51 INFO  time: imported build in 0.42s[0m
+[0m2021.02.18 11:44:57 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.18 11:44:58 INFO  time: indexed workspace in 7.29s[0m
+Feb 18, 2021 11:46:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+[0m2021.02.18 11:46:51 INFO  shutting down Metals[0m
+[0m2021.02.18 11:46:51 INFO  Shut down connection with build server.[0m
+[0m2021.02.18 11:46:51 INFO  Shut down connection with build server.[0m
+[0m2021.02.18 11:46:51 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.18 12:57:01 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.18 12:57:02 INFO  time: initialize in 0.83s[0m
+[0m2021.02.18 12:57:03 INFO  Attempting to connect to the build server...[0m
+[0m2021.02.18 12:57:03 WARN  no build target for: /home/yyazdi/project-2/project2/project/plugins.sbt[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5842670765890887903/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.18 12:57:03 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5842670765890887903/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5842670765890887903/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 12:57:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 12:57:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.18 12:57:04 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3452460235696400876/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1197797165416617680/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1197797165416617680/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1197797165416617680/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3452460235696400876/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3452460235696400876/bsp.socket...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+[0m2021.02.18 12:57:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 12:57:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 12:57:04 INFO  time: connected to build server in 1.39s[0m
+[0m2021.02.18 12:57:04 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.18 12:57:04 INFO  time: imported build in 0.24s[0m
+[0m2021.02.18 12:57:06 INFO  no build target: using presentation compiler with only scala-library[0m
+[0m2021.02.18 12:57:08 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.18 12:57:08 INFO  time: indexed workspace in 4.27s[0m
+Feb 18, 2021 12:58:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Feb 18, 2021 1:01:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+[0m2021.02.18 13:05:11 INFO  compiling root (1 scala source)[0m
+Feb 18, 2021 1:05:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 121
+[0m2021.02.18 13:05:24 INFO  time: compiled root in 12s[0m
+[0m2021.02.18 13:05:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 13:05:53 INFO  time: compiled root in 4.66s[0m
+Feb 18, 2021 1:17:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 234
+[0m2021.02.18 18:59:42 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.18 18:59:43 INFO  time: initialize in 0.9s[0m
+[0m2021.02.18 18:59:43 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5154812096386567659/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.18 18:59:44 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5154812096386567659/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5154812096386567659/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 18:59:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 18:59:44 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...[0m
+2021.02.18 18:59:44 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6316191516487881889/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3668173862629266178/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6316191516487881889/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6316191516487881889/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 18:59:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3668173862629266178/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3668173862629266178/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 18:59:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 18:59:44 INFO  time: connected to build server in 1.07s[0m
+[0m2021.02.18 18:59:44 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.18 18:59:44 INFO  time: imported build in 0.23s[0m
+[0m2021.02.18 18:59:46 INFO  no build target: using presentation compiler with only scala-library[0m
+[0m2021.02.18 18:59:54 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.18 18:59:55 INFO  time: indexed workspace in 10s[0m
+[0m2021.02.18 19:00:52 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:00:57 INFO  time: compiled root in 5.02s[0m
+Feb 18, 2021 7:02:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 132
+[0m2021.02.18 19:02:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:02:25 INFO  time: compiled root in 3.69s[0m
+[0m2021.02.18 19:09:21 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/project2' for client vscode 1.53.2.[0m
+[0m2021.02.18 19:09:21 INFO  time: initialize in 0.42s[0m
+[0m2021.02.18 19:09:25 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1996935061862293486/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.18 19:09:25 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/project2/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.11.12.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/home/yyazdi/project-2/project2/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1996935061862293486/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1996935061862293486/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 19:09:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 19:09:25 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.18 19:09:25 INFO  Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7009050432915603124/bsp.socket'...Attempting to connect to the build server...
+[0m
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher355613330469944166/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher355613330469944166/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher355613330469944166/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 19:09:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7009050432915603124/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7009050432915603124/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.18 19:09:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.18 19:09:25 INFO  time: connected to build server in 0.55s[0m
+[0m2021.02.18 19:09:25 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.18 19:09:25 INFO  time: imported build in 0.23s[0m
+[0m2021.02.18 19:09:27 INFO  no build target: using presentation compiler with only scala-library[0m
+[0m2021.02.18 19:09:34 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.18 19:09:34 INFO  time: indexed workspace in 8.59s[0m
+Feb 18, 2021 7:13:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19
+[0m2021.02.18 19:13:36 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:13:41 INFO  time: compiled root in 4.29s[0m
+[0m2021.02.18 19:23:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:23:28 INFO  time: compiled root in 1.39s[0m
+[0m2021.02.18 19:23:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:23:36 INFO  time: compiled root in 1.08s[0m
+[0m2021.02.18 19:24:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:24:06 INFO  time: compiled root in 0.8s[0m
+[0m2021.02.18 19:24:14 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:24:14 INFO  time: compiled root in 0.64s[0m
+[0m2021.02.18 19:24:23 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:24:23 INFO  time: compiled root in 0.71s[0m
+[0m2021.02.18 19:24:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:24:42 INFO  time: compiled root in 0.8s[0m
+[0m2021.02.18 19:27:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:27:22 INFO  time: compiled root in 0.42s[0m
+[0m2021.02.18 19:29:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:29:33 INFO  time: compiled root in 0.37s[0m
+[0m2021.02.18 19:29:54 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:29:54 INFO  time: compiled root in 0.4s[0m
+[0m2021.02.18 19:30:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:30:30 INFO  time: compiled root in 0.41s[0m
+[0m2021.02.18 19:30:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:30:55 INFO  time: compiled root in 0.14s[0m
+[0m2021.02.18 19:31:00 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:31:00 INFO  time: compiled root in 0.38s[0m
+[0m2021.02.18 19:33:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:33:07 INFO  time: compiled root in 3.1s[0m
+[0m2021.02.18 19:33:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:33:33 INFO  time: compiled root in 0.48s[0m
+[0m2021.02.18 19:34:59 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:50:43: stale bloop error: value contains is not a member of org.apache.spark.sql.Row
+      .filter(word => word.length > 3 && !word.contains("#"))
+                                          ^^^^^^^^^^^^^[0m
+[0m2021.02.18 19:34:59 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:50:43: stale bloop error: value contains is not a member of org.apache.spark.sql.Row
+      .filter(word => word.length > 3 && !word.contains("#"))
+                                          ^^^^^^^^^^^^^[0m
+[0m2021.02.18 19:35:08 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:50:43: stale bloop error: value contains is not a member of org.apache.spark.sql.Row
+      .filter(word => word.length > 3 && !word.contains("#"))
+                                          ^^^^^^^^^^^^^[0m
+[0m2021.02.18 19:35:08 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:50:43: stale bloop error: value contains is not a member of org.apache.spark.sql.Row
+      .filter(word => word.length > 3 && !word.contains("#"))
+                                          ^^^^^^^^^^^^^[0m
+Feb 18, 2021 7:35:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 860
+Feb 18, 2021 7:35:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 859
+[0m2021.02.18 19:35:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:35:51 INFO  time: compiled root in 0.14s[0m
+[0m2021.02.18 19:36:21 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:36:23 INFO  time: compiled root in 1.89s[0m
+[0m2021.02.18 19:36:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:36:29 INFO  time: compiled root in 0.34s[0m
+[0m2021.02.18 19:36:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:36:58 INFO  time: compiled root in 1.49s[0m
+[0m2021.02.18 19:37:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:37:44 INFO  time: compiled root in 0.27s[0m
+[0m2021.02.18 19:38:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:38:07 INFO  time: compiled root in 0.29s[0m
+[0m2021.02.18 19:38:49 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:38:50 INFO  time: compiled root in 1.68s[0m
+[0m2021.02.18 19:40:55 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:40:57 INFO  time: compiled root in 1.56s[0m
+[0m2021.02.18 19:42:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:42:07 INFO  time: compiled root in 1.27s[0m
+[0m2021.02.18 19:43:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:43:16 INFO  time: compiled root in 1.14s[0m
+[0m2021.02.18 19:43:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:43:30 INFO  time: compiled root in 1.31s[0m
+[0m2021.02.18 19:44:58 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:45:00 INFO  time: compiled root in 1.29s[0m
+[0m2021.02.18 19:46:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:46:39 INFO  time: compiled root in 1.17s[0m
+[0m2021.02.18 19:48:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:48:24 INFO  time: compiled root in 0.2s[0m
+[0m2021.02.18 19:48:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:48:47 INFO  time: compiled root in 1.7s[0m
+[0m2021.02.18 19:48:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:48:58 INFO  time: compiled root in 1.78s[0m
+[0m2021.02.18 19:50:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:50:17 INFO  time: compiled root in 1.4s[0m
+[0m2021.02.18 19:51:28 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:51:29 INFO  time: compiled root in 1.02s[0m
+[0m2021.02.18 19:52:44 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:52:45 INFO  time: compiled root in 1.07s[0m
+[0m2021.02.18 19:54:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:54:20 INFO  time: compiled root in 0.27s[0m
+[0m2021.02.18 19:55:27 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 19:55:27 INFO  time: compiled root in 0.99s[0m
+[0m2021.02.18 20:00:01 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:00:02 INFO  time: compiled root in 1s[0m
+[0m2021.02.18 20:01:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:01:15 INFO  time: compiled root in 1.18s[0m
+[0m2021.02.18 20:01:36 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:01:38 INFO  time: compiled root in 1.64s[0m
+Feb 18, 2021 8:03:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2001
+Feb 18, 2021 8:44:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2115
+Feb 18, 2021 8:44:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2117
+Feb 18, 2021 8:44:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2116
+Feb 18, 2021 8:44:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2118
+[0m2021.02.18 20:44:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:44:24 INFO  time: compiled root in 0.21s[0m
+[0m2021.02.18 20:44:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:44:39 INFO  time: compiled root in 1.01s[0m
+Feb 18, 2021 8:48:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2197
+[0m2021.02.18 20:48:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 20:48:31 INFO  time: compiled root in 1s[0m
+Feb 18, 2021 8:50:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2235
+Feb 18, 2021 8:56:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2241
+Feb 18, 2021 9:24:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2253
+Feb 18, 2021 10:53:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2263
+[0m2021.02.18 22:58:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 22:58:29 INFO  time: compiled root in 9.02s[0m
+[0m2021.02.18 22:59:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 22:59:06 INFO  time: compiled root in 3.22s[0m
+[0m2021.02.18 23:01:18 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:01:20 INFO  time: compiled root in 1.84s[0m
+[0m2021.02.18 23:04:33 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:04:34 INFO  time: compiled root in 1.07s[0m
+[0m2021.02.18 23:05:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:05:52 INFO  time: compiled root in 1s[0m
+[0m2021.02.18 23:06:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:06:40 INFO  time: compiled root in 0.94s[0m
+[0m2021.02.18 23:08:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:08:50 INFO  time: compiled root in 0.14s[0m
+[0m2021.02.18 23:08:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:08:56 INFO  time: compiled root in 0.98s[0m
+[0m2021.02.18 23:11:47 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:11:47 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:12:10 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:12:12 INFO  time: compiled root in 2.42s[0m
+[0m2021.02.18 23:13:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:13:42 INFO  time: compiled root in 0.9s[0m
+[0m2021.02.18 23:17:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:17:20 INFO  time: compiled root in 0.9s[0m
+[0m2021.02.18 23:17:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:17:25 INFO  time: compiled root in 0.88s[0m
+Feb 18, 2021 11:19:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3236
+Feb 18, 2021 11:23:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3341
+[0m2021.02.18 23:25:24 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:25:24 INFO  time: compiled root in 0.21s[0m
+[0m2021.02.18 23:25:32 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:25:32 INFO  time: compiled root in 0.21s[0m
+[0m2021.02.18 23:27:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:27:07 INFO  time: compiled root in 0.22s[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.Column
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:27:42 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:107: stale bloop error: value =!= is not a member of String
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word").filter("word" =!= "RT"))
+                                                                                                          ^^^^^^^^^^[0m
+[0m2021.02.18 23:28:10 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:28:10 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:29:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:29:25 INFO  time: compiled root in 0.91s[0m
+[0m2021.02.18 23:29:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:29:35 INFO  time: compiled root in 0.95s[0m
+[0m2021.02.18 23:30:39 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:30:39 INFO  time: compiled root in 0.9s[0m
+[0m2021.02.18 23:32:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:32:06 INFO  time: compiled root in 0.95s[0m
+[0m2021.02.18 23:32:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:32:16 INFO  time: compiled root in 0.18s[0m
+[0m2021.02.18 23:36:42 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:36:43 INFO  time: compiled root in 1.22s[0m
+[0m2021.02.18 23:38:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:38:03 INFO  time: compiled root in 0.21s[0m
+[0m2021.02.18 23:38:19 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:38:19 INFO  time: compiled root in 0.2s[0m
+[0m2021.02.18 23:38:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:38:26 INFO  time: compiled root in 1.06s[0m
+[0m2021.02.18 23:38:35 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:38:35 INFO  time: compiled root in 0.21s[0m
+[0m2021.02.18 23:39:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:39:16 INFO  time: compiled root in 0.18s[0m
+[0m2021.02.18 23:39:22 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:39:22 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:44:25 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:44:25 INFO  time: compiled root in 0.22s[0m
+[0m2021.02.18 23:44:29 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:44:29 INFO  time: compiled root in 0.2s[0m
+[0m2021.02.18 23:44:36 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:43:5: stale bloop error: org.apache.spark.sql.streaming.DataStreamWriter[org.apache.spark.sql.Row] does not take parameters
+> streamDf
+>       .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word"))
+>       .groupBy($"word")
+>       .count()
+>       .sort(functions.desc("count"))
+>       .writeStream()[0m
+[0m2021.02.18 23:44:36 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:43:5: stale bloop error: org.apache.spark.sql.streaming.DataStreamWriter[org.apache.spark.sql.Row] does not take parameters
+> streamDf
+>       .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word"))
+>       .groupBy($"word")
+>       .count()
+>       .sort(functions.desc("count"))
+>       .writeStream()[0m
+[0m2021.02.18 23:44:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:44:59 INFO  time: compiled root in 0.95s[0m
+Feb 18, 2021 11:46:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4615
+[0m2021.02.18 23:47:07 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:47:07 INFO  time: compiled root in 0.99s[0m
+[0m2021.02.18 23:49:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:49:15 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:49:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:49:45 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:50:03 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:50:03 INFO  time: compiled root in 0.98s[0m
+[0m2021.02.18 23:50:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:50:13 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.18 23:50:30 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:50:31 INFO  time: compiled root in 1.06s[0m
+[0m2021.02.18 23:50:36 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:50:36 INFO  time: compiled root in 0.23s[0m
+[0m2021.02.18 23:51:13 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:51:13 INFO  time: compiled root in 0.22s[0m
+[0m2021.02.18 23:51:43 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:51:43 INFO  time: compiled root in 0.24s[0m
+[0m2021.02.18 23:51:51 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:51:51 INFO  time: compiled root in 0.24s[0m
+[0m2021.02.18 23:51:54 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.TypedColumn[Any,String]
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).as[String].filter($"word").alias("word"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:51:54 INFO  /home/yyazdi/project-2/project2/src/main/scala/com/revature/project2/Runner.scala:44:49: stale bloop error: value filter is not a member of org.apache.spark.sql.TypedColumn[Any,String]
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).as[String].filter($"word").alias("word"))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.02.18 23:52:04 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:52:04 INFO  time: compiled root in 0.92s[0m
+[0m2021.02.18 23:53:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:53:11 INFO  time: compiled root in 0.98s[0m
+[0m2021.02.18 23:53:31 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:53:31 INFO  time: compiled root in 0.13s[0m
+[0m2021.02.18 23:53:45 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:53:45 INFO  time: compiled root in 0.18s[0m
+[0m2021.02.18 23:53:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.18 23:54:00 INFO  time: compiled root in 1.01s[0m
+[0m2021.02.19 00:00:23 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:00:23 INFO  time: compiled root in 0.14s[0m
+[0m2021.02.19 00:00:50 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:00:50 INFO  time: compiled root in 0.14s[0m
+[0m2021.02.19 00:04:15 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:04:17 INFO  time: compiled root in 1.92s[0m
+[0m2021.02.19 00:04:36 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:04:36 INFO  time: compiled root in 0.36s[0m
+[0m2021.02.19 00:04:46 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:04:46 INFO  time: compiled root in 0.19s[0m
+[0m2021.02.19 00:04:56 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:04:56 INFO  time: compiled root in 0.2s[0m
+[0m2021.02.19 00:05:11 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:05:11 INFO  time: compiled root in 0.22s[0m
+[0m2021.02.19 00:12:23 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:12:24 INFO  time: compiled root in 1.21s[0m
+Feb 19, 2021 12:25:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6069
+Feb 19, 2021 12:27:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6077

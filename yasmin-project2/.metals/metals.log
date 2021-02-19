@@ -1,0 +1,1091 @@
+[0m2021.02.19 00:20:36 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/yasmin-project2' for client vscode 1.53.2.[0m
+[0m2021.02.19 00:20:36 INFO  time: initialize in 0.47s[0m
+[0m2021.02.19 00:20:37 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.19 00:20:42 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals3183770641511682830/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.19 00:20:42 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/project/metals.sbt[0m
+[0m2021.02.19 00:20:42 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/project/project/metals.sbt[0m
+[0m2021.02.19 00:20:42 WARN  Unable to produce semanticdb for /home/yyazdi/project-2/yasmin-project2/project/project/metals.sbt[0m
+[0m2021.02.19 00:20:42 WARN  Unable to produce semanticdb for /home/yyazdi/project-2/yasmin-project2/project/metals.sbt[0m
+[0m2021.02.19 00:20:42 INFO  skipping build import with status 'Started'[0m
+[0m2021.02.19 00:20:43 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.19 00:20:48 INFO  [info] loading settings for project yasmin-project2-build-build from metals.sbt ...[0m
+[0m2021.02.19 00:20:50 INFO  [info] loading project definition from /home/yyazdi/project-2/yasmin-project2/project/project[0m
+[0m2021.02.19 00:20:52 INFO  [info] loading settings for project yasmin-project2-build from metals.sbt ...[0m
+[0m2021.02.19 00:20:52 INFO  [info] loading project definition from /home/yyazdi/project-2/yasmin-project2/project[0m
+[0m2021.02.19 00:20:55 INFO  [success] Generated .bloop/yasmin-project2-build.json[0m
+[0m2021.02.19 00:20:55 INFO  [info] compiling 1 Scala source to /home/yyazdi/project-2/yasmin-project2/project/target/scala-2.12/sbt-1.0/classes ...[0m
+[0m2021.02.19 00:20:59 INFO  [info] done compiling[0m
+[0m2021.02.19 00:20:59 INFO  [success] Total time: 7 s, completed Feb 19, 2021 12:21:00 AM[0m
+[0m2021.02.19 00:21:02 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.19 00:21:02 INFO  [info] set current project to yasmin-project2 (in build file:/home/yyazdi/project-2/yasmin-project2/)[0m
+[0m2021.02.19 00:21:02 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.19 00:21:02 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.19 00:21:02 INFO  [success] Total time: 0 s, completed Feb 19, 2021 12:21:03 AM[0m
+[0m2021.02.19 00:21:04 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.19 00:21:04 INFO  time: ran 'sbt bloopInstall' in 22s[0m
+[0m2021.02.19 00:21:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2296321035575369289/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/yasmin-project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/yasmin-project2/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/yasmin-project2/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.4.
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.16.0/jline-3.16.0.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.4/scala-compiler-2.13.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar
+[0m[32m[D][0m   => /home/yyazdi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2296321035575369289/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2296321035575369289/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:21:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:21:04 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6791848801881496248/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6791848801881496248/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6791848801881496248/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:21:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:21:04 INFO  time: connected to build server in 0.39s[0m
+[0m2021.02.19 00:21:04 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.19 00:21:06 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.19 00:21:11 INFO  time: indexed workspace in 6.63s[0m
+[0m2021.02.19 00:22:06 INFO  compiling root (1 scala source)[0m
+Feb 19, 2021 12:22:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+[0m2021.02.19 00:22:12 INFO  time: compiled root in 5.19s[0m
+[0m2021.02.19 00:22:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:22:20 INFO  time: compiled root in 0.91s[0m
+[0m2021.02.19 00:22:24 INFO  compiling yasmin-project2-build (1 scala source)[0m
+[0m2021.02.19 00:22:30 INFO  time: compiled yasmin-project2-build in 6.14s[0m
+Feb 19, 2021 12:23:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+[0m2021.02.19 00:23:06 INFO  shutting down Metals[0m
+[0m2021.02.19 00:23:06 INFO  Shut down connection with build server.[0m
+[0m2021.02.19 00:23:06 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.02.19 00:23:22 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/yasmin-project2' for client vscode 1.53.2.[0m
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@50374f22 rejected from java.util.concurrent.ThreadPoolExecutor@6e4bac09[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m2021.02.19 00:25:07 INFO  Started: Metals version 0.9.10 in workspace '/home/yyazdi/project-2/yasmin-project2' for client vscode 1.53.2.[0m
+[0m2021.02.19 00:25:08 INFO  time: initialize in 1.04s[0m
+[0m2021.02.19 00:25:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3562845350845565674/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.19 00:25:09 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/build.sbt[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3562845350845565674/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3562845350845565674/bsp.socket...
+[0m2021.02.19 00:25:09 INFO  skipping build import with status 'Installed'[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:25:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:25:09 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1768609556770542161/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1768609556770542161/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1768609556770542161/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:25:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:25:09 INFO  time: connected to build server in 0.7s[0m
+[0m2021.02.19 00:25:09 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.19 00:25:10 INFO  time: imported build in 0.12s[0m
+[0m2021.02.19 00:25:13 INFO  no build target: using presentation compiler with only scala-library[0m
+[0m2021.02.19 00:25:13 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.19 00:25:13 INFO  time: indexed workspace in 3.98s[0m
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Feb 19, 2021 12:25:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+[0m2021.02.19 00:25:16 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:25:17 INFO  time: compiled root in 1.06s[0m
+Feb 19, 2021 12:25:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+[0m2021.02.19 00:25:34 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/project/plugins.sbt[0m
+[0m2021.02.19 00:25:34 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/project/plugins.sbt[0m
+[0m2021.02.19 00:25:34 WARN  Unable to produce semanticdb for /home/yyazdi/project-2/yasmin-project2/project/plugins.sbt[0m
+[0m2021.02.19 00:25:34 INFO  skipping build import with status 'Dismissed'[0m
+[0m2021.02.19 00:25:58 WARN  no build target for: /home/yyazdi/project-2/yasmin-project2/project/plugins.sbt[0m
+[0m2021.02.19 00:25:58 WARN  Unable to produce semanticdb for /home/yyazdi/project-2/yasmin-project2/project/plugins.sbt[0m
+[0m2021.02.19 00:25:58 INFO  skipping build import with status 'Dismissed'[0m
+Feb 19, 2021 12:26:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
+Feb 19, 2021 12:26:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 48
+Feb 19, 2021 12:26:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+Feb 19, 2021 12:26:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61
+Feb 19, 2021 12:26:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+Feb 19, 2021 12:27:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+[0m2021.02.19 00:27:59 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:27:59 INFO  time: compiled root in 0.31s[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:07 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:09 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:10 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:11 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+Feb 19, 2021 12:29:12 AM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:29:23 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:3:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.SparkSession
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:4:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:5:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.functions._
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:6:8: stale bloop error: object apache is not a member of package org
+import org.apache.spark.sql.DataFrameReader
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:7:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.impl.client.HttpClients
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:8:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.RequestConfig
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:9:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.config.CookieSpecs
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:10:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.utils.URIBuilder
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:11:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.client.methods.HttpGet
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:19:8: stale bloop error: object apache is not a member of package org
+import org.apache.http.entity.StringEntity;
+       ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:23:19: stale bloop error: not found: value SparkSession
+      val spark = SparkSession
+                  ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:37:24: stale bloop error: not found: type SparkSession
+  def wordCount(spark: SparkSession) : Unit = {
+                       ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:41:30: stale bloop error: not found: type SparkSession
+  def wordCountByTime(spark: SparkSession) : Unit = {
+                             ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:59:31: stale bloop error: not found: type SparkSession
+  def helloTweetStream(spark: SparkSession): Unit = {
+                              ^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:100:22: stale bloop error: not found: value HttpClients
+    val httpClient = HttpClients.custom
+                     ^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:9: stale bloop error: not found: value RequestConfig
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+        ^^^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:102:44: stale bloop error: not found: value CookieSpecs
+        RequestConfig.custom.setCookieSpec(CookieSpecs.STANDARD).build()
+                                           ^^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:21: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                    ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:105:38: stale bloop error: not found: type URIBuilder
+    val uriBuilder: URIBuilder = new URIBuilder(
+                                     ^^^^^^^^^^[0m
+[0m2021.02.19 00:30:08 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:108:23: stale bloop error: not found: type HttpGet
+    val httpGet = new HttpGet(uriBuilder.build())
+                      ^^^^^^^[0m
+[0m2021.02.19 00:30:38 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:30:38 INFO  time: compiled root in 0.33s[0m
+[0m2021.02.19 00:31:18 INFO  compiling yasmin-project2-build (1 scala source)[0m
+[0m2021.02.19 00:31:19 INFO  time: compiled yasmin-project2-build in 1.52s[0m
+Feb 19, 2021 12:31:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 752
+[0m2021.02.19 00:31:38 INFO  running '/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals4170216751649980829/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.02.19 00:31:40 INFO  [info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_275)[0m
+[0m2021.02.19 00:31:44 INFO  [info] loading settings for project yasmin-project2-build-build-build from metals.sbt ...[0m
+[0m2021.02.19 00:31:44 INFO  [info] loading project definition from /home/yyazdi/project-2/yasmin-project2/project/project/project[0m
+[0m2021.02.19 00:31:48 INFO  [info] loading settings for project yasmin-project2-build-build from metals.sbt ...[0m
+[0m2021.02.19 00:31:48 INFO  [info] loading project definition from /home/yyazdi/project-2/yasmin-project2/project/project[0m
+[0m2021.02.19 00:31:51 INFO  [success] Generated .bloop/yasmin-project2-build-build.json[0m
+[0m2021.02.19 00:31:51 INFO  [success] Total time: 3 s, completed Feb 19, 2021 12:31:51 AM[0m
+[0m2021.02.19 00:31:53 INFO  [info] loading settings for project yasmin-project2-build from metals.sbt,plugins.sbt ...[0m
+[0m2021.02.19 00:31:53 INFO  [info] loading project definition from /home/yyazdi/project-2/yasmin-project2/project[0m
+[0m2021.02.19 00:31:54 INFO  [success] Generated .bloop/yasmin-project2-build.json[0m
+[0m2021.02.19 00:31:54 INFO  [success] Total time: 1 s, completed Feb 19, 2021 12:31:54 AM[0m
+[0m2021.02.19 00:31:55 INFO  [info] loading settings for project root from build.sbt ...[0m
+[0m2021.02.19 00:31:55 INFO  [info] set current project to yasmin-project2 (in build file:/home/yyazdi/project-2/yasmin-project2/)[0m
+[0m2021.02.19 00:31:59 INFO  [success] Generated .bloop/root.json[0m
+[0m2021.02.19 00:31:59 INFO  [success] Generated .bloop/root-test.json[0m
+[0m2021.02.19 00:31:59 INFO  [success] Total time: 5 s, completed Feb 19, 2021 12:32:00 AM[0m
+[0m2021.02.19 00:31:59 INFO  sbt bloopInstall exit: 0[0m
+[0m2021.02.19 00:32:00 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.02.19 00:32:00 INFO  Disconnecting from Bloop session...[0m
+[0m2021.02.19 00:32:00 INFO  Shut down connection with build server.[0m
+[0mNo more data in the server stdin, exiting...
+2021.02.19 00:32:00No more data in the server stdin, exiting... INFO  
+Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.19 00:32:00 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7509757615888955423/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/yyazdi/project-2/yasmin-project2/.bloop'...
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/yasmin-project2/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/home/yyazdi/project-2/yasmin-project2/.bloop/root.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7509757615888955423/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7509757615888955423/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:32:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:32:00 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.02.19 00:32:00 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2529825239512562245/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher241096269853830595/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher241096269853830595/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher241096269853830595/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:32:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2529825239512562245/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2529825239512562245/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.19 00:32:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yyazdi/.cache/metals/bsp.trace.json[0m
+[0m2021.02.19 00:32:00 INFO  time: connected to build server in 0.16s[0m
+[0m2021.02.19 00:32:00 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.19 00:32:02 WARN  Could not find java sources in None. Java symbols will not be available.[0m
+[0m2021.02.19 00:32:06 INFO  time: indexed workspace in 6.08s[0m
+[0m2021.02.19 00:32:06 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:32:08 INFO  time: compiled root in 1.47s[0m
+Feb 19, 2021 12:32:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 799
+[0m2021.02.19 00:32:36 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: value split is not a member of org.apache.spark.sql.Row
+      .flatMap(_.split("\\s+"))
+               ^^^^^^^[0m
+[0m2021.02.19 00:32:36 INFO  /home/yyazdi/project-2/yasmin-project2/src/main/scala/com/revature/project2/Runner.scala:45:16: stale bloop error: value split is not a member of org.apache.spark.sql.Row
+      .flatMap(_.split("\\s+"))
+               ^^^^^^^[0m
+[0m2021.02.19 00:32:40 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 00:32:42 INFO  time: compiled root in 1.97s[0m

@@ -2,6 +2,7 @@ package com.revature.project2
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.DataFrameReader
 import org.apache.http.impl.client.HttpClients
 import org.apache.http.client.config.RequestConfig
@@ -27,9 +28,28 @@ object Runner {
 
       import spark.implicits._
 
-     spark.sparkContext.setLogLevel("WARN")
+     spark.sparkContext.setLogLevel("ERROR")
 
-     helloTweetStream(spark)
+    //  helloTweetStream(spark)
+    wordCount(spark)
+  }
+
+  def wordCount(spark: SparkSession) : Unit = {
+    import spark.implicits._
+
+    val staticDf = spark.read.json("twitterstream")
+
+    val streamDf = spark.readStream.schema(staticDf.schema).json("twitterstream")
+    streamDf
+      .select($"data.created_at".alias("time"), explode(split($"data.text", "\\W+")).alias("word"))
+      .groupBy($"word", $"time")
+      .count()
+      .sort(functions.desc("count"))
+      .writeStream
+      .outputMode("complete")
+      .format("console")
+      .start()
+      .awaitTermination()
   }
 
   def helloTweetStream(spark: SparkSession): Unit = {
@@ -44,7 +64,7 @@ object Runner {
     var filesFoundInDir = false
     while(!filesFoundInDir && (System.currentTimeMillis()-start) < 60000) {
       filesFoundInDir = Files.list(Paths.get("twitterstream")).findFirst().isPresent()
-      Thread.sleep(500)
+      // Thread.sleep(500)
     }
     if(!filesFoundInDir) {
       println("Error: Unable to populate tweetstream after 30 seconds.  Exiting..")
