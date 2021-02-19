@@ -19971,3 +19971,19 @@ Feb 19, 2021 8:23:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 1510
 Feb 19, 2021 8:24:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 1567
+Feb 19, 2021 9:28:16 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.02.19 09:35:20 INFO  compiling root (1 scala source)[0m
+[0m2021.02.19 09:35:20 WARN  Skipping build import, no checksum.[0m
+[0m2021.02.19 09:35:20 INFO  time: compiled root in 0.87s[0m
+[0m2021.02.19 09:35:20 INFO  compiling root-test (1 scala source)[0m
+[0m2021.02.19 09:35:22 INFO  time: compiled root-test in 0.86s[0m
+[0m2021.02.19 09:42:56 WARN  Skipping build import, no checksum.[0m
+Feb 19, 2021 9:43:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1618
+Feb 19, 2021 9:43:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1620
+Feb 19, 2021 9:43:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1621
+Feb 19, 2021 9:43:08 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
