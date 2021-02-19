@@ -219,10 +219,7 @@ object TwitterStream {
         staticDf.printSchema()
 
         val millis = System.currentTimeMillis()
-
         val hashtags = ".*([#,@][a-zA-Z0-9]+).*".r
-
-
         staticDf
             .select(functions.split($"data.text", " "))
             .as[String]
@@ -237,7 +234,6 @@ object TwitterStream {
             .sort($"count".desc)
             .write
             .json(s"tweetstream-largest-tags-$millis")
-            
             //.show()
     }
 
@@ -270,10 +266,8 @@ object TwitterStream {
             .groupBy($"text")
             .sum()
             .sort($"sum(retweet_count)".desc)
-            .show(50, false)
-            //.write
-            //.json(s"tweetstream-topretweets-states-$millis")
-            
+            .write
+            .json(s"tweetstream-topretweets-states-$millis")
     }
 
     /**
@@ -297,7 +291,7 @@ object TwitterStream {
         staticDf
             //.filter(staticDf("Language") === "en")
             //.filter($"Place".contains(usList.toDS()))
-            // .filter($"Tweet".contains("#kpop") || 
+            //.filter($"Tweet".contains("#kpop") || 
             //         $"Tweet".contains("#k_pop") ||
             //         $"Tweet".contains("@kpop") ||
             //         $"Tweet".contains("@k_pop") ||
@@ -318,4 +312,6 @@ object TwitterStream {
             //.show()
     }
 
+
+    
 }
