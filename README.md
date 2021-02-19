@@ -55,11 +55,12 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## List of features 
 
-* Top15 countries where most twitter users are located. [fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
+* List countries where twitter users are located. [fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
+* Count languages which twitter users from different countries are used in their texts. [fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
+* Identify languages to which the country, where twitter users are located, corresponds. [ig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
 
 ## TODOs for future development
 
 * Word Counting (optional for project 2, will do in project 3)
-
 * Twitter Data Modeling using Machine Learning (optional for project 2, will do in project 3)
 
