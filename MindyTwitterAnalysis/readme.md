@@ -5,7 +5,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Specific Questions to Answer
 
-- **How is #BTS distributed globally? (Mindy Jen)**
+- **Study how #BTS is distributed globally in order to answer two business questions as follows: (Mindy Jen)**
 
   * Q1: What countries would you suggest BTS to hold a series of global concert tours in 2022? 
 
