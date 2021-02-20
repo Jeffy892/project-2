@@ -42,9 +42,32 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - Tensorflow or Pytorch (optional for project 2)
 - Git + GitHub
 
-## Twitter Data Query
+## Twitter Data Query 
 
-- 
+- [Ref.](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/quick-start)
+- Build the rule for the inquiry of filtered stream data via two different approaches below:
+  * bash terminal window
+  * [postman](https://developer.twitter.com/en/docs/tools-and-libraries/using-postman#:~:text=%20Getting%20started%20with%20Twitter's%20Postman%20collections%20,to%20choose%20an%20endpoint%20from%20the...%20More) 
+
+      curl -X POST 'https://api.twitter.com/2/tweets/search/stream/rules' \
+      -H "Content-type: application/json" \
+      -H "Authorization: Bearer $TWITTER_BEARER_TOKEN" -d \
+      '{
+        "add": [
+        { 
+         "value": "@bts OR #bts",
+         "tag": ""
+        },
+        {
+         "value": "@kpop OR #kpop OR @k_pop OR #k_pop",
+         "tag": ""
+        }
+       ] 
+     }'
+
+- Manage cURL command
+
+      curl 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name' -H "Authorization: Bearer $TWITTER_BEARER_TOKEN"
 
 ## Getting Started
 
