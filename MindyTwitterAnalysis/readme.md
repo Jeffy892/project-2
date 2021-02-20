@@ -69,6 +69,10 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
           }
          ] 
         }'
+        
+02/11/2021              | 02/11/2021   
+:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-11_postman_1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-11_postman_2.png) 
 
 - Manage cURL command
 
