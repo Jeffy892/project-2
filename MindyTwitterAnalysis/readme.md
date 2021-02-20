@@ -67,7 +67,8 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 - Manage cURL command
 
-      curl 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at&expansions=geo.place_id&place.fields=full_name' 
+      curl 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=lang,geo,public_metrics,created_at \ 
+      &expansions=geo.place_id&place.fields=full_name' \
       -H "Authorization: Bearer $TWITTER_BEARER_TOKEN"
 
 ## Getting Started
