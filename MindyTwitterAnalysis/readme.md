@@ -104,7 +104,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * BTS_geoOnly_210215_morning_CDT.json
   * BTS_geoOnly_210215_1pm-2pm_CDT.json
   * BTS_geoOnly_210215_7pm-8pm_CDT.json
-  * BTS_geoOnly_210215_9pm-12am_CDT.json
+  * BTSkpop_geoOnly_210215_9pm-12am_CDT.json
   * BTS_geoOnly_210216_5am-6am_CDT.json
 
 - nine `input` [file name] options for `json2csv`:
