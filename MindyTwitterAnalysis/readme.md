@@ -197,7 +197,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
         cp ./ana2_tweetFiltered_210216_morning_geoOnly_json/part* ./ana2_tweetFiltered_210216_morning_geoOnly_csv/ana2_tweetFiltered_210216_morning_geoOnly.csv
 
 before run `tweetSparkSql`              | after run `tweetSparkSql`       
-:-------------------------:|:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:
 ![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-20.png)  |  ![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-20%20(1).png) 
 
 ## Twitter Data Analysis: List of Features 
