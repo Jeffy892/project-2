@@ -37,14 +37,51 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Twitter Data Query
 
-## Twitter Data Analysis: List of features 
+## Twitter Data Analysis: List of Features 
 
-* List countries where twitter users are located. ![fig1](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig1.png)
-* Count languages which twitter users from different countries are used in their texts. ![fig2](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig2.png)
-* Identify languages to which the country, where twitter users are located, corresponds. ![fig3](https://github.com/renjmindy/project-2/blob/mindy/pic/0213_morning_fig3.png)    
+* Rank countries where most twitter users are located. 
+
+02/12 all day              | 02/13 morning             |  02/13 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0212_allday_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig1.png)
+
+02/14 afternoon              | 02/15 morning             |  02/15 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0214_afternoon_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_afternoon_fig1.png)
+
+02/15 evening              | 02/15 night             |  02/16 morning
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night-2_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0216_morning_fig1.png)
+
+* Count different spoken languages which twitter users in each country tweet in their texts. 
+
+02/12 all day              | 02/13 morning             |  02/13 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0212_allday_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig2.png)
+
+02/14 afternoon              | 02/15 morning             |  02/15 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0214_afternoon_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_morning_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_afternoon_fig2.png)
+
+02/15 evening              | 02/15 night             |  02/16 morning
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night-2_fig2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0216_morning_fig2.png)
+
+* Identify languages to which each given country, where twitter users post tweets, corresponds. 
+  
+02/12 all day              | 02/13 morning             |  02/13 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0212_allday_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig3.png)
+
+02/14 afternoon              | 02/15 morning             |  02/15 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0214_afternoon_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_morning_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_afternoon_fig3.png)
+
+02/15 evening              | 02/15 night             |  02/16 morning
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night-2_fig3.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0216_morning_fig3.png)
 
 ## TODOs for future development
 
 * Word Counting (optional for project 2, will do in project 3)
-* Twitter Data Modeling using Machine Learning (optional for project 2, will do in project 3)
-
+* Twitter Sentimental Analysis using Machine Learning Tree Models & NLP/RNN (optional for project 2, will do in project 3)
