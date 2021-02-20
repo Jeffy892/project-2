@@ -73,6 +73,12 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 ## Getting Started
 
+### first approach:
+- run
+
+      spark-submit mindy.jar \[option\] \[input file_name\] \[output dir_name\]
+
+### secon approach:
 - make a copy on your local system:
             
       git clone https://github.com/Jeffy892/project-2
