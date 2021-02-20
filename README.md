@@ -47,6 +47,11 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - [Ref.](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/quick-start)
 - Build the rule for the inquiry of filtered stream data via two different approaches below:
   * bash terminal window
+
+02/11/2021              | 02/11/2021             |  02/11/2021
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-11_11_v2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-11_13_v2.png)  |  ![](https://github.com/Jeffy892/project-2/blob/main/MindyTwitterAnalysis/pic/2021-02-11_14_v2.png)
+
   * [postman](https://developer.twitter.com/en/docs/tools-and-libraries/using-postman#:~:text=%20Getting%20started%20with%20Twitter's%20Postman%20collections%20,to%20choose%20an%20endpoint%20from%20the...%20More) 
 
         curl -X POST 'https://api.twitter.com/2/tweets/search/stream/rules' \
