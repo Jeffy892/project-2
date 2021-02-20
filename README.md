@@ -77,6 +77,14 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - run
 
       spark-submit mindy.jar \[option\] \[input file_name\] \[output dir_name\]
+      
+  Three command line arguments are listed as follows:    
+      
+  * [\option\]
+  * [\input file_name\]
+  * [\output dir_name\]
+
+  You can find details about their definitions below.
 
 ### secon approach:
 - make a copy on your local system:
@@ -96,7 +104,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
       spark-submit target/scala-2.11/tweetsapp-assembly-0.1.0-SNAPSHOT.jar \[option\] \[input file_name\] \[output dir_name\]
       
-- three options:
+- three options for [\option\]:
 
   * `tweetSparkSql`
   * `tweetMoreSparkSql`
@@ -116,13 +124,13 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - nine `input` [file name] options for `json2csv`:
 
   * ana2_tweetFiltered_210212_allday_geoOnly.json 
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json
-  * ana2_tweetFiltered_210212_allday_geoOnly.json 
+  * ana2_tweetFiltered_210213_morning_geoOnly.json
+  * ana2_tweetFiltered_210213_afternoon_geoOnly.json
+  * ana2_tweetFiltered_210214_afternoon_geoOnly.json
+  * ana2_tweetFiltered_210215_morning_geoOnly.json
+  * ana2_tweetFiltered_210215_afternoon_geoOnly.json
+  * ana2_tweetFiltered_210215_night_geoOnly.json
+  * ana2_tweetFiltered_210216_morning_geoOnly.json 
 
 - nine `output` [directory name] options for `tweetSparkSql`:
 
