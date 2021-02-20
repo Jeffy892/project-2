@@ -8,7 +8,7 @@ import org.apache.spark.sql.types.StringType
 
 object json2csv {
     
-    def run(spark: SparkSession): Unit = {
+    def run(spark: SparkSession, filename: String, dirname: String): Unit = {
         import spark.implicits._
 
         //val stringify = udf((vs: Seq[String]) => vs match {
@@ -16,7 +16,7 @@ object json2csv {
         //    case _    => s"""[${vs.mkString(",")}]"""
         //})
 
-        val df = spark.read.json("ana2_BTS_geoOnly_210216_morning_CDT_json/ana2_BTS_geoOnly_210216_morning_CDT.json")
+        val df = spark.read.json(filename)
         .withColumn("index", $"index".cast(IntegerType))
         .withColumn("Hr", $"Hr".cast(IntegerType))
         .withColumn("Min", $"Min".cast(IntegerType))
@@ -31,7 +31,7 @@ object json2csv {
 
         df.printSchema()   
 
-        val dumpCSV = df.write.csv("ana2_BTS_geoOnly_210216_morning_CDT_csv")
+        val dumpCSV = df.write.csv(dirname)
 
     }
 
