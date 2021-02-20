@@ -63,7 +63,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
            "tag": ""
           }
          ] 
-       }'
+        }'
 
 - Manage cURL command
 
