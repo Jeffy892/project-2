@@ -12,10 +12,10 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 object tweetMoreSparkSql {
-    def run(spark: SparkSession): Unit = {
+    def run(spark: SparkSession, filename: String, dirname: String): Unit = {
         import spark.implicits._
 
-        val df = spark.read.option("multiline", "true").json("BTS_geoOnly_210216_5am-6am_CDT.json")
+        val df = spark.read.option("multiline", "true").json(filename)
 
         df.show()
 
@@ -49,7 +49,7 @@ object tweetMoreSparkSql {
 
         result.filter(functions.length($"Tweet") > 0)
         .filter($"Tweet".rlike("BTS|kpop")) 
-        .write.json("ana2_BTS_geoOnly_210216_morning_CDT_json")
+        .write.json(dirname)
 
     }
 }
