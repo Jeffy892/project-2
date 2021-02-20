@@ -73,4 +73,4 @@ The jar files that are used in this project are contained in the `jar files` fol
 
 ### Google Slide Presentation
 
-https://docs.google.com/presentation/d/1MCluH6Jtp52zT6qFNj7vkehwvd70PPPzB8jWmgj6Ed4/edit?usp=sharing
+[group talk](https://docs.google.com/presentation/d/1MCluH6Jtp52zT6qFNj7vkehwvd70PPPzB8jWmgj6Ed4/edit?usp=sharing)
