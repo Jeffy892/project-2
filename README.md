@@ -57,6 +57,14 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0212_allday_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_afternoon_fig1.png)
 
+02/14 afternoon              | 02/15 morning             |  02/15 afternoon
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0214_afternoon_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_morning_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_afternoon_fig1.png)
+
+02/15 evening              | 02/15 night             |  02/16 morning
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0215_night-2_fig1.png)  |  ![](https://github.com/Jeffy892/project-2/blob/mindy/pic/0216_morning_fig1.png)
+
 * Count different spoken languages which twitter users in each country tweet in their texts. 
   ![fig2](https://github.com/Jeffy892/project-2/blob/mindy/pic/0213_morning_fig2.png)
 * Identify languages to which each given country, where twitter users post tweets, corresponds. 
