@@ -96,7 +96,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * `tweetMoreSparkSql`
   * `json2csv`
 
-- nine `input` file name options for `tweetSparkSql` and `tweetMoreSparkSql`:
+- nine `input` [file name] options for `tweetSparkSql` and `tweetMoreSparkSql`:
 
   * twitterFilteredStream_210212_geoOnly.json
   * twitterFilteredStream_210213_geoOnly.json
@@ -107,7 +107,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * BTS_geoOnly_210215_9pm-12am_CDT.json
   * BTS_geoOnly_210216_5am-6am_CDT.json
 
-- nine `input` file name options for `json2csv`:
+- nine `input` [file name] options for `json2csv`:
 
   * ana2_tweetFiltered_210212_allday_geoOnly.json 
   * ana2_tweetFiltered_210212_allday_geoOnly.json
@@ -118,7 +118,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * ana2_tweetFiltered_210212_allday_geoOnly.json
   * ana2_tweetFiltered_210212_allday_geoOnly.json 
 
-- nine `output` directory name options for `tweetSparkSql`:
+- nine `output` [directory name] options for `tweetSparkSql`:
 
   * ana_tweetFiltered_210212_allday_geoOnly_json
   * ana_tweetFiltered_210213_morning_geoOnly_json
@@ -130,7 +130,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
   * ana_tweetFiltered_210215_night_geoOnly_CDT_json
   * ana_tweetFiltered_210216_morning_geoOnly_CDT_json
 
- - change `output` file names by making copies residing in `output` folders generated via `tweetSparkSql`:
+ - change `output` file name by making copies residing in `output` folders generated via `tweetSparkSql`:
 
         cp ./ana_tweetFiltered_210212_allday_geoOnly_json/part* ./ana_tweetFiltered_210212_allday_geoOnly_json/ana_tweetFiltered_210212_allday_geoOnly.json
         cp ./ana_tweetFiltered_210213_morning_geoOnly_json/part* ./ana_tweetFiltered_210213_morning_geoOnly_json/ana_tweetFiltered_210213_morning_geoOnly.json
@@ -142,7 +142,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
         cp ./ana_tweetFiltered_210215_night_geoOnly_json/part* ./ana_tweetFiltered_210215_night_geoOnly_json/ana_tweetFiltered_210215_night_geoOnly.json
         cp ./ana_tweetFiltered_210216_morning_geoOnly_json/part* ./ana_tweetFiltered_210216_morning_geoOnly_json/ana_tweetFiltered_210216_morning_geoOnly.json
         
-- nine `output` directory name options for `tweetMoreSparkSql`: 
+- nine `output` [directory name] options for `tweetMoreSparkSql`: 
 
   * ana2_tweetFiltered_210212_allday_geoOnly_json
   * ana2_tweetFiltered_210213_morning_geoOnly_json
@@ -166,7 +166,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
         cp ./ana2_tweetFiltered_210215_night_geoOnly_json/part* ./ana2_tweetFiltered_210215_night_geoOnly_json/ana2_tweetFiltered_210215_night_geoOnly.json
         cp ./ana2_tweetFiltered_210216_morning_geoOnly_json/part* ./ana2_tweetFiltered_210216_morning_geoOnly_json/ana2_tweetFiltered_210216_morning_geoOnly.json
 
-- nine `output` directory name options for `json2csv`:
+- nine `output` [directory name] options for `json2csv`:
 
   * ana2_tweetFiltered_210212_allday_geoOnly_csv
   * ana2_tweetFiltered_210213_morning_geoOnly_csv
