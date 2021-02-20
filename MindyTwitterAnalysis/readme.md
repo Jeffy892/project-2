@@ -7,10 +7,14 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 - **How is #BTS distributed globally? (Mindy Jen)**
 
+  * Q1: What countries would you suggest BTS to hold a series of global concert tours in 2022? 
+
+  * Q2: What languages would you recommend BTS to speak in their global concert tours? 
+
 ## Resposibilities
 
 -  Learn/Understand Twitter API
--  Learn/Understand Spark/Scala (and other useful technologies and frameworks related to our project)
+-  Learn/Understand Spark/Scala, along with other useful technologies and frameworks related to our project
 -  Create queries related to our questions
 -  Execute queries and analyze
 -  Create Google slides for the presentation 
@@ -33,6 +37,7 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 - PySpark (optional for project 2)
 - Docker (optional for project 2)
 - Scikit-learn (optional for project 2)
+- Tensorflow or Pytorch (optional for project 2)
 - Git + GitHub
 
 ## Twitter Data Query
@@ -84,4 +89,4 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 ## TODOs for future development
 
 * Word Counting (optional for project 2, will do in project 3)
-* Twitter Sentimental Analyses & Recommendation Predictive Models using Machine Learning Tree Models & NLP/RNN (optional for project 2, will do in project 3)
+* Twitter Sentimental Analyses & Recommendation Predictive Models using Machine Learning Tree Models & NLP/RNN, e.g. LSTMs/GRUs (optional for project 2, will do in project 3)
