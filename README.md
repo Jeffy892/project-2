@@ -96,5 +96,5 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 ## TODOs for future development
 
 * Word Counting (optional for project 2, will do in project 3)
-* Twitter Data Modeling using Machine Learning (optional for project 2, will do in project 3)
+* Twitter Sentimental Analysis using Machine Learning Tree Models & NLP/RNN (optional for project 2, will do in project 3)
 
