@@ -9,6 +9,8 @@ Apache Spark
 YARN
 Scala 2.12.10
 Twitter API
+Jupyter Notebook
+Python
 
 ## Responsibilities
 
@@ -34,10 +36,14 @@ curl -L -X GET 'https://api.twitter.com/2/users/1409798257/tweets?tweet.fields=l
 
 Where $TWITTER_BEARER_TOKEN is the environment variable for the key necessary to access Twitter data (This command is intended for a Linux environment, for windows, some of the options will be different).
 
+To create the piecharts, you will need to have Anaconda installed and the latest version of Python.
+
 ## Usage
 
 The first part of the analysis takes the #BTS and checks for hashtags before #BTS or after #BTS and sees how many times they appear. The analysis only checks for # with english characters and numbers. When finished with a batch, it will print the hashtags that it found along with a count next to them indicating the amount of times it was found.
 
 The second part of the analysis takes a few tweets posted by BTS and checks the average amount of likes they receive and the maximum and minimum amount of likes that they have. Because the schema is different when collecting tweets by a user, trying to use a json file of other tweets would throw an error (more on this below in input).
+
+The pie charts for the first part are hardcoded at the moment, so to create them, you will have to edit the values in the code and then run it.
 
 ## License
