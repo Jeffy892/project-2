@@ -2,16 +2,16 @@
     "version": "1.4.0",
     "project": {
         "name": "twitterfilteredstream-build",
-        "directory": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project",
-        "workspaceDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project",
+        "directory": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project",
         "sources": [
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala-2.12",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala-2",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/java",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/scala-sbt-1.0",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/target/scala-2.12/sbt-1.0/src_managed/main",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/Dependencies.scala"
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/scala-2.12",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/scala-sbt-1.0",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/target/scala-2.12/sbt-1.0/src_managed/main",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/Dependencies.scala"
         ],
         "dependencies": [
             
@@ -129,11 +129,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"
         ],
-        "out": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/.bloop/twitterfilteredstream-build",
-        "classesDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/.bloop/twitterfilteredstream-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/.bloop/twitterfilteredstream-build",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/.bloop/twitterfilteredstream-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/src/main/resources",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -150,7 +150,7 @@
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
                 "/home/melissawhite/.sbt/boot/scala-2.12.12/lib/scala-xml_2.12.jar"
             ],
-            "analysis": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -220,7 +220,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/project"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/project"
                 ]
             },
             "mainClass": [

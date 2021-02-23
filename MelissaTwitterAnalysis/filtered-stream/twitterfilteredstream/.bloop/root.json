@@ -2,14 +2,14 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream",
-        "workspaceDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream",
+        "directory": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream",
+        "workspaceDir": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream",
         "sources": [
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2.11",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/scala-2",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/java",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/scala-2.11/src_managed/main"
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/src/main/scala",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/src/main/scala-2.11",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/src/main/scala-2",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/src/main/java",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/target/scala-2.11/src_managed/main"
         ],
         "dependencies": [
             
@@ -174,11 +174,11 @@
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar",
             "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"
         ],
-        "out": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root",
-        "classesDir": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/.bloop/root/scala-2.11/classes",
+        "out": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/.bloop/root",
+        "classesDir": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/.bloop/root/scala-2.11/classes",
         "resources": [
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/src/main/resources",
-            "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/scala-2.11/resource_managed/main"
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/src/main/resources",
+            "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/target/scala-2.11/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -195,7 +195,7 @@
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar",
                 "/home/melissawhite/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar"
             ],
-            "analysis": "/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip",
+            "analysis": "/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.11.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -254,7 +254,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
                 "options": [
-                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/filtered-stream/twitterfilteredstream"
+                    "-Duser.dir=/home/melissawhite/revature-project2/project-2/MelissaTwitterAnalysis/filtered-stream/twitterfilteredstream"
                 ]
             },
             "mainClass": [
