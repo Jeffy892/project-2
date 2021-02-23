@@ -132,15 +132,15 @@ We would like to explore questions about a popular Korean pop (“Kpop”) artis
 
 - nine `input` \[file name\] options for `json2csv`:
 
-  * ana2_tweetFiltered_210212_allday_geoOnly.json 
-  * ana2_tweetFiltered_210213_morning_geoOnly.json
-  * ana2_tweetFiltered_210213_afternoon_geoOnly.json
-  * ana2_tweetFiltered_210214_afternoon_geoOnly.json
-  * ana2_tweetFiltered_210215_morning_geoOnly.json
-  * ana2_tweetFiltered_210215_afternoon_geoOnly.json
-  * ana2_tweetFiltered_210215_evening_geoOnly.json
-  * ana2_tweetFiltered_210215_night_geoOnly.json 
-  * ana2_tweetFiltered_210216_morning_geoOnly.json
+  * ./ana2_tweetFiltered_210212_allday_geoOnly_json/ana2_tweetFiltered_210212_allday_geoOnly.json 
+  * ./ana2_tweetFiltered_210213_morning_geoOnly_json/ana2_tweetFiltered_210213_morning_geoOnly.json
+  * ./ana2_tweetFiltered_210213_afternoon_geoOnly_json/ana2_tweetFiltered_210213_afternoon_geoOnly.json
+  * ./ana2_tweetFiltered_210214_afternoon_geoOnly_json/ana2_tweetFiltered_210214_afternoon_geoOnly.json
+  * ./ana2_tweetFiltered_210215_morning_geoOnly_json/ana2_tweetFiltered_210215_morning_geoOnly.json
+  * ./ana2_tweetFiltered_210215_afternoon_geoOnly_json/ana2_tweetFiltered_210215_afternoon_geoOnly.json
+  * ./ana2_tweetFiltered_210215_evening_geoOnly_json/ana2_tweetFiltered_210215_evening_geoOnly.json
+  * ./ana2_tweetFiltered_210215_night_geoOnly_json/ana2_tweetFiltered_210215_night_geoOnly.json 
+  * ./ana2_tweetFiltered_210216_morning_geoOnly_json/ana2_tweetFiltered_210216_morning_geoOnly.json
 
 - nine `output` \[directory name\] options for `tweetSparkSql`:
 
