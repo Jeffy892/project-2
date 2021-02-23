@@ -24,6 +24,8 @@ Answer the questions:
 
 Analyze the data given in the form of JSON files from Twitter Developer.
 
+TO-DO: Change the Jupyter Notebook code to read values from a file, then update the Scala code to output values to a file.
+
 ## Getting Started
 
 To run the code, you will need Spark 2.4.7, Hadoop 2.7.7, and SBT to build the jar files.
