@@ -49,3 +49,5 @@ The second part of the analysis takes a few tweets posted by BTS and checks the 
 The pie charts for the first part are hardcoded at the moment, so to create them, you will have to edit the values in the code and then run it.
 
 ## License
+
+This project uses the following license: MIT License
