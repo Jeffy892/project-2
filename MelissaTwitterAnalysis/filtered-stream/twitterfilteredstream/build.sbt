@@ -7,7 +7,7 @@ ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "twitterfilteredstream",
+    name := "melissa-language-static-analysis",
     libraryDependencies += scalaTest % Test,        
     libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.7" % "provided",
     libraryDependencies ++= Seq(

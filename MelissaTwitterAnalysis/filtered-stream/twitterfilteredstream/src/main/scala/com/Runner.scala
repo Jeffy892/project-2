@@ -38,7 +38,7 @@ object run {
     spark.sparkContext.setLogLevel("WARN")
 
     // streamTweets()
-    // langTweetStream(spark)
+    // langTweetStream(spark) //lang stats from streaming data
     
     // langCount(spark) //lang stats from tweets/bts.csv
     getLangStat(spark) //lang stats from tweets-sampled-data
