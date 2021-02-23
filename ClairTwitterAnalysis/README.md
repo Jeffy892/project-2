@@ -4,13 +4,13 @@ Big Data Analysis with Twitter Data
 
 ## Technologies Used
 
-SparkSQL
-Apache Spark
-YARN
-Scala 2.12.10
-Twitter API
-Jupyter Notebook
-Python
+  - SparkSQL
+  - Apache Spark
+  - YARN
+  - Scala 2.12.10
+  - Twitter API
+  - Jupyter Notebook
+  - Python
 
 ## Responsibilities
 
